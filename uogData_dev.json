@@ -382,6 +382,13 @@
     "response": "Goodbye! 👋 Feel free to tap my icon again whenever you need help. Allah Hafiz! ✨"
   },
   {
+    "intent": "test",
+    "keywords": [
+      "test"
+    ],
+    "response": "you tested"
+  },
+  {
     "intent": "bot_status",
     "keywords": [
       "how are you",
