@@ -1,6 +1,43 @@
 {
-  "version": 1.4,
+  "version": 1.5,
   "intents": [
+    {
+      "intent": "action_target_cgpa",
+      "keywords": [
+        "target cgpa",
+        "reach cgpa",
+        "future cgpa",
+        "need cgpa",
+        "target",
+        "kitna cgpa chahiye",
+        "target gpa"
+      ],
+      "response": "Here is the Target CGPA Calculator! Enter your current stats and your goal below to see what you need this semester: 🎯 [WIDGET_TARGET]"
+    },
+    {
+      "intent": "action_gpa_calc",
+      "keywords": [
+        "calculate gpa",
+        "my gpa",
+        "find gpa",
+        "gpa nikalna hai",
+        "gpa check karna",
+        "gpa widget"
+      ],
+      "response": "Let's calculate your semester GPA right here! Add your courses below: 🧮 [WIDGET_GPA]"
+    },
+    {
+      "intent": "action_cgpa_calc",
+      "keywords": [
+        "calculate cgpa",
+        "my cgpa",
+        "find cgpa",
+        "cgpa nikalna hai",
+        "cgpa check karna",
+        "cgpa widget"
+      ],
+      "response": "Let's calculate your overall CGPA! Add your previous semesters below: 📈 [WIDGET_CGPA]"
+    },
     {
       "intent": "cmd_open_lms",
       "keywords": [
@@ -167,7 +204,12 @@
     },
     {
       "intent": "calendar_link",
-      "keywords": ["calendar link", "schedule link", "dates link", "academic calendar"],
+      "keywords": [
+        "calendar link",
+        "schedule link",
+        "dates link",
+        "academic calendar"
+      ],
       "response": "You can view the official UOG academic schedule here: 📅 https://uog.edu.pk/calendar"
     },
     {
@@ -306,7 +348,9 @@
         "all departments",
         "list of departments",
         "blocks",
-        "buildings"
+        "buildings",
+       "block kahan hain",
+        "kidhar hain departments"
       ],
       "response": "UOG campus blocks are named after famous scholars 🏛️:\n• Block A (Sociology, BBA...)\n• Block B (CS, IT...)\n• Block BS (Chemistry...)\n• Block E/M (Engineering)\n• Block P (Mass Com)\n• Block R (History, IR...)\n• Block S (Math, Physics)\n• Block SADA (Architecture, Fine Arts)\n\nWhich department are you looking for? 🔍"
     },
@@ -339,7 +383,9 @@
         "software engineering",
         "cs",
         "it",
-        "b"
+        "b",
+        "b block kidhar hai",
+        "b block kahan hai"
       ],
       "response": "Block B, officially the Arfa Karim Block 💻, contains Economics, Information Technology (IT), Computer Science (CS), and Software Engineering."
     },
@@ -734,7 +780,9 @@
         "connect wifi",
         "internet",
         "wifi password",
-        "network"
+        "network",
+        "wifi kese connect karun",
+        "net nahi chal raha"
       ],
       "response": "To connect to UOG Eduroam WiFi 📶:\n\n1️⃣ Network Name: eduroam\n2️⃣ EAP Method: PEAP\n3️⃣ Phase 2 Authentication: MSCHAPV2\n4️⃣ CA Certificate: Do not validate\n5️⃣ Identity: <YourRollNo>@uog.edu.pk\n6️⃣ Password: Your CMS Password."
     },
@@ -757,6 +805,7 @@
         "enroll courses",
         "add courses",
         "enrollment",
+        "course kese add karun",
         "register course"
       ],
       "response": "For Course Registration 📝:\n\n1️⃣ Log in to CMS -> 'Student Center'.\n2️⃣ Click 'Enroll' under the Academics section.\n3️⃣ Select the current term.\n4️⃣ Add classes to your cart and click 'Finish Enrolling'."
