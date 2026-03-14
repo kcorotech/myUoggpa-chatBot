@@ -1,6 +1,23 @@
 {
-  "version": 1.7,
+  "version": 1.8,
   "intents": [
+    {
+      "intent": "programs_offered",
+      "keywords": [
+        "programs", 
+        "courses", 
+        "undergraduate", 
+        "bs programs", 
+        "degrees", 
+        "what can i study", 
+        "list of programs", 
+        "offer", 
+        "degree", 
+        "bachelors",
+        "kon se course"
+      ],
+      "response": "UOG offers over 120 degree programs! 🎓\n\n• Computing & IT 💻\n• Engineering ⚙️\n• Business & Management 📊\n• Sciences 🔬\n• Arts, Media & Law 🎭\n• Social Sciences 🌍\n• Architecture & Design 🎨\n\nTell me which field you like, or view the complete list of programs on the official website: 🌐 https://uog.edu.pk/degrees/c-tbv57cea53bc7eda/ndd57cea53bbba4e"
+    },
     {
       "intent": "action_settings_widget",
       "keywords": [
