@@ -1,36 +1,6 @@
 {
-  "version": 1.8,
+  "version": 1.9,
   "intents": [
-    {
-      "intent": "programs_offered",
-      "keywords": [
-        "programs", 
-        "courses", 
-        "undergraduate", 
-        "bs programs", 
-        "degrees", 
-        "what can i study", 
-        "list of programs", 
-        "offer", 
-        "degree", 
-        "bachelors",
-        "kon se course"
-      ],
-      "response": "UOG offers over 120 degree programs! 🎓\n\n• Computing & IT 💻\n• Engineering ⚙️\n• Business & Management 📊\n• Sciences 🔬\n• Arts, Media & Law 🎭\n• Social Sciences 🌍\n• Architecture & Design 🎨\n\nTell me which field you like, or view the complete list of programs on the official website: 🌐 https://uog.edu.pk/degrees/c-tbv57cea53bc7eda/ndd57cea53bbba4e"
-    },
-    {
-      "intent": "action_settings_widget",
-      "keywords": [
-        "switch",
-        "option",
-        "switch option",
-        "settings",
-        "preferences",
-        "change policy",
-        "change theme"
-      ],
-      "response": "Here are your quick settings! ⚙️ Tap any option below to switch it instantly: [WIDGET_SETTINGS]"
-    },
     {
       "intent": "action_target_cgpa",
       "keywords": [
@@ -69,6 +39,20 @@
       "response": "Let's calculate your overall CGPA! Add your previous semesters below: 📈 [WIDGET_CGPA]"
     },
     {
+      "intent": "action_settings_widget",
+      "keywords": [
+        "switch",
+        "option",
+        "switch option",
+        "settings",
+        "preferences",
+        "change policy",
+        "change theme",
+        "setting"
+      ],
+      "response": "Here are your quick settings! ⚙️ Tap any option below to switch it instantly: [WIDGET_SETTINGS]"
+    },
+    {
       "intent": "cmd_open_lms",
       "keywords": [
         "open lms",
@@ -77,13 +61,7 @@
         "launch lms",
         "lms login",
         "open uog lms",
-        "open university lms",
-        "take me to lms",
         "lms kholo",
-        "login lms",
-        "go to uog lms",
-        "start uog lms",
-        "lms portal",
         "lms site"
       ],
       "response": "Opening the UOG LMS for you right now! 🌐 [CMD_LMS]"
@@ -96,14 +74,8 @@
         "start cms",
         "launch cms",
         "cms login",
-        "open uog cms",
-        "take me to cms",
         "cms portal",
-        "login cms",
-        "uog cms login",
-        "cms kholo",
-        "open university cms",
-        "go to uog cms"
+        "cms kholo"
       ],
       "response": "Taking you straight to the UOG CMS! 🎓 [CMD_CMS]"
     },
@@ -114,15 +86,8 @@
         "dark theme",
         "switch to dark",
         "enable dark mode",
-        "dark",
-        "turn on dark mode",
-        "make it dark",
-        "activate dark mode",
-        "enable dark theme",
-        "night mode",
-        "switch dark mode",
-        "dark ui",
-        "dark screen"
+        "dark screen",
+        "night mode"
       ],
       "response": "Switched to the dark side! 🌙 [CMD_DARK_MODE]"
     },
@@ -133,11 +98,6 @@
         "light theme",
         "switch to light",
         "enable light mode",
-        "light",
-        "turn on light mode",
-        "switch to light theme",
-        "disable dark mode",
-        "make screen light",
         "bright mode",
         "light ui"
       ],
@@ -149,7 +109,7 @@
         "new policy",
         "switch to new grading",
         "2025 policy",
-        "switch new grade"
+        "new grade"
       ],
       "response": "Done! I have switched your calculator to the New 2025 Grading Policy. 🆕 [CMD_POLICY_NEW]"
     },
@@ -164,6 +124,245 @@
       "response": "Done! I have reverted your calculator to the Old Grading Policy. 📜 [CMD_POLICY_OLD]"
     },
     {
+      "intent": "programs_offered",
+      "keywords": [
+        "programs",
+        "courses",
+        "undergraduate",
+        "bs programs",
+        "degrees",
+        "what can i study",
+        "list of programs",
+        "offer",
+        "degree",
+        "bachelors",
+        "kon se course"
+      ],
+      "response": "UOG offers over 120 degree programs! 🎓\n\n🔹 **Undergraduate (BS/BSc):**\n• Computing & IT 💻\n• Engineering ⚙️\n• Business & Management 📊\n• Sciences 🔬\n• Arts, Media & Law 🎭\n• Social Sciences 🌍\n• Architecture & Design 🎨\n\n🔹 **Graduate (MS/MPhil/MBA):**\nOffered across all the faculties above!\n\n💡 Tell me exactly what you want to know (e.g., *'BS Computer Science fees'* or *'MBA fees'*), or view the full list here: 🌐 https://uog.edu.pk"
+    },
+    {
+      "intent": "programs_graduate",
+      "keywords": [
+        "masters",
+        "mphil",
+        "ms",
+        "msc",
+        "mba",
+        "llm",
+        "graduate",
+        "postgrad",
+        "diploma",
+        "ms programs",
+        "mphil programs"
+      ],
+      "response": "UOG offers a wide range of Graduate Programs (MS, MPhil, MSc, MBA, LLM, and Diplomas) across all major faculties! 🎓\n\nStandard Masters fees range from 41,620 PKR to 43,070 PKR.\n\nTell me which specific MS/MPhil program you are looking for (e.g., 'MS CS fees'), or check the full list here: 🌐 https://uog.edu.pk"
+    },
+    {
+      "intent": "fees_architecture_design",
+      "keywords": [
+        "architecture",
+        "design",
+        "fine arts",
+        "ceramics",
+        "film",
+        "digital arts",
+        "industrial design",
+        "textile design",
+        "visual communication"
+      ],
+      "response": "🎨 Architecture, Design & Fine Arts Fees:\n• BS Ceramics: 25,000 PKR\n• BS Film & Digital: 40,000 PKR\n• BS Industrial / Fine Arts: 52,326 PKR\n• BS Textile / Visual Comm: 60,000 PKR\n📧 design@admissions.uog.edu.pk"
+    },
+    {
+      "intent": "fees_arts_languages_law",
+      "keywords": [
+        "english",
+        "urdu",
+        "mass communication",
+        "media",
+        "islamic studies",
+        "physical education",
+        "law",
+        "llb",
+        "translation"
+      ],
+      "response": "🎭 Arts, Languages & Law Fees:\n• BS Urdu / History: 20,000 PKR\n• BS Islamic Studies / B.Ed: 35,000 PKR\n• BS English (Trans): 47,500 PKR\n• BS Mass Comm: 50,000 PKR\n• BS Physical Ed: 55,000 PKR\n• BS English (Lit): 60,000 PKR\n• LLB (4 Years): 70,000 PKR\n*(Evening programs are generally ~65,045 PKR)*"
+    },
+    {
+      "intent": "fees_computing",
+      "keywords": [
+        "computer science",
+        "bs cs",
+        "information technology",
+        "bs it",
+        "software engineering",
+        "bs se",
+        "cyber security",
+        "data science",
+        "artificial intelligence",
+        "ai"
+      ],
+      "response": "💻 Computing & IT Fees:\n• BS CS / IT / SE: 65,000 PKR (Morning) | 90,000 PKR (Evening)\n• BS Artificial Intelligence: 65,000 PKR\n• BS Cyber Security: 65,000 PKR\n• BS Data Science: 65,000 PKR\n📧 cs@admissions.uog.edu.pk"
+    },
+    {
+      "intent": "fees_engineering",
+      "keywords": [
+        "engineering",
+        "chemical engineering",
+        "electrical engineering",
+        "mechanical engineering",
+        "food process",
+        "b tech",
+        "computer engineering tech"
+      ],
+      "response": "⚙️ Engineering & Technology Fees:\n• BSc Chemical Eng: 25,000 PKR\n• BSc Food Process / Electrical Eng: 47,500 PKR\n• BSc Computer Eng Tech / Mechanical: 60,000 PKR\n📧 electrical@admissions.uog.edu.pk"
+    },
+    {
+      "intent": "fees_business_management",
+      "keywords": [
+        "bba",
+        "business",
+        "commerce",
+        "accounting",
+        "finance",
+        "banking",
+        "hotel management",
+        "hospitality",
+        "public admin",
+        "ecommerce",
+        "e-commerce",
+        "business analytics"
+      ],
+      "response": "📊 Management & Commerce Fees:\n• BS Commerce/Finance/Analytics/Public Admin: 47,500 PKR\n• BBA (4 Year): 65,000 PKR (Morning) | 90,000 PKR (Evening)\n• BS Hospitality Management: 80,000 PKR\n📧 management@admissions.uog.edu.pk"
+    },
+    {
+      "intent": "fees_science_bio",
+      "keywords": [
+        "biochemistry",
+        "biotechnology",
+        "nutrition",
+        "dietetics",
+        "medical laboratory",
+        "mlt",
+        "microbiology"
+      ],
+      "response": "🧬 Biosciences Fees:\n• BS Biochem / Biotech: 65,000 PKR (Morning) | ~50,000 PKR (Evening)\n• BS Nutrition / MLT / Microbiology: 75,000 PKR\n📧 bmb@admissions.uog.edu.pk"
+    },
+    {
+      "intent": "fees_science_general",
+      "keywords": [
+        "botany",
+        "chemistry",
+        "environmental science",
+        "climate change",
+        "geography",
+        "mathematics",
+        "physics",
+        "statistics",
+        "zoology",
+        "data analytics",
+        "science"
+      ],
+      "response": "🔬 General Science Fees:\n• BS Botany / Geography: 30,000 PKR\n• BS Stat: 35,000 PKR\n• BS Environment / Zoology / Data Analytics: 47,500 PKR\n• BS Math: 60,000 PKR\n• BS Chemistry / Physics: 65,000 PKR\n*(Evening programs vary from 50k to 66.5k PKR)*"
+    },
+    {
+      "intent": "fees_social_sciences",
+      "keywords": [
+        "psychology",
+        "sociology",
+        "economics",
+        "international relations",
+        "ir",
+        "political science",
+        "history",
+        "criminology",
+        "education",
+        "defence",
+        "strategic studies",
+        "special education"
+      ],
+      "response": "🌍 Social Sciences Fees:\n• BS History: 20,000 PKR\n• BS Economics: 35,000 PKR\n• BS Sociology / IR / Pol Science / Criminology: 47,500 PKR\n• BS Psychology: 60,000 PKR (Morning) | 50,000 PKR (Evening)\n📧 psychology@admissions.uog.edu.pk"
+    },
+    {
+      "intent": "fees_grad_arts_social_law",
+      "keywords": [
+        "mphil english",
+        "mphil mass comm",
+        "mphil islamic studies",
+        "llm",
+        "mphil economics",
+        "mphil education",
+        "mphil history",
+        "mphil ir",
+        "mphil political science",
+        "mphil sociology",
+        "ms psychology",
+        "mphil law",
+        "masters english",
+        "masters psychology",
+        "masters economics"
+      ],
+      "response": "🎭 Arts, Social Sciences & Law (Masters/MPhil):\n• MPhil (English, Mass Comm, Islamic Studies, Economics, Education, History, IR, Pol Sci, Sociology): 41,620 PKR\n• MS Psychology: 41,620 PKR\n• LLM: 41,620 PKR\n• Clinical Psych / Autism Diplomas: 47,500 PKR"
+    },
+    {
+      "intent": "fees_grad_computing_engineering",
+      "keywords": [
+        "ms computer science",
+        "ms cs",
+        "ms it",
+        "msc chemical",
+        "msc electrical",
+        "msc mechanical",
+        "masters cs",
+        "masters software",
+        "masters engineering"
+      ],
+      "response": "💻 Computing & Engineering (Masters/MS):\n• MS Computer Science: 43,070 PKR\n• MS Information Technology: 43,070 PKR\n• MSc Engineering (Chemical, Electrical, Mechanical): 43,070 PKR"
+    },
+    {
+      "intent": "fees_grad_management",
+      "keywords": [
+        "mba",
+        "mba executive",
+        "mphil commerce",
+        "mphil business",
+        "masters business"
+      ],
+      "response": "📊 Management & Commerce (Masters/MPhil):\n• MBA (2 Years): 43,070 PKR\n• MBA Executive: 43,070 PKR\n• MPhil Commerce / Business Admin: 43,070 PKR"
+    },
+    {
+      "intent": "fees_grad_science",
+      "keywords": [
+        "mphil biochemistry",
+        "mphil biotechnology",
+        "mphil botany",
+        "mphil chemistry",
+        "mphil environmental",
+        "mphil geography",
+        "mphil mathematics",
+        "mphil physics",
+        "mphil statistics",
+        "mphil zoology",
+        "masters physics",
+        "masters chemistry",
+        "masters math"
+      ],
+      "response": "🔬 Sciences (Masters/MPhil):\n• MPhil Programs (Biochem, Biotech, Botany, Chemistry, Env Science, Geography, Math, Physics, Stat, Zoology): 43,070 PKR"
+    },
+    {
+      "intent": "fees",
+      "keywords": [
+        "fee",
+        "cost",
+        "price",
+        "semester fee",
+        "tuition",
+        "dues",
+        "fee structure",
+        "kitni fee hai"
+      ],
+      "response": "Standard undergraduate semester tuition at UOG ranges from 30,000 to 90,000 PKR 💰 depending on the program. Graduate programs are around 41,000-43,000 PKR.\n\nPlease tell me your specific department (e.g., 'BS IT fees' or 'MBA fees') to get the exact cost!"
+    },
+    {
       "intent": "greeting_islamic",
       "keywords": [
         "asslamualikum",
@@ -172,31 +371,13 @@
         "aoa",
         "assalamualaikum",
         "aslamualikum",
-        "assalamu alaikum",
-        "assalam o alaikum",
-        "asalam o alaikum",
-        "salam bro",
-        "salam bot",
-        "aoa bot",
         "wsalam"
       ],
       "response": "Walaikum Assalam! ✨ I am the MyUOG Assistant. How can I help you today?"
     },
     {
       "intent": "greeting_casual",
-      "keywords": [
-        "hi",
-        "hello",
-        "hey",
-        "sup",
-        "yo",
-        "hi bot",
-        "hello bot",
-        "hey there",
-        "hey assistant",
-        "good morning",
-        "good evening"
-      ],
+      "keywords": ["hi", "hello", "hey", "sup", "yo", "kya haal hai"],
       "response": "Hi there! 👋 I am the MyUOG Assistant. How can I help you today?"
     },
     {
@@ -208,12 +389,8 @@
         "uog",
         "where is",
         "location",
-        "tell me about uog",
-        "uog university",
-        "uog details",
-        "where is uog located",
-        "location of uog",
-        "about university of gujrat"
+        "kidhar hai uog",
+        "kahan hai uog"
       ],
       "response": "The University of Gujrat (UOG) is a public-sector university established in 2004. 🏛️ The main Hafiz Hayat Campus is located on Jalalpur Jattan Road, Gujrat. 📍"
     },
@@ -265,31 +442,32 @@
       "response": "🌸 Spring Semester Schedule:\n• Classes Commence: Jan 27\n• Mid Terms: Mar 24 - Apr 01\n• Final Terms: May 26 - Jun 03\n• Results: Jun 13"
     },
     {
-      "intent": "fees_computing",
-      "keywords": [
-        "computer science",
-        "bs cs",
-        "information technology",
-        "bs it",
-        "software engineering",
-        "bs se",
-        "cyber security",
-        "data science"
-      ],
-      "response": "💻 Faculty of Computing & IT:\n• Morning Fee: ~65,000 PKR\n• Evening Fee: ~90,000 PKR\n📧 Contact: cs@admissions.uog.edu.pk"
+      "intent": "calendar_summer",
+      "keywords": ["summer", "summer semester", "summer classes"],
+      "response": "☀️ Summer Semester Schedule:\n• Classes Commence: Jun 23\n• Exams: Aug 18 - Aug 22\n• Results: Aug 29"
     },
     {
-      "intent": "fees_business",
+      "intent": "calendar_mids",
+      "keywords": ["mid", "mids", "mid term", "mid terms", "midterm"],
+      "response": "📝 Mid Term Examinations:\n• Fall Mids: Oct 28 - Nov 05\n• Spring Mids: Mar 24 - Apr 01\n• Summer Exams: Aug 18 - 22"
+    },
+    {
+      "intent": "calendar_finals",
+      "keywords": ["final", "finals", "final term", "final exams", "finalterm"],
+      "response": "🎓 Final Term Examinations:\n• Fall Finals: Dec 30 - Jan 07\n• Spring Finals: May 26 - Jun 03\n• Summer Exams: Aug 18 - 22"
+    },
+    {
+      "intent": "calendar_holidays",
       "keywords": [
-        "bba",
-        "business",
-        "commerce",
-        "accounting",
-        "finance",
-        "banking",
-        "hotel management"
+        "holidays",
+        "off",
+        "vacation",
+        "public holiday",
+        "break",
+        "eid",
+        "gazetted"
       ],
-      "response": "📊 Management & Admin Sciences:\n• Morning Fee: ~47,000 - 65,000 PKR\n• Evening Fee: ~90,000 PKR\n📧 Contact: management@admissions.uog.edu.pk"
+      "response": "🏖️ Upcoming Public Holidays (Expected):\n• Eid-ul-Fitr: Mar 31 - Apr 02\n• Labour Day: May 01\n• Eid-ul-Adha: Jun 06 - 08\n• Ashura: Jul 05 - 06\n• Independence Day: Aug 14\n• Eid Milad-un-Nabi: Sept 05"
     },
     {
       "intent": "policy_course_load",
@@ -311,6 +489,78 @@
         "w grade"
       ],
       "response": "⚠️ Course Withdrawal:\n• You can withdraw up to the 4th week ('W' grade).\n• ❌ Dropping AFTER the 4th week results in an 'F' grade!"
+    },
+    {
+      "intent": "wifi_eduroam",
+      "keywords": [
+        "wifi",
+        "eduroam",
+        "connect wifi",
+        "internet",
+        "wifi password",
+        "wifi kese connect karun",
+        "net nahi chal raha"
+      ],
+      "response": "To connect to UOG Eduroam WiFi 📶:\n1️⃣ Network Name: eduroam\n2️⃣ EAP Method: PEAP\n3️⃣ Phase 2 Authentication: MSCHAPV2\n4️⃣ CA Certificate: Do not validate\n5️⃣ Identity: <YourRollNo>@uog.edu.pk\n6️⃣ Password: Your CMS Password."
+    },
+    {
+      "intent": "cms_fee_voucher",
+      "keywords": [
+        "fee voucher",
+        "download voucher",
+        "challan form",
+        "print voucher",
+        "fee challan",
+        "cms voucher",
+        "challan kese nikalun"
+      ],
+      "response": "To download your fee voucher from CMS 💳:\n1️⃣ Log in to CMS.\n2️⃣ Go to 'Student Center'.\n3️⃣ Scroll down to the 'Finances' section.\n4️⃣ Click on the 'Print Fee Voucher' link to download your PDF.\n\n🎥 Watch tutorial: https://youtu.be/dummy_voucher_video"
+    },
+    {
+      "intent": "cms_course_enrollment",
+      "keywords": [
+        "course registration",
+        "enroll courses",
+        "add courses",
+        "enrollment",
+        "register course",
+        "course kese add karun"
+      ],
+      "response": "For Course Registration 📝:\n1️⃣ Log in to CMS -> 'Student Center'.\n2️⃣ Click 'Enroll' under the Academics section.\n3️⃣ Select the current term.\n4️⃣ Add classes to your cart and click 'Finish Enrolling'.\n\n🎥 Watch tutorial: https://youtu.be/dummy_enroll_video"
+    },
+    {
+      "intent": "cms_attendance_results",
+      "keywords": [
+        "transcript",
+        "check attendance",
+        "attendance",
+        "marks",
+        "results",
+        "grades on cms"
+      ],
+      "response": "To check Attendance or Results 📊:\nLog in to your CMS 'Student Center'. Under the 'Academics' section, click the drop-down menu to select 'Attendance' or generate an 'Unofficial Transcript'."
+    },
+    {
+      "intent": "lms_assignments",
+      "keywords": [
+        "submit assignment",
+        "upload assignment",
+        "lms assignment",
+        "assignment deadline",
+        "turn in assignment"
+      ],
+      "response": "To submit an assignment on LMS 📁:\n1️⃣ Open your course.\n2️⃣ Click the specific Assignment link.\n3️⃣ Click 'Add submission'.\n4️⃣ Upload your file and hit 'Save changes'."
+    },
+    {
+      "intent": "lms_lectures",
+      "keywords": [
+        "download lectures",
+        "course material",
+        "lms lectures",
+        "slides",
+        "notes"
+      ],
+      "response": "To access your course materials 📚:\nLog in to LMS, select your course from the dashboard, and scroll through the weekly topics to view and download lectures, slides, and notes."
     },
     {
       "intent": "bot_developer",
@@ -343,7 +593,7 @@
         "grading system",
         "passing marks"
       ],
-      "response": "UOG recently updated its grading system. 📊 You can type 'Switch to new grading policy' or 'Switch to old grading policy' and I will change your app settings instantly!"
+      "response": "UOG recently updated its grading system. 📊 You can type 'Switch to new grading policy' or 'Switch to old grading policy', or just type 'Settings' to open the control panel!"
     },
     {
       "intent": "grading_old",
@@ -352,8 +602,7 @@
         "old grades",
         "old grading",
         "pre 2025",
-        "previous grade",
-        "old"
+        "previous grade"
       ],
       "response": "Here is the Old Grading System 📜:\n• A+ (85+): 4.0 🌟\n• A (80-84): 3.7\n• B+ (75-79): 3.4\n• B (70-74): 3.0\n• B- (65-69): 2.5\n• C+ (60-64): 2.0\n• C (55-59): 1.5\n• D (50-54): 1.0 ⚠️\n• F (<50): 0.0 ❌"
     },
@@ -364,8 +613,7 @@
         "new grades",
         "new grading",
         "2025 batch",
-        "2025 grade",
-        "new"
+        "2025 grade"
       ],
       "response": "Here is the New 2025 Grading System Summary 🆕:\n• A (80-100%): 3.67 to 4.00 🌟\n• B (65-79%): 2.50 to 3.60\n• C (55-64%): 1.50 to 2.40\n• D (50-54%): 1.00 to 1.40 ⚠️\n• F (<50%): 0.00 ❌"
     },
@@ -379,10 +627,10 @@
         "list of departments",
         "blocks",
         "buildings",
-       "block kahan hain",
+        "block kahan hain",
         "kidhar hain departments"
       ],
-      "response": "UOG campus blocks are named after famous scholars 🏛️:\n• Block A (Sociology, BBA...)\n• Block B (CS, IT...)\n• Block BS (Chemistry...)\n• Block E/M (Engineering)\n• Block P (Mass Com)\n• Block R (History, IR...)\n• Block S (Math, Physics)\n• Block SADA (Architecture, Fine Arts)\n\nWhich department are you looking for? 🔍"
+      "response": "UOG campus blocks are named after scholars 🏛️:\n• Block A (Sociology, BBA...)\n• Block B (CS, IT...)\n• Block BS (Chemistry...)\n• Block E/M (Engineering)\n• Block P (Mass Com)\n• Block R (History, IR...)\n• Block S (Math, Physics)\n• Block SADA (Architecture, Fine Arts)\nWhich department are you looking for? 🔍"
     },
     {
       "intent": "block_a",
@@ -396,7 +644,7 @@
         "bba",
         "mba",
         "finance",
-        "a"
+        "a block kidhar hai"
       ],
       "response": "Block A, officially named the Al-Farabi Block 🏢, houses Sociology, Psychology, BBA, MBA, Finance, an IT Lab, and the Video Conference Hall. 📊"
     },
@@ -413,7 +661,6 @@
         "software engineering",
         "cs",
         "it",
-        "b",
         "b block kidhar hai",
         "b block kahan hai"
       ],
@@ -429,7 +676,7 @@
         "botany",
         "zoology",
         "environmental",
-        "bs"
+        "bs block kidhar hai"
       ],
       "response": "Block BS, now named the Jabir Bin Hayyan Block 🔬, contains the Pro VC office, Chemistry, Botany, Zoology, and Environmental science departments. 🌿"
     },
@@ -443,7 +690,7 @@
         "physics",
         "commerce",
         "statistics",
-        "s"
+        "s block kahan hai"
       ],
       "response": "Block S, known as the Al-Khwarizmi Block 📐, is home to the Math, Physics, Commerce, and Statistics departments, as well as the Printing Press. 🖨️"
     },
@@ -459,8 +706,7 @@
         "islamic studies",
         "english",
         "physical education",
-        "geography",
-        "r"
+        "geography"
       ],
       "response": "Block R, officially the Ibne Khaldun Block 🌍, houses International Relations, Political Science, History, Islamic Studies, English, Physical Education, Geography, and CELTS. 📚"
     },
@@ -477,9 +723,7 @@
         "chemical",
         "b.tech",
         "al jazari",
-        "ibn e sina",
-        "e",
-        "m"
+        "ibn e sina"
       ],
       "response": "Block E (Al-Jazari) and Block M (Ibn e Sina) ⚙️ host Chemical, Electrical, Mechanical Engineering, and B.Tech programs. 🛠️"
     },
@@ -492,8 +736,7 @@
         "bio-chemistry",
         "bio-technology",
         "mass com",
-        "mass communication",
-        "p"
+        "mass communication"
       ],
       "response": "Block P, now the Omar al Khayam Block 📸, is home to Bio-Chemistry, Bio-Technology, Mass Communication, and the Wood Workshop. 🧬"
     },
@@ -506,8 +749,7 @@
         "architecture",
         "fine arts",
         "ceramics",
-        "design",
-        "sada"
+        "design"
       ],
       "response": "Block SADA, known as the Sadequain Block 🎨, houses Architecture, Fine Arts, Ceramics, Multimedia Design, Textile Design, and Product Design. 📐"
     },
@@ -519,42 +761,24 @@
         "deadline",
         "merit list",
         "enroll",
-        "undergraduate",
-        "bachelors",
-        "ms",
-        "mphil",
-        "phd",
         "uog admission",
         "apply for uog",
         "how to apply",
-        "admission open",
-        "admission date",
-        "uog entry requirements"
+        "admission open"
       ],
       "response": "Admissions generally open in Fall. 🍂 BS requires at least 45% in Inter/DAE. MS/MPhil/PhD require 16 years of education, plus a departmental test and interview. 📝"
     },
     {
-      "intent": "fees",
-      "keywords": [
-        "fee",
-        "cost",
-        "price",
-        "semester fee",
-        "tuition",
-        "dues",
-        "fee structure",
-        "semester fee",
-        "uog fee",
-        "how much fee",
-        "fee per semester",
-        "tuition fee",
-        "uog tuition"
-      ],
-      "response": "Standard undergraduate semester tuition at UOG typically ranges from 30,000 PKR to 80,000 PKR 💰, depending on the program. Transport 🚌 and hostel 🛏️ fees are extra."
-    },
-    {
       "intent": "transport",
-      "keywords": ["transport", "bus", "routes", "van", "shuttle", "commute"],
+      "keywords": [
+        "transport",
+        "bus",
+        "routes",
+        "van",
+        "shuttle",
+        "commute",
+        "bus kahan se milti hai"
+      ],
       "response": "UOG operates a massive fleet of buses 🚌 covering routes to Gujranwala, Sialkot, Daska, Jhelum, Kharian, and Mandi Bahauddin. Contact the Transport Office for the exact route plan! 🗺️"
     },
     {
@@ -567,9 +791,7 @@
         "read",
         "uog library",
         "central library",
-        "where is library",
-        "library timing",
-        "study place"
+        "where is library"
       ],
       "response": "The main central library is the Quaid-i-Azam Library. 📚 It connects a network of 11 departmental libraries with thousands of books and digital access. 💻"
     },
@@ -584,10 +806,7 @@
         "girls hostel",
         "boys hostel",
         "uog hostel",
-        "hostel fee",
-        "hostel rooms",
-        "boys hostel",
-        "girls hostel uog"
+        "hostel fee"
       ],
       "response": "UOG provides on-campus hostel facilities for both male and female students. 🛏️ Seats are limited and usually allotted on a merit/distance basis."
     },
@@ -600,10 +819,7 @@
         "peef",
         "fee concession",
         "need based scholarship",
-        "merit scholarship",
-        "uog scholarship",
-        "financial support",
-        "student aid"
+        "merit scholarship"
       ],
       "response": "UOG offers financial aid 🎓 including HEC Need-Based, Ehsaas, PEEF, and UOG Merit Concessions. You can apply through the UA&FAO office. 📄"
     },
@@ -653,11 +869,7 @@
         "allah hafiz",
         "khuda hafiz",
         "take care",
-        "bye bye",
-        "see ya",
-        "talk later",
-        "good night",
-        "ok bye"
+        "bye bye"
       ],
       "response": "Goodbye! 👋 Feel free to tap my icon again whenever you need help. Allah Hafiz! ✨"
     },
@@ -669,8 +881,7 @@
         "how do you do",
         "how r u",
         "hows it going",
-        "are you ok",
-        "are you working"
+        "are you ok"
       ],
       "response": "I am doing great and running smoothly! ⚡ Ready to help you calculate your grades and navigate UOG."
     },
@@ -681,11 +892,8 @@
         "who is you",
         "what are you",
         "your name",
-        "your name",
         "who made you",
-        "what is your name",
-        "who built you",
-        "are you a bot"
+        "what is your name"
       ],
       "response": "I am the MyUOG Assistant! 🤖 I am an AI built directly into this app to help you with GPA calculations, campus info, and academic policies."
     },
@@ -729,7 +937,7 @@
         "cgpa",
         "cumulative"
       ],
-      "response": "To calculate your CGPA 📈:\n\nThe app takes the GPA of each semester, multiplies it by that semester's credit hours, adds them all up, and divides by your total credit hours.\n\n💡 You can easily do this on the CGPA Calculator screen!"
+      "response": "To calculate your CGPA 📈:\n\nThe app takes the GPA of each semester, multiplies it by that semester's credit hours, adds them all up, and divides by your total credit hours.\n\n💡 You can just type 'Calculate CGPA' to do it right here!"
     },
     {
       "intent": "repeater_mode",
@@ -773,177 +981,6 @@
       "intent": "contact_support",
       "keywords": ["contact", "phone", "email", "helpline", "support", "admin"],
       "response": "You can visit uog.edu.pk 🌐, call +92 (53) 2260000 📞, or email info@uog.edu.pk ✉️ for official support."
-    },
-    {
-      "intent": "calendar_summer",
-      "keywords": ["summer", "summer semester", "summer classes"],
-      "response": "☀️ Summer Semester Schedule:\n• Classes Commence: Jun 23\n• Exams: Aug 18 - Aug 22\n• Results: Aug 29"
-    },
-    {
-      "intent": "calendar_mids",
-      "keywords": ["mid", "mids", "mid term", "mid terms", "midterm"],
-      "response": "📝 Mid Term Examinations:\n• Fall Mids: Oct 28 - Nov 05\n• Spring Mids: Mar 24 - Apr 01\n• Summer Exams: Aug 18 - 22"
-    },
-    {
-      "intent": "calendar_finals",
-      "keywords": ["final", "finals", "final term", "final exams", "finalterm"],
-      "response": "🎓 Final Term Examinations:\n• Fall Finals: Dec 30 - Jan 07\n• Spring Finals: May 26 - Jun 03\n• Summer Exams: Aug 18 - 22"
-    },
-    {
-      "intent": "calendar_holidays",
-      "keywords": [
-        "holidays",
-        "off",
-        "vacation",
-        "public holiday",
-        "break",
-        "eid",
-        "gazetted"
-      ],
-      "response": "🏖️ Upcoming Public Holidays (Expected):\n• Eid-ul-Fitr: Mar 31 - Apr 02\n• Labour Day: May 01\n• Eid-ul-Adha: Jun 06 - 08\n• Ashura: Jul 05 - 06\n• Independence Day: Aug 14\n• Eid Milad-un-Nabi: Sept 05"
-    },
-    {
-      "intent": "wifi_eduroam",
-      "keywords": [
-        "wifi",
-        "eduroam",
-        "connect wifi",
-        "internet",
-        "wifi password",
-        "network",
-        "wifi kese connect karun",
-        "net nahi chal raha"
-      ],
-      "response": "To connect to UOG Eduroam WiFi 📶:\n\n1️⃣ Network Name: eduroam\n2️⃣ EAP Method: PEAP\n3️⃣ Phase 2 Authentication: MSCHAPV2\n4️⃣ CA Certificate: Do not validate\n5️⃣ Identity: <YourRollNo>@uog.edu.pk\n6️⃣ Password: Your CMS Password."
-    },
-    {
-      "intent": "cms_fee_voucher",
-      "keywords": [
-        "fee voucher",
-        "download voucher",
-        "challan form",
-        "print voucher",
-        "fee challan",
-        "cms voucher"
-      ],
-      "response": "To download your fee voucher from CMS 💳:\n\n1️⃣ Log in to CMS.\n2️⃣ Go to 'Student Center'.\n3️⃣ Scroll down to the 'Finances' section.\n4️⃣ Click on the 'Print Fee Voucher' link to download your PDF."
-    },
-    {
-      "intent": "cms_course_enrollment",
-      "keywords": [
-        "course registration",
-        "enroll courses",
-        "add courses",
-        "enrollment",
-        "course kese add karun",
-        "register course"
-      ],
-      "response": "For Course Registration 📝:\n\n1️⃣ Log in to CMS -> 'Student Center'.\n2️⃣ Click 'Enroll' under the Academics section.\n3️⃣ Select the current term.\n4️⃣ Add classes to your cart and click 'Finish Enrolling'."
-    },
-    {
-      "intent": "cms_attendance_results",
-      "keywords": [
-        "transcript",
-        "check attendance",
-        "attendance",
-        "marks",
-        "results",
-        "grades on cms"
-      ],
-      "response": "To check Attendance or Results 📊:\n\nLog in to your CMS 'Student Center'. Under the 'Academics' section, click the drop-down menu to select 'Attendance' or generate an 'Unofficial Transcript'."
-    },
-    {
-      "intent": "lms_assignments",
-      "keywords": [
-        "submit assignment",
-        "upload assignment",
-        "lms assignment",
-        "assignment deadline",
-        "turn in assignment"
-      ],
-      "response": "To submit an assignment on LMS 📁:\n\n1️⃣ Open your course.\n2️⃣ Click the specific Assignment link.\n3️⃣ Click 'Add submission'.\n4️⃣ Upload your file and hit 'Save changes'."
-    },
-    {
-      "intent": "lms_lectures",
-      "keywords": [
-        "download lectures",
-        "course material",
-        "lms lectures",
-        "slides",
-        "notes"
-      ],
-      "response": "To access your course materials 📚:\n\nLog in to LMS, select your course from the dashboard, and scroll through the weekly topics to view and download lectures, slides, and notes."
-    },
-    {
-      "intent": "fees_science",
-      "keywords": [
-        "physics",
-        "chemistry",
-        "zoology",
-        "botany",
-        "biochemistry",
-        "biotechnology",
-        "mathematics",
-        "environmental science",
-        "microbiology",
-        "science"
-      ],
-      "response": "🔬 Faculty of Science:\n• Programs: Physics, Chemistry, Math, Botany, Zoology, Biochemistry, Biotech, Microbiology, etc.\n• Morning Fee: 30,000 to 75,000 PKR\n• Evening Fee: ~50,000 to 66,495 PKR\n📧 Contact: bmb@admissions.uog.edu.pk"
-    },
-    {
-      "intent": "fees_arts_media_law",
-      "keywords": [
-        "english",
-        "urdu",
-        "mass communication",
-        "media",
-        "law",
-        "llb",
-        "islamic studies",
-        "physical education",
-        "sports"
-      ],
-      "response": "🎭 Faculty of Arts & Law:\n• Programs: BS English, Urdu, Mass Comm, Islamic Studies, Physical Ed, and LLB.\n• Morning Fee: 20,000 to 70,000 PKR\n• Evening Fee: ~65,045 PKR\n📧 Contact: english@admissions.uog.edu.pk"
-    },
-    {
-      "intent": "fees_social_sciences",
-      "keywords": [
-        "psychology",
-        "sociology",
-        "economics",
-        "international relations",
-        "ir",
-        "political science",
-        "history",
-        "criminology",
-        "education"
-      ],
-      "response": "🌍 Faculty of Social Sciences:\n• Programs: BS Psychology, Sociology, Economics, IR, Political Science, History, Criminology.\n• Morning Fee: 20,000 to 60,000 PKR\n• Evening Fee: ~65,045 PKR\n📧 Contact: psychology@admissions.uog.edu.pk"
-    },
-    {
-      "intent": "fees_art_design",
-      "keywords": [
-        "fine arts",
-        "textile design",
-        "visual communication",
-        "industrial design",
-        "film",
-        "digital arts",
-        "ceramics",
-        "design"
-      ],
-      "response": "🎨 Architecture, Design & Fine Arts:\n• Programs: BS Fine Arts, Textile, Visual Comm, Industrial Design, Film, Ceramics.\n• Morning Fee: 25,000 to 60,000 PKR\n📧 Contact: design@admissions.uog.edu.pk"
-    },
-    {
-      "intent": "gpa_calculation",
-      "keywords": [
-        "calculate gpa",
-        "gpa formula",
-        "how to calculate gpa",
-        "formula",
-        "gpa"
-      ],
-      "response": "To calculate your GPA 🧮:\n\n1️⃣ Multiply the Grade Points of each course by its Credit Hours.\n2️⃣ Sum them all up.\n3️⃣ Divide by the total credit hours.\n\n💡 Tip: You can use the GPA Calculator feature on the previous screen to do this instantly!"
     },
     {
       "intent": "fallback_unknown",
