@@ -1,5 +1,5 @@
 {
-  "version": 1.3,
+  "version": 1.4,
   "intents": [
     {
       "intent": "cmd_open_lms",
@@ -167,7 +167,7 @@
     },
     {
       "intent": "calendar_link",
-      "keywords": ["calendar link", "schedule link", "dates link"],
+      "keywords": ["calendar link", "schedule link", "dates link", "academic calendar"],
       "response": "You can view the official UOG academic schedule here: 📅 https://uog.edu.pk/calendar"
     },
     {
@@ -725,6 +725,146 @@
         "gazetted"
       ],
       "response": "🏖️ Upcoming Public Holidays (Expected):\n• Eid-ul-Fitr: Mar 31 - Apr 02\n• Labour Day: May 01\n• Eid-ul-Adha: Jun 06 - 08\n• Ashura: Jul 05 - 06\n• Independence Day: Aug 14\n• Eid Milad-un-Nabi: Sept 05"
+    },
+    {
+      "intent": "wifi_eduroam",
+      "keywords": [
+        "wifi",
+        "eduroam",
+        "connect wifi",
+        "internet",
+        "wifi password",
+        "network"
+      ],
+      "response": "To connect to UOG Eduroam WiFi 📶:\n\n1️⃣ Network Name: eduroam\n2️⃣ EAP Method: PEAP\n3️⃣ Phase 2 Authentication: MSCHAPV2\n4️⃣ CA Certificate: Do not validate\n5️⃣ Identity: <YourRollNo>@uog.edu.pk\n6️⃣ Password: Your CMS Password."
+    },
+    {
+      "intent": "cms_fee_voucher",
+      "keywords": [
+        "fee voucher",
+        "download voucher",
+        "challan form",
+        "print voucher",
+        "fee challan",
+        "cms voucher"
+      ],
+      "response": "To download your fee voucher from CMS 💳:\n\n1️⃣ Log in to CMS.\n2️⃣ Go to 'Student Center'.\n3️⃣ Scroll down to the 'Finances' section.\n4️⃣ Click on the 'Print Fee Voucher' link to download your PDF."
+    },
+    {
+      "intent": "cms_course_enrollment",
+      "keywords": [
+        "course registration",
+        "enroll courses",
+        "add courses",
+        "enrollment",
+        "register course"
+      ],
+      "response": "For Course Registration 📝:\n\n1️⃣ Log in to CMS -> 'Student Center'.\n2️⃣ Click 'Enroll' under the Academics section.\n3️⃣ Select the current term.\n4️⃣ Add classes to your cart and click 'Finish Enrolling'."
+    },
+    {
+      "intent": "cms_attendance_results",
+      "keywords": [
+        "transcript",
+        "check attendance",
+        "attendance",
+        "marks",
+        "results",
+        "grades on cms"
+      ],
+      "response": "To check Attendance or Results 📊:\n\nLog in to your CMS 'Student Center'. Under the 'Academics' section, click the drop-down menu to select 'Attendance' or generate an 'Unofficial Transcript'."
+    },
+    {
+      "intent": "lms_assignments",
+      "keywords": [
+        "submit assignment",
+        "upload assignment",
+        "lms assignment",
+        "assignment deadline",
+        "turn in assignment"
+      ],
+      "response": "To submit an assignment on LMS 📁:\n\n1️⃣ Open your course.\n2️⃣ Click the specific Assignment link.\n3️⃣ Click 'Add submission'.\n4️⃣ Upload your file and hit 'Save changes'."
+    },
+    {
+      "intent": "lms_lectures",
+      "keywords": [
+        "download lectures",
+        "course material",
+        "lms lectures",
+        "slides",
+        "notes"
+      ],
+      "response": "To access your course materials 📚:\n\nLog in to LMS, select your course from the dashboard, and scroll through the weekly topics to view and download lectures, slides, and notes."
+    },
+    {
+      "intent": "fees_science",
+      "keywords": [
+        "physics",
+        "chemistry",
+        "zoology",
+        "botany",
+        "biochemistry",
+        "biotechnology",
+        "mathematics",
+        "environmental science",
+        "microbiology",
+        "science"
+      ],
+      "response": "🔬 Faculty of Science:\n• Programs: Physics, Chemistry, Math, Botany, Zoology, Biochemistry, Biotech, Microbiology, etc.\n• Morning Fee: 30,000 to 75,000 PKR\n• Evening Fee: ~50,000 to 66,495 PKR\n📧 Contact: bmb@admissions.uog.edu.pk"
+    },
+    {
+      "intent": "fees_arts_media_law",
+      "keywords": [
+        "english",
+        "urdu",
+        "mass communication",
+        "media",
+        "law",
+        "llb",
+        "islamic studies",
+        "physical education",
+        "sports"
+      ],
+      "response": "🎭 Faculty of Arts & Law:\n• Programs: BS English, Urdu, Mass Comm, Islamic Studies, Physical Ed, and LLB.\n• Morning Fee: 20,000 to 70,000 PKR\n• Evening Fee: ~65,045 PKR\n📧 Contact: english@admissions.uog.edu.pk"
+    },
+    {
+      "intent": "fees_social_sciences",
+      "keywords": [
+        "psychology",
+        "sociology",
+        "economics",
+        "international relations",
+        "ir",
+        "political science",
+        "history",
+        "criminology",
+        "education"
+      ],
+      "response": "🌍 Faculty of Social Sciences:\n• Programs: BS Psychology, Sociology, Economics, IR, Political Science, History, Criminology.\n• Morning Fee: 20,000 to 60,000 PKR\n• Evening Fee: ~65,045 PKR\n📧 Contact: psychology@admissions.uog.edu.pk"
+    },
+    {
+      "intent": "fees_art_design",
+      "keywords": [
+        "fine arts",
+        "textile design",
+        "visual communication",
+        "industrial design",
+        "film",
+        "digital arts",
+        "ceramics",
+        "design"
+      ],
+      "response": "🎨 Architecture, Design & Fine Arts:\n• Programs: BS Fine Arts, Textile, Visual Comm, Industrial Design, Film, Ceramics.\n• Morning Fee: 25,000 to 60,000 PKR\n📧 Contact: design@admissions.uog.edu.pk"
+    },
+    {
+      "intent": "gpa_calculation",
+      "keywords": [
+        "calculate gpa",
+        "gpa formula",
+        "how to calculate gpa",
+        "formula",
+        "gpa"
+      ],
+      "response": "To calculate your GPA 🧮:\n\n1️⃣ Multiply the Grade Points of each course by its Credit Hours.\n2️⃣ Sum them all up.\n3️⃣ Divide by the total credit hours.\n\n💡 Tip: You can use the GPA Calculator feature on the previous screen to do this instantly!"
     },
     {
       "intent": "fallback_unknown",
