@@ -1,6 +1,19 @@
 {
-  "version": 1.5,
+  "version": 1.1,
   "intents": [
+    {
+      "intent": "action_settings_widget",
+      "keywords": [
+        "switch",
+        "option",
+        "switch option",
+        "settings",
+        "preferences",
+        "change policy",
+        "change theme"
+      ],
+      "response": "Here are your quick settings! ⚙️ Tap any option below to switch it instantly: [WIDGET_SETTINGS]"
+    },
     {
       "intent": "action_target_cgpa",
       "keywords": [
