@@ -13,7 +13,7 @@
     },
     {
       "intent": "cmd_theme_dark",
-      "keywords": ["dark mode", "dark theme", "switch to dark", "enable dark mode"],
+      "keywords": ["dark mode", "dark theme", "switch to dark", "enable dark mode", "dark"],
       "response": "Switched to the dark side! 🌙 [CMD_DARK_MODE]"
     },
     {
