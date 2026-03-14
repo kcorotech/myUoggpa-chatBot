@@ -3,52 +3,161 @@
   "intents": [
     {
       "intent": "cmd_open_lms",
-      "keywords": ["open lms", "go to lms", "start lms", "launch lms"],
+      "keywords": [
+        "open lms",
+        "go to lms",
+        "start lms",
+        "launch lms",
+        "lms login",
+        "open uog lms",
+        "open university lms",
+        "take me to lms",
+        "lms kholo",
+        "login lms",
+        "go to uog lms",
+        "start uog lms",
+        "lms portal",
+        "lms site"
+      ],
       "response": "Opening the UOG LMS for you right now! 🌐 [CMD_LMS]"
     },
     {
       "intent": "cmd_open_cms",
-      "keywords": ["open cms", "go to cms", "start cms", "launch cms"],
+      "keywords": [
+        "open cms",
+        "go to cms",
+        "start cms",
+        "launch cms",
+        "cms login",
+        "open uog cms",
+        "take me to cms",
+        "cms portal",
+        "login cms",
+        "uog cms login",
+        "cms kholo",
+        "open university cms",
+        "go to uog cms"
+      ],
       "response": "Taking you straight to the UOG CMS! 🎓 [CMD_CMS]"
     },
     {
       "intent": "cmd_theme_dark",
-      "keywords": ["dark mode", "dark theme", "switch to dark", "enable dark mode", "dark"],
+      "keywords": [
+        "dark mode",
+        "dark theme",
+        "switch to dark",
+        "enable dark mode",
+        "dark",
+        "turn on dark mode",
+        "make it dark",
+        "activate dark mode",
+        "enable dark theme",
+        "night mode",
+        "switch dark mode",
+        "dark ui",
+        "dark screen"
+      ],
       "response": "Switched to the dark side! 🌙 [CMD_DARK_MODE]"
     },
     {
       "intent": "cmd_theme_light",
-      "keywords": ["light mode", "light theme", "switch to light", "enable light mode", "light"],
+      "keywords": [
+        "light mode",
+        "light theme",
+        "switch to light",
+        "enable light mode",
+        "light",
+        "turn on light mode",
+        "switch to light theme",
+        "disable dark mode",
+        "make screen light",
+        "bright mode",
+        "light ui"
+      ],
       "response": "Let there be light! ☀️ [CMD_LIGHT_MODE]"
     },
     {
       "intent": "cmd_policy_new",
-      "keywords": ["new policy", "switch to new grading", "2025 policy"],
+      "keywords": [
+        "new policy",
+        "switch to new grading",
+        "2025 policy",
+        "switch new grade"
+      ],
       "response": "Done! I have switched your calculator to the New 2025 Grading Policy. 🆕 [CMD_POLICY_NEW]"
     },
     {
       "intent": "cmd_policy_old",
-      "keywords": ["old policy", "switch to old grading", "previous policy", "old system"],
+      "keywords": [
+        "old policy",
+        "switch to old grading",
+        "previous policy",
+        "old system"
+      ],
       "response": "Done! I have reverted your calculator to the Old Grading Policy. 📜 [CMD_POLICY_OLD]"
     },
     {
       "intent": "greeting_islamic",
-      "keywords": ["asslamualikum", "assalam", "salam", "aoa", "assalamualaikum", "aslamualikum"],
+      "keywords": [
+        "asslamualikum",
+        "assalam",
+        "salam",
+        "aoa",
+        "assalamualaikum",
+        "aslamualikum",
+        "assalamu alaikum",
+        "assalam o alaikum",
+        "asalam o alaikum",
+        "salam bro",
+        "salam bot",
+        "aoa bot",
+        "wsalam"
+      ],
       "response": "Walaikum Assalam! ✨ I am the MyUOG Assistant. How can I help you today?"
     },
     {
       "intent": "greeting_casual",
-      "keywords": ["hi", "hello", "hey", "sup"],
+      "keywords": [
+        "hi",
+        "hello",
+        "hey",
+        "sup",
+        "yo",
+        "hi bot",
+        "hello bot",
+        "hey there",
+        "hey assistant",
+        "good morning",
+        "good evening"
+      ],
       "response": "Hi there! 👋 I am the MyUOG Assistant. How can I help you today?"
     },
     {
       "intent": "uog_info",
-      "keywords": ["what is uog", "about uog", "university of gujrat", "uog", "where is", "location"],
+      "keywords": [
+        "what is uog",
+        "about uog",
+        "university of gujrat",
+        "uog",
+        "where is",
+        "location",
+        "tell me about uog",
+        "uog university",
+        "uog details",
+        "where is uog located",
+        "location of uog",
+        "about university of gujrat"
+      ],
       "response": "The University of Gujrat (UOG) is a public-sector university established in 2004. 🏛️ The main Hafiz Hayat Campus is located on Jalalpur Jattan Road, Gujrat. 📍"
     },
     {
       "intent": "uog_stats",
-      "keywords": ["how many students", "how big", "total students", "faculty size"],
+      "keywords": [
+        "how many students",
+        "how big",
+        "total students",
+        "faculty size"
+      ],
       "response": "UOG supports over 16,000 students 👨‍🎓👩‍🎓 and about 650 faculty members 👨‍🏫 across 33 departments, offering over 120 degree programs! 🎓"
     },
     {
@@ -63,112 +172,308 @@
     },
     {
       "intent": "calendar_fall",
-      "keywords": ["fall", "fall semester", "fall classes", "fall mids", "fall finals"],
+      "keywords": [
+        "fall",
+        "fall semester",
+        "fall classes",
+        "fall mids",
+        "fall finals"
+      ],
       "response": "🍂 Fall Semester Schedule:\n• Classes Commenced: Sept 02\n• Mid Terms: Oct 28 - Nov 05\n• Final Terms: Dec 30 - Jan 07\n• Results: Jan 17"
     },
     {
       "intent": "calendar_spring",
-      "keywords": ["spring", "spring semester", "spring classes", "spring mids", "spring finals"],
+      "keywords": [
+        "spring",
+        "spring semester",
+        "spring classes",
+        "spring mids",
+        "spring finals"
+      ],
       "response": "🌸 Spring Semester Schedule:\n• Classes Commence: Jan 27\n• Mid Terms: Mar 24 - Apr 01\n• Final Terms: May 26 - Jun 03\n• Results: Jun 13"
     },
     {
       "intent": "fees_computing",
-      "keywords": ["computer science", "bs cs", "information technology", "bs it", "software engineering", "bs se", "cyber security", "data science"],
+      "keywords": [
+        "computer science",
+        "bs cs",
+        "information technology",
+        "bs it",
+        "software engineering",
+        "bs se",
+        "cyber security",
+        "data science"
+      ],
       "response": "💻 Faculty of Computing & IT:\n• Morning Fee: ~65,000 PKR\n• Evening Fee: ~90,000 PKR\n📧 Contact: cs@admissions.uog.edu.pk"
     },
     {
       "intent": "fees_business",
-      "keywords": ["bba", "business", "commerce", "accounting", "finance", "banking", "hotel management"],
+      "keywords": [
+        "bba",
+        "business",
+        "commerce",
+        "accounting",
+        "finance",
+        "banking",
+        "hotel management"
+      ],
       "response": "📊 Management & Admin Sciences:\n• Morning Fee: ~47,000 - 65,000 PKR\n• Evening Fee: ~90,000 PKR\n📧 Contact: management@admissions.uog.edu.pk"
     },
     {
       "intent": "policy_course_load",
-      "keywords": ["credit hours", "maximum courses", "minimum credit", "course load", "cr hrs"],
+      "keywords": [
+        "credit hours",
+        "maximum courses",
+        "minimum credit",
+        "course load",
+        "cr hrs"
+      ],
       "response": "📚 Course Load Policy:\n• Normal: 15 to 18 Cr. Hrs.\n• Maximum: 21 Cr. Hrs. (Requires HOD approval).\n• Minimum: 12 Cr. Hrs."
     },
     {
       "intent": "policy_withdrawal",
-      "keywords": ["withdraw course", "withdraw subject", "leave course", "w grade"],
+      "keywords": [
+        "withdraw course",
+        "withdraw subject",
+        "leave course",
+        "w grade"
+      ],
       "response": "⚠️ Course Withdrawal:\n• You can withdraw up to the 4th week ('W' grade).\n• ❌ Dropping AFTER the 4th week results in an 'F' grade!"
     },
     {
       "intent": "bot_developer",
-      "keywords": ["developer", "who developed", "who made this app", "contact developer", "creator"],
+      "keywords": [
+        "developer",
+        "who developed",
+        "who made this app",
+        "contact developer",
+        "creator"
+      ],
       "response": "This app was proudly developed by Kcoro Tech! 👨‍💻 If you have feedback or want to report a bug, email: kcorotech@gmail.com ✉️"
     },
     {
       "intent": "bot_language",
-      "keywords": ["what language", "programming language", "tech stack", "coded in", "javascript"],
+      "keywords": [
+        "what language",
+        "programming language",
+        "tech stack",
+        "coded in",
+        "javascript"
+      ],
       "response": "I am built using JavaScript! 🚀 (Specifically, React Native). This allows me to run blazingly fast and work completely offline on your phone."
     },
     {
       "intent": "grading_general",
-      "keywords": ["grading", "grade", "grades", "grading system", "passing marks"],
+      "keywords": [
+        "grading",
+        "grade",
+        "grades",
+        "grading system",
+        "passing marks"
+      ],
       "response": "UOG recently updated its grading system. 📊 You can type 'Switch to new grading policy' or 'Switch to old grading policy' and I will change your app settings instantly!"
     },
     {
       "intent": "grading_old",
-      "keywords": ["old grade", "old grades", "old grading", "pre 2025", "previous grade", "old"],
+      "keywords": [
+        "old grade",
+        "old grades",
+        "old grading",
+        "pre 2025",
+        "previous grade",
+        "old"
+      ],
       "response": "Here is the Old Grading System 📜:\n• A+ (85+): 4.0 🌟\n• A (80-84): 3.7\n• B+ (75-79): 3.4\n• B (70-74): 3.0\n• B- (65-69): 2.5\n• C+ (60-64): 2.0\n• C (55-59): 1.5\n• D (50-54): 1.0 ⚠️\n• F (<50): 0.0 ❌"
     },
     {
       "intent": "grading_new",
-      "keywords": ["new grade", "new grades", "new grading", "2025 batch", "2025 grade", "new"],
+      "keywords": [
+        "new grade",
+        "new grades",
+        "new grading",
+        "2025 batch",
+        "2025 grade",
+        "new"
+      ],
       "response": "Here is the New 2025 Grading System Summary 🆕:\n• A (80-100%): 3.67 to 4.00 🌟\n• B (65-79%): 2.50 to 3.60\n• C (55-64%): 1.50 to 2.40\n• D (50-54%): 1.00 to 1.40 ⚠️\n• F (<50%): 0.00 ❌"
     },
     {
       "intent": "all_departments",
-      "keywords": ["department", "departments", "department info", "all departments", "list of departments", "blocks", "buildings"],
+      "keywords": [
+        "department",
+        "departments",
+        "department info",
+        "all departments",
+        "list of departments",
+        "blocks",
+        "buildings"
+      ],
       "response": "UOG campus blocks are named after famous scholars 🏛️:\n• Block A (Sociology, BBA...)\n• Block B (CS, IT...)\n• Block BS (Chemistry...)\n• Block E/M (Engineering)\n• Block P (Mass Com)\n• Block R (History, IR...)\n• Block S (Math, Physics)\n• Block SADA (Architecture, Fine Arts)\n\nWhich department are you looking for? 🔍"
     },
     {
       "intent": "block_a",
-      "keywords": ["block a", "a block", "al farabi", "farabi", "sociology", "psychology", "bba", "mba", "finance", "a"],
+      "keywords": [
+        "block a",
+        "a block",
+        "al farabi",
+        "farabi",
+        "sociology",
+        "psychology",
+        "bba",
+        "mba",
+        "finance",
+        "a"
+      ],
       "response": "Block A, officially named the Al-Farabi Block 🏢, houses Sociology, Psychology, BBA, MBA, Finance, an IT Lab, and the Video Conference Hall. 📊"
     },
     {
       "intent": "block_b",
-      "keywords": ["block b", "b block", "arfa karim", "arfa", "economics", "information technology", "computer science", "software engineering", "cs", "it", "b"],
+      "keywords": [
+        "block b",
+        "b block",
+        "arfa karim",
+        "arfa",
+        "economics",
+        "information technology",
+        "computer science",
+        "software engineering",
+        "cs",
+        "it",
+        "b"
+      ],
       "response": "Block B, officially the Arfa Karim Block 💻, contains Economics, Information Technology (IT), Computer Science (CS), and Software Engineering."
     },
     {
       "intent": "block_bs",
-      "keywords": ["block bs", "bs block", "jabir bin hayyan", "chemistry", "botany", "zoology", "environmental", "bs"],
+      "keywords": [
+        "block bs",
+        "bs block",
+        "jabir bin hayyan",
+        "chemistry",
+        "botany",
+        "zoology",
+        "environmental",
+        "bs"
+      ],
       "response": "Block BS, now named the Jabir Bin Hayyan Block 🔬, contains the Pro VC office, Chemistry, Botany, Zoology, and Environmental science departments. 🌿"
     },
     {
       "intent": "block_s",
-      "keywords": ["block s", "s block", "al khwarizmi", "math", "physics", "commerce", "statistics", "s"],
+      "keywords": [
+        "block s",
+        "s block",
+        "al khwarizmi",
+        "math",
+        "physics",
+        "commerce",
+        "statistics",
+        "s"
+      ],
       "response": "Block S, known as the Al-Khwarizmi Block 📐, is home to the Math, Physics, Commerce, and Statistics departments, as well as the Printing Press. 🖨️"
     },
     {
       "intent": "block_r",
-      "keywords": ["block r", "r block", "ibne khaldun", "international relations", "political science", "history", "islamic studies", "english", "physical education", "geography", "r"],
+      "keywords": [
+        "block r",
+        "r block",
+        "ibne khaldun",
+        "international relations",
+        "political science",
+        "history",
+        "islamic studies",
+        "english",
+        "physical education",
+        "geography",
+        "r"
+      ],
       "response": "Block R, officially the Ibne Khaldun Block 🌍, houses International Relations, Political Science, History, Islamic Studies, English, Physical Education, Geography, and CELTS. 📚"
     },
     {
       "intent": "block_e_m",
-      "keywords": ["block e", "e block", "block m", "m block", "engineering", "electrical", "mechanical", "chemical", "b.tech", "al jazari", "ibn e sina", "e", "m"],
+      "keywords": [
+        "block e",
+        "e block",
+        "block m",
+        "m block",
+        "engineering",
+        "electrical",
+        "mechanical",
+        "chemical",
+        "b.tech",
+        "al jazari",
+        "ibn e sina",
+        "e",
+        "m"
+      ],
       "response": "Block E (Al-Jazari) and Block M (Ibn e Sina) ⚙️ host Chemical, Electrical, Mechanical Engineering, and B.Tech programs. 🛠️"
     },
     {
       "intent": "block_p",
-      "keywords": ["block p", "p block", "omar", "bio-chemistry", "bio-technology", "mass com", "mass communication", "p"],
+      "keywords": [
+        "block p",
+        "p block",
+        "omar",
+        "bio-chemistry",
+        "bio-technology",
+        "mass com",
+        "mass communication",
+        "p"
+      ],
       "response": "Block P, now the Omar al Khayam Block 📸, is home to Bio-Chemistry, Bio-Technology, Mass Communication, and the Wood Workshop. 🧬"
     },
     {
       "intent": "block_sada",
-      "keywords": ["block sada", "sada block", "sadequain", "architecture", "fine arts", "ceramics", "design", "sada"],
+      "keywords": [
+        "block sada",
+        "sada block",
+        "sadequain",
+        "architecture",
+        "fine arts",
+        "ceramics",
+        "design",
+        "sada"
+      ],
       "response": "Block SADA, known as the Sadequain Block 🎨, houses Architecture, Fine Arts, Ceramics, Multimedia Design, Textile Design, and Product Design. 📐"
     },
     {
       "intent": "admissions",
-      "keywords": ["admission", "apply", "deadline", "merit list", "enroll", "undergraduate", "bachelors", "ms", "mphil", "phd"],
+      "keywords": [
+        "admission",
+        "apply",
+        "deadline",
+        "merit list",
+        "enroll",
+        "undergraduate",
+        "bachelors",
+        "ms",
+        "mphil",
+        "phd",
+        "uog admission",
+        "apply for uog",
+        "how to apply",
+        "admission open",
+        "admission date",
+        "uog entry requirements"
+      ],
       "response": "Admissions generally open in Fall. 🍂 BS requires at least 45% in Inter/DAE. MS/MPhil/PhD require 16 years of education, plus a departmental test and interview. 📝"
     },
     {
       "intent": "fees",
-      "keywords": ["fee", "cost", "price", "semester fee", "tuition", "dues", "fee structure"],
+      "keywords": [
+        "fee",
+        "cost",
+        "price",
+        "semester fee",
+        "tuition",
+        "dues",
+        "fee structure",
+        "semester fee",
+        "uog fee",
+        "how much fee",
+        "fee per semester",
+        "tuition fee",
+        "uog tuition"
+      ],
       "response": "Standard undergraduate semester tuition at UOG typically ranges from 30,000 PKR to 80,000 PKR 💰, depending on the program. Transport 🚌 and hostel 🛏️ fees are extra."
     },
     {
@@ -178,22 +483,61 @@
     },
     {
       "intent": "library",
-      "keywords": ["library", "books", "study space", "quaid e azam", "read"],
+      "keywords": [
+        "library",
+        "books",
+        "study space",
+        "quaid e azam",
+        "read",
+        "uog library",
+        "central library",
+        "where is library",
+        "library timing",
+        "study place"
+      ],
       "response": "The main central library is the Quaid-i-Azam Library. 📚 It connects a network of 11 departmental libraries with thousands of books and digital access. 💻"
     },
     {
       "intent": "hostel",
-      "keywords": ["hostel", "accommodation", "room", "stay", "boarding", "girls hostel", "boys hostel"],
+      "keywords": [
+        "hostel",
+        "accommodation",
+        "room",
+        "stay",
+        "boarding",
+        "girls hostel",
+        "boys hostel",
+        "uog hostel",
+        "hostel fee",
+        "hostel rooms",
+        "boys hostel",
+        "girls hostel uog"
+      ],
       "response": "UOG provides on-campus hostel facilities for both male and female students. 🛏️ Seats are limited and usually allotted on a merit/distance basis."
     },
     {
       "intent": "scholarship",
-      "keywords": ["scholarship", "financial aid", "ehsaas", "peef", "fee concession"],
+      "keywords": [
+        "scholarship",
+        "financial aid",
+        "ehsaas",
+        "peef",
+        "fee concession",
+        "need based scholarship",
+        "merit scholarship",
+        "uog scholarship",
+        "financial support",
+        "student aid"
+      ],
       "response": "UOG offers financial aid 🎓 including HEC Need-Based, Ehsaas, PEEF, and UOG Merit Concessions. You can apply through the UA&FAO office. 📄"
     },
     {
       "intent": "nice_to_meet",
-      "keywords": ["nice to meet you", "glad to meet you", "pleased to meet you"],
+      "keywords": [
+        "nice to meet you",
+        "glad to meet you",
+        "pleased to meet you"
+      ],
       "response": "Nice to meet you too! 🤝 I'm here to make your university life a little easier. What can I help you with?"
     },
     {
@@ -203,32 +547,84 @@
     },
     {
       "intent": "how_to_use",
-      "keywords": ["how to use this app", "how to use", "help me use", "app guide", "how does this work"],
+      "keywords": [
+        "how to use this app",
+        "how to use",
+        "help me use",
+        "app guide",
+        "how does this work"
+      ],
       "response": "This app helps you manage your UOG academic life! 📱\n\n• Calculate your semester grades 🧮\n• Save your results 💾\n• Check grading criteria 📊\n• Ask me questions about the campus! 🤖"
     },
     {
       "intent": "about_app",
-      "keywords": ["myuoggpa", "my uog gpa", "what is this app", "about this app", "app info"],
+      "keywords": [
+        "myuoggpa",
+        "my uog gpa",
+        "what is this app",
+        "about this app",
+        "app info"
+      ],
       "response": "MyUOG is your personal academic companion! 🎒 It's designed specifically for University of Gujrat students to calculate GPAs accurately, track progress, and get instant answers. 🚀"
     },
     {
       "intent": "goodbye",
-      "keywords": ["bye", "goodbye", "by", "see you", "allah hafiz", "khuda hafiz", "take care"],
+      "keywords": [
+        "bye",
+        "goodbye",
+        "by",
+        "see you",
+        "allah hafiz",
+        "khuda hafiz",
+        "take care",
+        "bye bye",
+        "see ya",
+        "talk later",
+        "good night",
+        "ok bye"
+      ],
       "response": "Goodbye! 👋 Feel free to tap my icon again whenever you need help. Allah Hafiz! ✨"
     },
     {
       "intent": "bot_status",
-      "keywords": ["how are you", "how are u", "how do you do"],
+      "keywords": [
+        "how are you",
+        "how are u",
+        "how do you do",
+        "how r u",
+        "hows it going",
+        "are you ok",
+        "are you working"
+      ],
       "response": "I am doing great and running smoothly! ⚡ Ready to help you calculate your grades and navigate UOG."
     },
     {
       "intent": "bot_identity",
-      "keywords": ["who are you", "who is you", "what are you", "your name"],
+      "keywords": [
+        "who are you",
+        "who is you",
+        "what are you",
+        "your name",
+        "your name",
+        "who made you",
+        "what is your name",
+        "who built you",
+        "are you a bot"
+      ],
       "response": "I am the MyUOG Assistant! 🤖 I am an AI built directly into this app to help you with GPA calculations, campus info, and academic policies."
     },
     {
       "intent": "acknowledgment",
-      "keywords": ["okay", "ok", "alright", "thanks", "thank you", "got it", "nice", "good"],
+      "keywords": [
+        "okay",
+        "ok",
+        "alright",
+        "thanks",
+        "thank you",
+        "got it",
+        "nice",
+        "good"
+      ],
       "response": "You're very welcome! 😊 Let me know if you need help with anything else."
     },
     {
@@ -238,17 +634,36 @@
     },
     {
       "intent": "hostile_abusive",
-      "keywords": ["are you dumb", "fuck you", "stupid", "idiot", "shut up", "dumb", "fuck"],
+      "keywords": [
+        "are you dumb",
+        "fuck you",
+        "stupid",
+        "idiot",
+        "shut up",
+        "dumb",
+        "fuck"
+      ],
       "response": "I'm a simple assistant and still learning! 😅 If I misunderstood something, try keeping your question short and specific about UOG or the GPA calculator."
     },
     {
       "intent": "cgpa_info",
-      "keywords": ["how to calculate cgpa", "cgpa formula", "cgpa", "cumulative"],
+      "keywords": [
+        "how to calculate cgpa",
+        "cgpa formula",
+        "cgpa",
+        "cumulative"
+      ],
       "response": "To calculate your CGPA 📈:\n\nThe app takes the GPA of each semester, multiplies it by that semester's credit hours, adds them all up, and divides by your total credit hours.\n\n💡 You can easily do this on the CGPA Calculator screen!"
     },
     {
       "intent": "repeater_mode",
-      "keywords": ["repeater mode", "repeater", "repeat course", "fail", "supply"],
+      "keywords": [
+        "repeater mode",
+        "repeater",
+        "repeat course",
+        "fail",
+        "supply"
+      ],
       "response": "If you repeated a course, turn on 'REPEATER MODE' 🔄 on the CGPA screen! It will ask you to select the specific semesters where the repeat happened so it calculates your new CGPA with 100% accuracy. ✅"
     },
     {
@@ -258,18 +673,58 @@
     },
     {
       "intent": "whatsapp_groups",
-      "keywords": ["whatsapp", "whatsapp group", "groups", "facebook group", "join group"],
+      "keywords": [
+        "whatsapp",
+        "whatsapp group",
+        "groups",
+        "facebook group",
+        "join group"
+      ],
       "response": "I don't have direct links to student WhatsApp groups because they change every semester. 📱 I recommend asking your Class Representative (CR) or checking the official UOG Facebook groups! 👥"
     },
     {
       "intent": "current_date",
-      "keywords": ["whats the date today", "date today", "what is the date", "today date", "date"],
+      "keywords": [
+        "whats the date today",
+        "date today",
+        "what is the date",
+        "today date",
+        "date"
+      ],
       "response": "I operate entirely offline to save your data 🔋, so I don't track the live calendar. However, you can check the official UOG schedule here: 📅 https://uog.edu.pk/calendar"
     },
     {
       "intent": "contact_support",
       "keywords": ["contact", "phone", "email", "helpline", "support", "admin"],
       "response": "You can visit uog.edu.pk 🌐, call +92 (53) 2260000 📞, or email info@uog.edu.pk ✉️ for official support."
+    },
+    {
+      "intent": "calendar_summer",
+      "keywords": ["summer", "summer semester", "summer classes"],
+      "response": "☀️ Summer Semester Schedule:\n• Classes Commence: Jun 23\n• Exams: Aug 18 - Aug 22\n• Results: Aug 29"
+    },
+    {
+      "intent": "calendar_mids",
+      "keywords": ["mid", "mids", "mid term", "mid terms", "midterm"],
+      "response": "📝 Mid Term Examinations:\n• Fall Mids: Oct 28 - Nov 05\n• Spring Mids: Mar 24 - Apr 01\n• Summer Exams: Aug 18 - 22"
+    },
+    {
+      "intent": "calendar_finals",
+      "keywords": ["final", "finals", "final term", "final exams", "finalterm"],
+      "response": "🎓 Final Term Examinations:\n• Fall Finals: Dec 30 - Jan 07\n• Spring Finals: May 26 - Jun 03\n• Summer Exams: Aug 18 - 22"
+    },
+    {
+      "intent": "calendar_holidays",
+      "keywords": [
+        "holidays",
+        "off",
+        "vacation",
+        "public holiday",
+        "break",
+        "eid",
+        "gazetted"
+      ],
+      "response": "🏖️ Upcoming Public Holidays (Expected):\n• Eid-ul-Fitr: Mar 31 - Apr 02\n• Labour Day: May 01\n• Eid-ul-Adha: Jun 06 - 08\n• Ashura: Jul 05 - 06\n• Independence Day: Aug 14\n• Eid Milad-un-Nabi: Sept 05"
     },
     {
       "intent": "fallback_unknown",
