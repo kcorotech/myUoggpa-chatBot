@@ -1,5 +1,5 @@
 {
-  "version": 1.1,
+  "version": 1.7,
   "intents": [
     {
       "intent": "action_settings_widget",
