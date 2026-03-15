@@ -1,5 +1,5 @@
 {
-  "version": 1.9,
+  "version": 2.0,
   "intents": [
     {
       "intent": "action_target_cgpa",
@@ -22,9 +22,11 @@
         "find gpa",
         "gpa nikalna hai",
         "gpa check karna",
-        "gpa widget"
+        "gpa widget",
+        "how to check gpa",
+        "gpa calculation"
       ],
-      "response": "Let's calculate your semester GPA right here! Add your courses below: 🧮 [WIDGET_GPA]"
+      "response": "Please select your grading policy first, then enter your courses below to calculate your semester GPA: \n[WIDGET_SETTINGS] \n[WIDGET_GPA]"
     },
     {
       "intent": "action_cgpa_calc",
@@ -34,7 +36,9 @@
         "find cgpa",
         "cgpa nikalna hai",
         "cgpa check karna",
-        "cgpa widget"
+        "cgpa widget",
+        "cgpa calculate",
+        "cgpa calculation"
       ],
       "response": "Let's calculate your overall CGPA! Add your previous semesters below: 📈 [WIDGET_CGPA]"
     },
