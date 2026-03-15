@@ -1,5 +1,56 @@
 {
-  "version": 2.4,
+  "version": 3.0,
+  "variables": {
+    "[VAR_FALL_COMMENCE]": "Sept 02",
+    "[VAR_FALL_MIDS]": "Oct 28 - Nov 05",
+    "[VAR_FALL_FINALS]": "Dec 30 - Jan 07",
+    "[VAR_FALL_RESULTS]": "Jan 17",
+    "[VAR_SPRING_COMMENCE]": "Jan 27",
+    "[VAR_SPRING_MIDS]": "Mar 24 - Apr 01",
+    "[VAR_SPRING_FINALS]": "May 26 - Jun 03",
+    "[VAR_SPRING_RESULTS]": "Jun 13",
+    "[VAR_SUMMER_COMMENCE]": "Jun 23",
+    "[VAR_SUMMER_EXAMS]": "Aug 18 - Aug 22",
+    "[VAR_SUMMER_RESULTS]": "Aug 29",
+    "[VAR_FEE_BS_CERAMICS]": "25,000 PKR",
+    "[VAR_FEE_BS_FILM]": "40,000 PKR",
+    "[VAR_FEE_BS_FINE_ARTS]": "52,326 PKR",
+    "[VAR_FEE_BS_TEXTILE]": "60,000 PKR",
+    "[VAR_FEE_BS_URDU_HISTORY]": "20,000 PKR",
+    "[VAR_FEE_BS_ISLAMIC]": "35,000 PKR",
+    "[VAR_FEE_BS_ENGLISH_TRANS]": "47,500 PKR",
+    "[VAR_FEE_BS_MASS_COMM]": "50,000 PKR",
+    "[VAR_FEE_BS_PHYSICAL_ED]": "55,000 PKR",
+    "[VAR_FEE_BS_ENGLISH_LIT]": "60,000 PKR",
+    "[VAR_FEE_LLB]": "70,000 PKR",
+    "[VAR_FEE_BS_CS_IT_SE_MORN]": "65,000 PKR",
+    "[VAR_FEE_BS_CS_IT_SE_EVE]": "90,000 PKR",
+    "[VAR_FEE_BS_AI_CYBER_DATA]": "65,000 PKR",
+    "[VAR_FEE_BSC_CHEMICAL]": "25,000 PKR",
+    "[VAR_FEE_BSC_ELECTRICAL]": "47,500 PKR",
+    "[VAR_FEE_BSC_MECHANICAL]": "60,000 PKR",
+    "[VAR_FEE_BBA_MORN]": "65,000 PKR",
+    "[VAR_FEE_BBA_EVE]": "90,000 PKR",
+    "[VAR_FEE_BS_HOSPITALITY]": "80,000 PKR",
+    "[VAR_FEE_BS_COMMERCE_FINANCE]": "47,500 PKR",
+    "[VAR_FEE_BS_BIOCHEM_BIOTECH_MORN]": "65,000 PKR",
+    "[VAR_FEE_BS_BIOCHEM_BIOTECH_EVE]": "~50,000 PKR",
+    "[VAR_FEE_BS_NUTRITION_MLT]": "75,000 PKR",
+    "[VAR_FEE_BS_BOTANY_GEO]": "30,000 PKR",
+    "[VAR_FEE_BS_STAT]": "35,000 PKR",
+    "[VAR_FEE_BS_ENV_ZOO_DATA]": "47,500 PKR",
+    "[VAR_FEE_BS_MATH]": "60,000 PKR",
+    "[VAR_FEE_BS_CHEM_PHYSICS]": "65,000 PKR",
+    "[VAR_FEE_BS_PSYCH_MORN]": "60,000 PKR",
+    "[VAR_FEE_BS_PSYCH_EVE]": "50,000 PKR",
+    "[VAR_FEE_GRAD_STANDARD]": "41,620 PKR to 43,070 PKR",
+    "[VAR_FEE_MPHIL_ARTS_SOCIAL]": "41,620 PKR",
+    "[VAR_FEE_MS_COMPUTING_ENG]": "43,070 PKR",
+    "[VAR_FEE_MBA]": "43,070 PKR",
+    "[VAR_FEE_MPHIL_SCIENCE]": "43,070 PKR",
+    "[VAR_STAT_STUDENTS]": "16,000",
+    "[VAR_STAT_FACULTY]": "650"
+  },
   "intents": [
     {
       "intent": "action_target_cgpa",
@@ -52,7 +103,10 @@
         "preferences",
         "change policy",
         "change theme",
-        "setting"
+        "setting",
+        "app theme",
+        "dark mode setting",
+        "control panel"
       ],
       "response": "Here are your quick settings! ⚙️ Tap any option below to switch it instantly: [WIDGET_SETTINGS]"
     },
@@ -159,7 +213,7 @@
         "ms programs",
         "mphil programs"
       ],
-      "response": "UOG offers a wide range of Graduate Programs (MS, MPhil, MSc, MBA, LLM, and Diplomas) across all major faculties! 🎓\n\nStandard Masters fees range from 41,620 PKR to 43,070 PKR.\n\nTell me which specific MS/MPhil program you are looking for (e.g., 'MS CS fees'), or check the full list here: 🌐 https://uog.edu.pk"
+      "response": "UOG offers a wide range of Graduate Programs (MS, MPhil, MSc, MBA, LLM, and Diplomas) across all major faculties! 🎓\n\nStandard Masters fees range from [VAR_FEE_GRAD_STANDARD].\n\nTell me which specific MS/MPhil program you are looking for (e.g., 'MS CS fees'), or check the full list here: 🌐 https://uog.edu.pk"
     },
     {
       "intent": "fees_architecture_design",
@@ -172,9 +226,12 @@
         "digital arts",
         "industrial design",
         "textile design",
-        "visual communication"
+        "visual communication",
+        "architecture fee",
+        "fine arts fee",
+        "design fee"
       ],
-      "response": "🎨 Architecture, Design & Fine Arts Fees:\n• BS Ceramics: 25,000 PKR\n• BS Film & Digital: 40,000 PKR\n• BS Industrial / Fine Arts: 52,326 PKR\n• BS Textile / Visual Comm: 60,000 PKR\n📧 design@admissions.uog.edu.pk"
+      "response": "🎨 Architecture, Design & Fine Arts Fees:\n• BS Ceramics: [VAR_FEE_BS_CERAMICS]\n• BS Film & Digital: [VAR_FEE_BS_FILM]\n• BS Industrial / Fine Arts: [VAR_FEE_BS_FINE_ARTS]\n• BS Textile / Visual Comm: [VAR_FEE_BS_TEXTILE]\n📧 design@admissions.uog.edu.pk"
     },
     {
       "intent": "fees_arts_languages_law",
@@ -187,9 +244,13 @@
         "physical education",
         "law",
         "llb",
-        "translation"
+        "translation",
+        "english fee",
+        "law fee",
+        "llb fee",
+        "urdu fee"
       ],
-      "response": "🎭 Arts, Languages & Law Fees:\n• BS Urdu / History: 20,000 PKR\n• BS Islamic Studies / B.Ed: 35,000 PKR\n• BS English (Trans): 47,500 PKR\n• BS Mass Comm: 50,000 PKR\n• BS Physical Ed: 55,000 PKR\n• BS English (Lit): 60,000 PKR\n• LLB (4 Years): 70,000 PKR\n*(Evening programs are generally ~65,045 PKR)*"
+      "response": "🎭 Arts, Languages & Law Fees:\n• BS Urdu / History: [VAR_FEE_BS_URDU_HISTORY]\n• BS Islamic Studies / B.Ed: [VAR_FEE_BS_ISLAMIC]\n• BS English (Trans): [VAR_FEE_BS_ENGLISH_TRANS]\n• BS Mass Comm: [VAR_FEE_BS_MASS_COMM]\n• BS Physical Ed: [VAR_FEE_BS_PHYSICAL_ED]\n• BS English (Lit): [VAR_FEE_BS_ENGLISH_LIT]\n• LLB (4 Years): [VAR_FEE_LLB]"
     },
     {
       "intent": "fees_computing",
@@ -203,9 +264,13 @@
         "cyber security",
         "data science",
         "artificial intelligence",
-        "ai"
+        "ai",
+        "cs fee",
+        "it fee",
+        "software engineering fee",
+        "computer science fee"
       ],
-      "response": "💻 Computing & IT Fees:\n• BS CS / IT / SE: 65,000 PKR (Morning) | 90,000 PKR (Evening)\n• BS Artificial Intelligence: 65,000 PKR\n• BS Cyber Security: 65,000 PKR\n• BS Data Science: 65,000 PKR\n📧 cs@admissions.uog.edu.pk"
+      "response": "💻 Computing & IT Fees:\n• BS CS / IT / SE: [VAR_FEE_BS_CS_IT_SE_MORN] (Morning) | [VAR_FEE_BS_CS_IT_SE_EVE] (Evening)\n• BS Artificial Intelligence: [VAR_FEE_BS_AI_CYBER_DATA]\n• BS Cyber Security: [VAR_FEE_BS_AI_CYBER_DATA]\n• BS Data Science: [VAR_FEE_BS_AI_CYBER_DATA]\n📧 cs@admissions.uog.edu.pk"
     },
     {
       "intent": "fees_engineering",
@@ -216,9 +281,12 @@
         "mechanical engineering",
         "food process",
         "b tech",
-        "computer engineering tech"
+        "computer engineering tech",
+        "engineering fee",
+        "electrical fee",
+        "mechanical fee"
       ],
-      "response": "⚙️ Engineering & Technology Fees:\n• BSc Chemical Eng: 25,000 PKR\n• BSc Food Process / Electrical Eng: 47,500 PKR\n• BSc Computer Eng Tech / Mechanical: 60,000 PKR\n📧 electrical@admissions.uog.edu.pk"
+      "response": "⚙️ Engineering & Technology Fees:\n• BSc Chemical Eng: [VAR_FEE_BSC_CHEMICAL]\n• BSc Food Process / Electrical Eng: [VAR_FEE_BSC_ELECTRICAL]\n• BSc Computer Eng Tech / Mechanical: [VAR_FEE_BSC_MECHANICAL]\n📧 electrical@admissions.uog.edu.pk"
     },
     {
       "intent": "fees_business_management",
@@ -234,9 +302,12 @@
         "public admin",
         "ecommerce",
         "e-commerce",
-        "business analytics"
+        "business analytics",
+        "bba fee",
+        "commerce fee",
+        "business fee"
       ],
-      "response": "📊 Management & Commerce Fees:\n• BS Commerce/Finance/Analytics/Public Admin: 47,500 PKR\n• BBA (4 Year): 65,000 PKR (Morning) | 90,000 PKR (Evening)\n• BS Hospitality Management: 80,000 PKR\n📧 management@admissions.uog.edu.pk"
+      "response": "📊 Management & Commerce Fees:\n• BS Commerce/Finance/Analytics/Public Admin: [VAR_FEE_BS_COMMERCE_FINANCE]\n• BBA (4 Year): [VAR_FEE_BBA_MORN] (Morning) | [VAR_FEE_BBA_EVE] (Evening)\n• BS Hospitality Management: [VAR_FEE_BS_HOSPITALITY]\n📧 management@admissions.uog.edu.pk"
     },
     {
       "intent": "fees_science_bio",
@@ -247,9 +318,11 @@
         "dietetics",
         "medical laboratory",
         "mlt",
-        "microbiology"
+        "microbiology",
+        "biotech fee",
+        "biochem fee"
       ],
-      "response": "🧬 Biosciences Fees:\n• BS Biochem / Biotech: 65,000 PKR (Morning) | ~50,000 PKR (Evening)\n• BS Nutrition / MLT / Microbiology: 75,000 PKR\n📧 bmb@admissions.uog.edu.pk"
+      "response": "🧬 Biosciences Fees:\n• BS Biochem / Biotech: [VAR_FEE_BS_BIOCHEM_BIOTECH_MORN] (Morning) | [VAR_FEE_BS_BIOCHEM_BIOTECH_EVE] (Evening)\n• BS Nutrition / MLT / Microbiology: [VAR_FEE_BS_NUTRITION_MLT]\n📧 bmb@admissions.uog.edu.pk"
     },
     {
       "intent": "fees_science_general",
@@ -264,9 +337,12 @@
         "statistics",
         "zoology",
         "data analytics",
-        "science"
+        "science",
+        "physics fee",
+        "chemistry fee",
+        "math fee"
       ],
-      "response": "🔬 General Science Fees:\n• BS Botany / Geography: 30,000 PKR\n• BS Stat: 35,000 PKR\n• BS Environment / Zoology / Data Analytics: 47,500 PKR\n• BS Math: 60,000 PKR\n• BS Chemistry / Physics: 65,000 PKR\n*(Evening programs vary from 50k to 66.5k PKR)*"
+      "response": "🔬 General Science Fees:\n• BS Botany / Geography: [VAR_FEE_BS_BOTANY_GEO]\n• BS Stat: [VAR_FEE_BS_STAT]\n• BS Environment / Zoology / Data Analytics: [VAR_FEE_BS_ENV_ZOO_DATA]\n• BS Math: [VAR_FEE_BS_MATH]\n• BS Chemistry / Physics: [VAR_FEE_BS_CHEM_PHYSICS]"
     },
     {
       "intent": "fees_social_sciences",
@@ -282,9 +358,12 @@
         "education",
         "defence",
         "strategic studies",
-        "special education"
+        "special education",
+        "psychology fee",
+        "ir fee",
+        "sociology fee"
       ],
-      "response": "🌍 Social Sciences Fees:\n• BS History: 20,000 PKR\n• BS Economics: 35,000 PKR\n• BS Sociology / IR / Pol Science / Criminology: 47,500 PKR\n• BS Psychology: 60,000 PKR (Morning) | 50,000 PKR (Evening)\n📧 psychology@admissions.uog.edu.pk"
+      "response": "🌍 Social Sciences Fees:\n• BS History: [VAR_FEE_BS_URDU_HISTORY]\n• BS Economics: [VAR_FEE_BS_STAT]\n• BS Sociology / IR / Pol Science / Criminology: [VAR_FEE_BS_ENV_ZOO_DATA]\n• BS Psychology: [VAR_FEE_BS_PSYCH_MORN] (Morning) | [VAR_FEE_BS_PSYCH_EVE] (Evening)\n📧 psychology@admissions.uog.edu.pk"
     },
     {
       "intent": "fees_grad_arts_social_law",
@@ -303,9 +382,11 @@
         "mphil law",
         "masters english",
         "masters psychology",
-        "masters economics"
+        "masters economics",
+        "llm fee",
+        "mphil fee"
       ],
-      "response": "🎭 Arts, Social Sciences & Law (Masters/MPhil):\n• MPhil (English, Mass Comm, Islamic Studies, Economics, Education, History, IR, Pol Sci, Sociology): 41,620 PKR\n• MS Psychology: 41,620 PKR\n• LLM: 41,620 PKR\n• Clinical Psych / Autism Diplomas: 47,500 PKR"
+      "response": "🎭 Arts, Social Sciences & Law (Masters/MPhil):\n• MPhil (English, Mass Comm, Islamic Studies, Economics, Education, History, IR, Pol Sci, Sociology): [VAR_FEE_MPHIL_ARTS_SOCIAL]\n• MS Psychology: [VAR_FEE_MPHIL_ARTS_SOCIAL]\n• LLM: [VAR_FEE_MPHIL_ARTS_SOCIAL]\n• Clinical Psych / Autism Diplomas: [VAR_FEE_BS_ENGLISH_TRANS]"
     },
     {
       "intent": "fees_grad_computing_engineering",
@@ -318,9 +399,10 @@
         "msc mechanical",
         "masters cs",
         "masters software",
-        "masters engineering"
+        "masters engineering",
+        "ms cs fee"
       ],
-      "response": "💻 Computing & Engineering (Masters/MS):\n• MS Computer Science: 43,070 PKR\n• MS Information Technology: 43,070 PKR\n• MSc Engineering (Chemical, Electrical, Mechanical): 43,070 PKR"
+      "response": "💻 Computing & Engineering (Masters/MS):\n• MS Computer Science: [VAR_FEE_MS_COMPUTING_ENG]\n• MS Information Technology: [VAR_FEE_MS_COMPUTING_ENG]\n• MSc Engineering (Chemical, Electrical, Mechanical): [VAR_FEE_MS_COMPUTING_ENG]"
     },
     {
       "intent": "fees_grad_management",
@@ -329,9 +411,10 @@
         "mba executive",
         "mphil commerce",
         "mphil business",
-        "masters business"
+        "masters business",
+        "mba fee"
       ],
-      "response": "📊 Management & Commerce (Masters/MPhil):\n• MBA (2 Years): 43,070 PKR\n• MBA Executive: 43,070 PKR\n• MPhil Commerce / Business Admin: 43,070 PKR"
+      "response": "📊 Management & Commerce (Masters/MPhil):\n• MBA (2 Years): [VAR_FEE_MBA]\n• MBA Executive: [VAR_FEE_MBA]\n• MPhil Commerce / Business Admin: [VAR_FEE_MBA]"
     },
     {
       "intent": "fees_grad_science",
@@ -350,7 +433,7 @@
         "masters chemistry",
         "masters math"
       ],
-      "response": "🔬 Sciences (Masters/MPhil):\n• MPhil Programs (Biochem, Biotech, Botany, Chemistry, Env Science, Geography, Math, Physics, Stat, Zoology): 43,070 PKR"
+      "response": "🔬 Sciences (Masters/MPhil):\n• MPhil Programs (Biochem, Biotech, Botany, Chemistry, Env Science, Geography, Math, Physics, Stat, Zoology): [VAR_FEE_MPHIL_SCIENCE]"
     },
     {
       "intent": "fees",
@@ -364,7 +447,7 @@
         "fee structure",
         "kitni fee hai"
       ],
-      "response": "Standard undergraduate semester tuition at UOG ranges from 30,000 to 90,000 PKR 💰 depending on the program. Graduate programs are around 41,000-43,000 PKR.\n\nPlease tell me your specific department (e.g., 'BS IT fees' or 'MBA fees') to get the exact cost!"
+      "response": "Standard undergraduate semester tuition at UOG ranges from 30,000 to 90,000 PKR 💰 depending on the program. Graduate programs are around 41,000-43,000 PKR.\n\nPlease tell me your specific department (e.g., 'BS IT fee' or 'MBA fee') to get the exact cost!"
     },
     {
       "intent": "greeting_islamic",
@@ -406,7 +489,7 @@
         "total students",
         "faculty size"
       ],
-      "response": "UOG supports over 16,000 students 👨‍🎓👩‍🎓 and about 650 faculty members 👨‍🏫 across 33 departments, offering over 120 degree programs! 🎓"
+      "response": "UOG supports over [VAR_STAT_STUDENTS] students 👨‍🎓👩‍🎓 and about [VAR_STAT_FACULTY] faculty members 👨‍🏫 across 33 departments, offering over 120 degree programs! 🎓"
     },
     {
       "intent": "portals",
@@ -433,7 +516,7 @@
         "fall mids",
         "fall finals"
       ],
-      "response": "🍂 Fall Semester Schedule:\n• Classes Commenced: Sept 02\n• Mid Terms: Oct 28 - Nov 05\n• Final Terms: Dec 30 - Jan 07\n• Results: Jan 17"
+      "response": "🍂 Fall Semester Schedule:\n• Classes Commenced: [VAR_FALL_COMMENCE]\n• Mid Terms: [VAR_FALL_MIDS]\n• Final Terms: [VAR_FALL_FINALS]\n• Results: [VAR_FALL_RESULTS]"
     },
     {
       "intent": "calendar_spring",
@@ -444,22 +527,22 @@
         "spring mids",
         "spring finals"
       ],
-      "response": "🌸 Spring Semester Schedule:\n• Classes Commence: Jan 27\n• Mid Terms: Mar 24 - Apr 01\n• Final Terms: May 26 - Jun 03\n• Results: Jun 13"
+      "response": "🌸 Spring Semester Schedule:\n• Classes Commence: [VAR_SPRING_COMMENCE]\n• Mid Terms: [VAR_SPRING_MIDS]\n• Final Terms: [VAR_SPRING_FINALS]\n• Results: [VAR_SPRING_RESULTS]"
     },
     {
       "intent": "calendar_summer",
       "keywords": ["summer", "summer semester", "summer classes"],
-      "response": "☀️ Summer Semester Schedule:\n• Classes Commence: Jun 23\n• Exams: Aug 18 - Aug 22\n• Results: Aug 29"
+      "response": "☀️ Summer Semester Schedule:\n• Classes Commence: [VAR_SUMMER_COMMENCE]\n• Exams: [VAR_SUMMER_EXAMS]\n• Results: [VAR_SUMMER_RESULTS]"
     },
     {
       "intent": "calendar_mids",
       "keywords": ["mid", "mids", "mid term", "mid terms", "midterm"],
-      "response": "📝 Mid Term Examinations:\n• Fall Mids: Oct 28 - Nov 05\n• Spring Mids: Mar 24 - Apr 01\n• Summer Exams: Aug 18 - 22"
+      "response": "📝 Mid Term Examinations:\n• Fall Mids: [VAR_FALL_MIDS]\n• Spring Mids: [VAR_SPRING_MIDS]\n• Summer Exams: [VAR_SUMMER_EXAMS]"
     },
     {
       "intent": "calendar_finals",
       "keywords": ["final", "finals", "final term", "final exams", "finalterm"],
-      "response": "🎓 Final Term Examinations:\n• Fall Finals: Dec 30 - Jan 07\n• Spring Finals: May 26 - Jun 03\n• Summer Exams: Aug 18 - 22"
+      "response": "🎓 Final Term Examinations:\n• Fall Finals: [VAR_FALL_FINALS]\n• Spring Finals: [VAR_SPRING_FINALS]\n• Summer Exams: [VAR_SUMMER_EXAMS]"
     },
     {
       "intent": "calendar_holidays",
@@ -550,7 +633,7 @@
         "grading system",
         "passing marks"
       ],
-      "response": "UOG recently updated its grading system. 📊 You can type 'Switch to new grading policy' or 'Switch to old grading policy', or just type 'Settings' to open the control panel!"
+      "response": "UOG recently updated its grading system! 📊 You can see the details or switch your active policy below: \n[WIDGET_POLICY]"
     },
     {
       "intent": "grading_old",
