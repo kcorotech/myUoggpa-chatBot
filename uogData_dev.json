@@ -919,7 +919,8 @@
         "depts",
         "dept",
         "department list",
-        "sare block"
+        "sare block",
+        "block"
       ],
       "response": "UOG campus blocks are named after scholars 🏛️:\n• Block A (Sociology, BBA...)\n• Block B (CS, IT...)\n• Block BS (Chemistry...)\n• Block E/M (Engineering)\n• Block P (Mass Com)\n• Block R (History, IR...)\n• Block S (Math, Physics)\n• Block SADA (Architecture, Fine Arts)\nWhich department are you looking for? 🔍"
     },
