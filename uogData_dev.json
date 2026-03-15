@@ -1,5 +1,5 @@
 {
-  "version": 3.1,
+  "version": 3.2,
   "variables": {
     "[VAR_FALL_COMMENCE]": "Sept 02",
     "[VAR_FALL_MIDS]": "Oct 28 - Nov 05",
@@ -659,7 +659,9 @@
         "cald",
         "celendar",
         "datesheet",
-        "date sheet"
+        "date sheet",
+        "academic",
+        "academia"
       ],
       "response": "Here is the official UOG Academic Calendar! 📅 Choose an option below: \n[WIDGET_CALENDAR]"
     },
@@ -930,7 +932,8 @@
         "blck a",
         "blok a",
         "a-block",
-        "a"
+        "a",
+        "where is block a?"
       ],
       "response": "Block A, officially named the Al-Farabi Block 🏢, houses Sociology, Psychology, BBA, MBA, Finance, an IT Lab, and the Video Conference Hall. 📊"
     },
@@ -952,7 +955,8 @@
         "blck b",
         "blok b",
         "b-block",
-        "b"
+        "b",
+        "where is block b?"
       ],
       "response": "Block B, officially the Arfa Karim Block 💻, contains Economics, Information Technology (IT), Computer Science (CS), and Software Engineering."
     },
@@ -970,7 +974,8 @@
         "blck bs",
         "blok bs",
         "bs-block",
-        "bs"
+        "bs",
+        "where is block bs?"
       ],
       "response": "Block BS, now named the Jabir Bin Hayyan Block 🔬, contains the Pro VC office, Chemistry, Botany, Zoology, and Environmental science departments. 🌿"
     },
@@ -988,7 +993,8 @@
         "blck s",
         "blok s",
         "s-block",
-        "s"
+        "s",
+        "where is block s?"
       ],
       "response": "Block S, known as the Al-Khwarizmi Block 📐, is home to the Math, Physics, Commerce, and Statistics departments, as well as the Printing Press. 🖨️"
     },
@@ -1008,7 +1014,8 @@
         "blck r",
         "blok r",
         "r-block",
-        "r"
+        "r",
+        "where is block r?"
       ],
       "response": "Block R, officially the Ibne Khaldun Block 🌍, houses International Relations, Political Science, History, Islamic Studies, English, Physical Education, Geography, and CELTS. 📚"
     },
@@ -1031,7 +1038,9 @@
         "blck m",
         "blok m",
         "e",
-        "m"
+        "m",
+        "where is block e?",
+        "where is block m?"
       ],
       "response": "Block E (Al-Jazari) and Block M (Ibn e Sina) ⚙️ host Chemical, Electrical, Mechanical Engineering, and B.Tech programs. 🛠️"
     },
@@ -1048,7 +1057,8 @@
         "blck p",
         "blok p",
         "p-block",
-        "p"
+        "p",
+        "where is block p?"
       ],
       "response": "Block P, now the Omar al Khayam Block 📸, is home to Bio-Chemistry, Bio-Technology, Mass Communication, and the Wood Workshop. 🧬"
     },
@@ -1063,7 +1073,8 @@
         "ceramics",
         "design",
         "blck sada",
-        "sada dept"
+        "sada dept",
+        "where is Sada block?"
       ],
       "response": "Block SADA, known as the Sadequain Block 🎨, houses Architecture, Fine Arts, Ceramics, Multimedia Design, Textile Design, and Product Design. 📐"
     },
