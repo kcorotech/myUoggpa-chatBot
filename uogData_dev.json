@@ -506,44 +506,7 @@
         "wifi kese connect karun",
         "net nahi chal raha"
       ],
-      "response": "To connect to UOG Eduroam WiFi 📶:\n1️⃣ Network Name: eduroam\n2️⃣ EAP Method: PEAP\n3️⃣ Phase 2 Authentication: MSCHAPV2\n4️⃣ CA Certificate: Do not validate\n5️⃣ Identity: <YourRollNo>@uog.edu.pk\n6️⃣ Password: Your CMS Password."
-    },
-    {
-      "intent": "cms_fee_voucher",
-      "keywords": [
-        "fee voucher",
-        "download voucher",
-        "challan form",
-        "print voucher",
-        "fee challan",
-        "cms voucher",
-        "challan kese nikalun"
-      ],
-      "response": "To download your fee voucher from CMS 💳:\n1️⃣ Log in to CMS.\n2️⃣ Go to 'Student Center'.\n3️⃣ Scroll down to the 'Finances' section.\n4️⃣ Click on the 'Print Fee Voucher' link to download your PDF.\n\n🎥 Watch tutorial: https://youtu.be/dummy_voucher_video"
-    },
-    {
-      "intent": "cms_course_enrollment",
-      "keywords": [
-        "course registration",
-        "enroll courses",
-        "add courses",
-        "enrollment",
-        "register course",
-        "course kese add karun"
-      ],
-      "response": "For Course Registration 📝:\n1️⃣ Log in to CMS -> 'Student Center'.\n2️⃣ Click 'Enroll' under the Academics section.\n3️⃣ Select the current term.\n4️⃣ Add classes to your cart and click 'Finish Enrolling'.\n\n🎥 Watch tutorial: https://youtu.be/dummy_enroll_video"
-    },
-    {
-      "intent": "cms_attendance_results",
-      "keywords": [
-        "transcript",
-        "check attendance",
-        "attendance",
-        "marks",
-        "results",
-        "grades on cms"
-      ],
-      "response": "To check Attendance or Results 📊:\nLog in to your CMS 'Student Center'. Under the 'Academics' section, click the drop-down menu to select 'Attendance' or generate an 'Unofficial Transcript'."
+      "response": "To connect to UOG Eduroam WiFi 📶:\n1️⃣ Network Name: eduroam\n2️⃣ EAP Method: PEAP\n3️⃣ Phase 2 Authentication: MSCHAPV2\n4️⃣ CA Certificate: Do not validate\n5️⃣ Identity: <YourRollNo>@uog.edu.pk\n6️⃣ Password: Your RollNo."
     },
     {
       "intent": "lms_assignments",
@@ -555,17 +518,6 @@
         "turn in assignment"
       ],
       "response": "To submit an assignment on LMS 📁:\n1️⃣ Open your course.\n2️⃣ Click the specific Assignment link.\n3️⃣ Click 'Add submission'.\n4️⃣ Upload your file and hit 'Save changes'."
-    },
-    {
-      "intent": "lms_lectures",
-      "keywords": [
-        "download lectures",
-        "course material",
-        "lms lectures",
-        "slides",
-        "notes"
-      ],
-      "response": "To access your course materials 📚:\nLog in to LMS, select your course from the dashboard, and scroll through the weekly topics to view and download lectures, slides, and notes."
     },
     {
       "intent": "bot_developer",
@@ -935,6 +887,29 @@
       "response": "I'm a simple assistant and still learning! 😅 If I misunderstood something, try keeping your question short and specific about UOG or the GPA calculator."
     },
     {
+      "intent": "gpa_info",
+      "keywords": [
+        "how to calculate gpa",
+        "gpa formula",
+        "what is gpa",
+        "gpa calculation"
+      ],
+      "response": "To calculate your Semester GPA 🧮:\n\nMultiply the grade points of each course by its credit hours, add them all together, and divide by the total credit hours for that semester.\n\n💡 You can just type 'Calculate GPA' to do it right here!"
+    },
+    {
+      "intent": "share_app",
+      "keywords": [
+        "share",
+        "share app",
+        "share with friends",
+        "send app",
+        "forward app",
+        "recommend app",
+        "invite"
+      ],
+      "response": "Love using the MyUOG Assistant? 💙 Share it with your university friends so they can calculate their grades too! \n[WIDGET_SHARE]"
+    },
+    {
       "intent": "cgpa_info",
       "keywords": [
         "how to calculate cgpa",
@@ -985,7 +960,7 @@
     {
       "intent": "contact_support",
       "keywords": ["contact", "phone", "email", "helpline", "support", "admin"],
-      "response": "You can visit uog.edu.pk 🌐, call +92 (53) 2260000 📞, or email info@uog.edu.pk ✉️ for official support."
+      "response": "You can visit uog.edu.pk 🌐 or email info@uog.edu.pk ✉️ for official support."
     },
     {
       "intent": "fallback_unknown",
