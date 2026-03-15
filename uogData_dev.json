@@ -1,5 +1,5 @@
 {
-  "version": 2.0,
+  "version": 2.1,
   "intents": [
     {
       "intent": "action_target_cgpa",
@@ -26,7 +26,7 @@
         "how to check gpa",
         "gpa calculation"
       ],
-      "response": "Please select your grading policy first, then enter your courses below to calculate your semester GPA: \n[WIDGET_SETTINGS] \n[WIDGET_GPA]"
+      "response": "Sure! Please select your batch policy first, then enter your courses below: \n[WIDGET_POLICY] \n[WIDGET_GPA]"
     },
     {
       "intent": "action_cgpa_calc",
