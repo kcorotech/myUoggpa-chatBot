@@ -419,9 +419,10 @@
         "calendar link",
         "schedule link",
         "dates link",
-        "academic calendar"
+        "academic calendar",
+        "calendar"
       ],
-      "response": "You can view the official UOG academic schedule here: 📅 https://uog.edu.pk/calendar"
+      "response": "Here is the official UOG Academic Calendar! 📅 Choose an option below: \n[WIDGET_CALENDAR]"
     },
     {
       "intent": "calendar_fall",
