@@ -1,17 +1,18 @@
 {
-  "version": 3.2,
+  "version": 3.3,
   "variables": {
-    "[VAR_FALL_COMMENCE]": "Sept 02",
-    "[VAR_FALL_MIDS]": "Oct 28 - Nov 05",
-    "[VAR_FALL_FINALS]": "Dec 30 - Jan 07",
-    "[VAR_FALL_RESULTS]": "Jan 17",
-    "[VAR_SPRING_COMMENCE]": "Jan 27",
-    "[VAR_SPRING_MIDS]": "Mar 24 - Apr 01",
-    "[VAR_SPRING_FINALS]": "May 26 - Jun 03",
-    "[VAR_SPRING_RESULTS]": "Jun 13",
-    "[VAR_SUMMER_COMMENCE]": "Jun 23",
-    "[VAR_SUMMER_EXAMS]": "Aug 18 - Aug 22",
-    "[VAR_SUMMER_RESULTS]": "Aug 29",
+    "[VAR_FALL_COMMENCE]": "Sept 15, 2025",
+    "[VAR_FALL_MIDS]": "Nov 10 - 17, 2025",
+    "[VAR_FALL_FINALS]": "Jan 06 - 21, 2026",
+    "[VAR_FALL_RESULTS]": "Feb 06, 2026",
+    "[VAR_SPRING_COMMENCE]": "Feb 02, 2026",
+    "[VAR_SPRING_MIDS]": "Mar 30 - Apr 06, 2026",
+    "[VAR_SPRING_FINALS]": "June 1 - 16, 2026",
+    "[VAR_SPRING_RESULTS]": "July 02, 2026",
+    "[VAR_SUMMER_COMMENCE]": "June 22, 2026",
+    "[VAR_SUMMER_MIDS]": "July 20 - 24, 2026",
+    "[VAR_SUMMER_FINALS]": "Aug 17 - 21, 2026",
+    "[VAR_SUMMER_RESULTS]": "Aug 31, 2026",
     "[VAR_FEE_BS_CERAMICS]": "25,000 PKR",
     "[VAR_FEE_BS_FILM]": "40,000 PKR",
     "[VAR_FEE_BS_FINE_ARTS]": "52,326 PKR",
@@ -49,7 +50,12 @@
     "[VAR_FEE_MBA]": "43,070 PKR",
     "[VAR_FEE_MPHIL_SCIENCE]": "43,070 PKR",
     "[VAR_STAT_STUDENTS]": "16,000",
-    "[VAR_STAT_FACULTY]": "650"
+    "[VAR_STAT_FACULTY]": "650",
+    "[VAR_HOLIDAY_EID_FITR]": "Mar 19 - 22, 2026",
+    "[VAR_HOLIDAY_LABOUR]": "May 01, 2026",
+    "[VAR_HOLIDAY_EID_ADHA]": "May 26 - 28, 2026",
+    "[VAR_HOLIDAY_ASHURA]": "Jun 25 - 26, 2026",
+    "[VAR_HOLIDAY_INDEPENDENCE]": "Aug 14, 2026"
   },
   "intents": [
     {
@@ -624,7 +630,7 @@
         "total awam",
         "university size"
       ],
-      "response": "UOG supports over [VAR_STAT_STUDENTS] students 👨‍🎓👩‍🎓 and about [VAR_STAT_FACULTY] faculty members 👨‍🏫 across 33 departments, offering over 120 degree programs! 🎓"
+      "response": "UOG supports approximately over [VAR_STAT_STUDENTS] students 👨‍🎓👩‍🎓 and about [VAR_STAT_FACULTY] faculty members 👨‍🏫 across 33 departments, offering over 120 degree programs! 🎓"
     },
     {
       "intent": "portals",
@@ -706,7 +712,7 @@
         "sumer",
         "smmer"
       ],
-      "response": "☀️ Summer Semester Schedule:\n• Classes Commence: [VAR_SUMMER_COMMENCE]\n• Exams: [VAR_SUMMER_EXAMS]\n• Results: [VAR_SUMMER_RESULTS]"
+      "response": "☀️ Summer Semester Schedule:\n• Classes Commence: [VAR_SUMMER_COMMENCE]\n• Mid Terms: [VAR_SUMMER_MIDS]\n• Final Terms: [VAR_SUMMER_FINALS]\n• Results: [VAR_SUMMER_RESULTS]"
     },
     {
       "intent": "calendar_mids",
@@ -721,7 +727,7 @@
         "midterm exams",
         "half exams"
       ],
-      "response": "📝 Mid Term Examinations:\n• Fall Mids: [VAR_FALL_MIDS]\n• Spring Mids: [VAR_SPRING_MIDS]\n• Summer Exams: [VAR_SUMMER_EXAMS]"
+      "response": "📝 Mid Term Examinations:\n• Fall Mids: [VAR_FALL_MIDS]\n• Spring Mids: [VAR_SPRING_MIDS]\n• Summer Exams: [VAR_SUMMER_MIDS]"
     },
     {
       "intent": "calendar_finals",
@@ -736,7 +742,7 @@
         "end exams",
         "board exams"
       ],
-      "response": "🎓 Final Term Examinations:\n• Fall Finals: [VAR_FALL_FINALS]\n• Spring Finals: [VAR_SPRING_FINALS]\n• Summer Exams: [VAR_SUMMER_EXAMS]"
+      "response": "🎓 Final Term Examinations:\n• Fall Finals: [VAR_FALL_FINALS]\n• Spring Finals: [VAR_SPRING_FINALS]\n• Summer Exams: [VAR_SUMMER_FINALS]"
     },
     {
       "intent": "calendar_holidays",
@@ -754,9 +760,10 @@
         "vacations",
         "off days",
         "free days",
-        "holiday"
+        "holiday",
+        "free"
       ],
-      "response": "🏖️ Upcoming Public Holidays (Expected):\n• Eid-ul-Fitr: Mar 31 - Apr 02\n• Labour Day: May 01\n• Eid-ul-Adha: Jun 06 - 08\n• Ashura: Jul 05 - 06\n• Independence Day: Aug 14\n• Eid Milad-un-Nabi: Sept 05"
+      "response": "🏖️ Upcoming Public Holidays (Expected):\n• Eid-ul-Fitr: [VAR_HOLIDAY_EID_FITR]\n• Labour Day: [VAR_HOLIDAY_LABOUR]\n• Eid-ul-Adha: [VAR_HOLIDAY_EID_ADHA]\n• Ashura: [VAR_HOLIDAY_ASHURA]\n• Independence Day: [VAR_HOLIDAY_INDEPENDENCE]"
     },
     {
       "intent": "policy_course_load",
