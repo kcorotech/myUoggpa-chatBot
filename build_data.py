@@ -1,8 +1,8 @@
 import csv, json, urllib.request, io, os
 
 # 🔴 PASTE YOUR TWO SHEET IDs HERE:
-DEV_SHEET_ID = "1oZHa17ggoM2TQCd_xOnBds-xhLMasbZyKKFhicphSvY/edit?gid=0#gid=0"
-PROD_SHEET_ID = "1Ws_W_sz2TJj5Et-r9LxcvkHMxozxHk_EkDLSdQMZagk/edit?gid=0#gid=0"
+DEV_SHEET_ID = "1oZHa17ggoM2TQCd_xOnBds-xhLMasbZyKKFhicphSvY"
+PROD_SHEET_ID = "1Ws_W_sz2TJj5Et-r9LxcvkHMxozxHk_EkDLSdQMZagk"
 
 def get_csv(sheet_id, tab_name):
     url = f"https://docs.google.com/spreadsheets/d/{sheet_id}/gviz/tq?tqx=out:csv&sheet={tab_name}"
