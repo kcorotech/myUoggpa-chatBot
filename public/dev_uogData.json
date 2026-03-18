@@ -1,5 +1,5 @@
 {
-  "version": 1.7,
+  "version": 1.8,
   "variables": {
     "[VAR_FALL_RESULTS]": "Feb 06, 2026",
     "[VAR_SPRING_COMMENCE]": "Feb 02, 2026",
@@ -328,33 +328,6 @@
         "mass com fees"
       ],
       "response": "🎭 Arts, Languages & Law Fees:\n• BS Urdu / History: [VAR_FEE_BS_URDU_HISTORY]\n• BS Islamic Studies / B.Ed: [VAR_FEE_BS_ISLAMIC]\n• BS English (Trans): [VAR_FEE_BS_ENGLISH_TRANS]\n• BS Mass Comm: [VAR_FEE_BS_MASS_COMM]\n• BS Physical Ed: [VAR_FEE_BS_PHYSICAL_ED]\n• BS English (Lit): [VAR_FEE_BS_ENGLISH_LIT]\n• LLB (4 Years): [VAR_FEE_LLB]"
-    },
-    {
-      "intent": "fees_computing",
-      "keywords": [
-        "computer science",
-        "bs cs",
-        "information technology",
-        "bs it",
-        "software engineering",
-        "bs se",
-        "cyber security",
-        "data science",
-        "artificial intelligence",
-        "ai",
-        "cs fee",
-        "it fee",
-        "software engineering fee",
-        "computer science fee",
-        "se fees",
-        "cs fees",
-        "it fees",
-        "bs cs fee",
-        "software fee",
-        "ai fee",
-        "data science fee"
-      ],
-      "response": "💻 Computing & IT Fees:\n• BS CS / IT / SE: [VAR_FEE_BS_CS_IT_SE_MORN] (Morning) | [VAR_FEE_BS_CS_IT_SE_EVE] (Evening)\n• BS Artificial Intelligence: [VAR_FEE_BS_AI_CYBER_DATA]\n• BS Cyber Security: [VAR_FEE_BS_AI_CYBER_DATA]\n• BS Data Science: [VAR_FEE_BS_AI_CYBER_DATA]\n📧 cs@admissions.uog.edu.pk"
     },
     {
       "intent": "fees_engineering",
