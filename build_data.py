@@ -32,6 +32,32 @@ def build_json_for_env(sheet_id, prefix):
             if var_name:
                 variables[var_name] = var_value
 
+    # 2.5 Get Programs and auto-build the JSON strings
+    try:
+        programs_data = get_csv(sheet_id, "Programs")
+        undergrad, grad, doc = [], [], []
+        for row in programs_data:
+            keys = list(row.keys())
+            if len(keys) >= 5:
+                lvl = str(row.get(keys[0], "")).strip().upper()
+                prog_obj = {
+                    "d": str(row.get(keys[1], "")).strip(),
+                    "p": str(row.get(keys[2], "")).strip(),
+                    "f": str(row.get(keys[3], "")).strip(),
+                    "t": str(row.get(keys[4], "")).strip()
+                }
+                # Sort them into the right buckets
+                if "UNDER" in lvl: undergrad.append(prog_obj)
+                elif "GRAD" in lvl: grad.append(prog_obj)
+                elif "DOC" in lvl or "PHD" in lvl: doc.append(prog_obj)
+        
+        # Inject them directly into the variables dictionary!
+        if undergrad: variables["[DATA_UNDERGRAD]"] = json.dumps(undergrad, ensure_ascii=False)
+        if grad: variables["[DATA_GRADUATE]"] = json.dumps(grad, ensure_ascii=False)
+        if doc: variables["[DATA_DOCTORATE]"] = json.dumps(doc, ensure_ascii=False)
+    except Exception as e:
+        print("No Programs tab found, skipping...")
+
     # 3. Get Intents
     intents_data = get_csv(sheet_id, "Intents")
     intents = []
