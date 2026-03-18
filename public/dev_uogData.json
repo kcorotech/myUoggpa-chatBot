@@ -1,5 +1,5 @@
 {
-  "version": 1.1,
+  "version": 1.2,
   "variables": {
     "[VAR_FALL_RESULTS]": "Feb 06, 2026",
     "[VAR_SPRING_COMMENCE]": "Feb 02, 2026",
@@ -52,7 +52,10 @@
     "[VAR_HOLIDAY_LABOUR]": "May 01, 2026",
     "[VAR_HOLIDAY_EID_ADHA]": "May 26 - 28, 2026",
     "[VAR_HOLIDAY_ASHURA]": "Jun 25 - 26, 2026",
-    "[VAR_HOLIDAY_INDEPENDENCE]": "Aug 14, 2026"
+    "[VAR_HOLIDAY_INDEPENDENCE]": "Aug 14, 2026",
+    "[DATA_UNDERGRAD]": "[{\"d\":\"Econ\",\"p\":\"BS Dev Studies\",\"f\":\"47500\",\"t\":\"M\"},{\"d\":\"Econ\",\"p\":\"BS Economics\",\"f\":\"35000\",\"t\":\"M\"},{\"d\":\"CS\",\"p\":\"BS CS\",\"f\":\"65000\",\"t\":\"M\"},{\"d\":\"CS\",\"p\":\"BS CS\",\"f\":\"90000\",\"t\":\"E\"}]",
+    "[DATA_GRADUATE]": "[{\"d\":\"Biotech\",\"p\":\"MPhil Biochem\",\"f\":\"43070\",\"t\":\"FT\"},{\"d\":\"Psych\",\"p\":\"MS Psych\",\"f\":\"41620\",\"t\":\"FT\"}]",
+    "[DATA_DOCTORATE]": "[{\"d\":\"Math\",\"p\":\"PhD Math\",\"f\":\"71575\",\"t\":\"FT\"},{\"d\":\"Law\",\"p\":\"PhD Law\",\"f\":\"199275\",\"t\":\"FT\"}]"
   },
   "intents": [
     {
@@ -259,7 +262,7 @@
         "course list",
         "bs list"
       ],
-      "response": "UOG offers over 120 degree programs! 🎓\n\n🔹 **Undergraduate (BS/BSc):**\n• Computing & IT 💻\n• Engineering ⚙️\n• Business & Management 📊\n• Sciences 🔬\n• Arts, Media & Law 🎭\n• Social Sciences 🌍\n• Architecture & Design 🎨\n\n🔹 **Graduate (MS/MPhil/MBA):**\nOffered across all the faculties above!\n\n💡 Tell me exactly what you want to know (e.g., *'BS Computer Science fees'* or *'MBA fees'*), or view the full list here: 🌐 https://uog.edu.pk"
+      "response": "UOG offers 120+ programs. Select a level to view departments and fees: [WIDGET_PROGRAMS]"
     },
     {
       "intent": "programs_graduate",
