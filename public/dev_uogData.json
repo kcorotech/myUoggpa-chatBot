@@ -1,5 +1,5 @@
 {
-  "version": 2.9,
+  "version": 2.12,
   "variables": {
     "[VAR_FALL_COMMENCE]": "Sept 15, 2025",
     "[VAR_FALL_MIDS]": "Nov 10 - 17, 2025",
@@ -291,7 +291,9 @@
         "heya",
         "wassup",
         "kaise ho",
-        "kya chal raha"
+        "kya chal raha",
+        "hi",
+        "hye"
       ],
       "response": "Hi there! 👋 I am the MyUOG Assistant. How can I help you today?"
     },
@@ -410,7 +412,8 @@
         "midterms",
         "mid exams",
         "midterm exams",
-        "half exams"
+        "half exams",
+        "exam"
       ],
       "response": "📝 Mid Term Examinations:\n• Fall Mids: [VAR_FALL_MIDS]\n• Spring Mids: [VAR_SPRING_MIDS]\n• Summer Exams: [VAR_SUMMER_MIDS]"
     },
@@ -1046,7 +1049,11 @@
         "bitch",
         "asshole",
         "chutiya",
-        "pagal"
+        "pagal",
+        "sex",
+        "sexy",
+        "nude",
+        "nuidty"
       ],
       "response": "I'm a simple assistant and still learning! 😅 If I misunderstood something, try keeping your question short and specific about UOG or the GPA calculator."
     },
@@ -1155,7 +1162,7 @@
         "today's date",
         "day today"
       ],
-      "response": "I operate entirely offline to save your data 🔋, so I don't track the live calendar. However, you can check the official UOG schedule here: 📅 https://uog.edu.pk/calendar"
+      "response": "I operate entirely offline to save your data 🔋, so I don't track the live calendar. However, you can check the official UOG schedule here: 📅 https://uog.edu.pk"
     },
     {
       "intent": "contact_support",
