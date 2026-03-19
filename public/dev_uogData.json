@@ -1,11 +1,11 @@
 {
-  "version": 2.5,
+  "version": 2.6,
   "variables": {
     "[VAR_FALL_RESULTS]": "Feb 06, 2026",
     "[VAR_SPRING_COMMENCE]": "Feb 02, 2026",
     "[VAR_SPRING_MIDS]": "",
     "[VAR_SPRING_FINALS]": "",
-    "[VAR_SPRING_RESULTS]": "July 02, 2026",
+    "[VAR_SPRING_RESULTS]": "July 2, 2026",
     "[VAR_SUMMER_COMMENCE]": "June 22, 2026",
     "[VAR_SUMMER_MIDS]": "",
     "[VAR_SUMMER_FINALS]": "",
