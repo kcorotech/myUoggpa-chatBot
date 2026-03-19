@@ -1,5 +1,5 @@
 {
-  "version": 2.3,
+  "version": 2.4,
   "variables": {
     "[VAR_FALL_RESULTS]": "Feb 06, 2026",
     "[VAR_SPRING_COMMENCE]": "Feb 02, 2026",
@@ -607,7 +607,7 @@
         "sare block",
         "block"
       ],
-      "response": "UOG campus blocks are named after scholars 🏛️:\n• Block A (Sociology, BBA...)\n• Block B (CS, IT...)\n• Block BS (Chemistry...)\n• Block E/M (Engineering)\n• Block P (Mass Com)\n• Block R (History, IR...)\n• Block S (Math, Physics)\n• Block SADA (Architecture, Fine Arts)\nWhich department are you looking for? 🔍"
+      "response": "UOG campus blocks are named after scholars 🏛️:\n• Block A (Sociology, BBA...)\n• Block B (CS, IT...)\n• Block BS (Chemistry...)\n• Block E/M (Engineering)\n• Block P (Mass Com)\n• Block R (History, IR...)\n• Block S (Math, Physics)\n• Block SADA (Architecture, Fine Arts)\n• HRM Block (Hotel Management)\n• New Blocks (Islamic Studies, English, Edu)\nWhich department are you looking for? 🔍"
     },
     {
       "intent": "block_a",
@@ -764,6 +764,7 @@
       "intent": "block_new_1",
       "keywords": [
         "new block 1",
+        "new block",
         "islamic studies dept",
         "physical education",
         "sports science"
@@ -774,6 +775,7 @@
       "intent": "block_hrm",
       "keywords": [
         "hrm block",
+        "hm block",
         "hotel management",
         "hospitality management"
       ],
@@ -783,6 +785,7 @@
       "intent": "block_english",
       "keywords": [
         "new block english",
+        "new english block",
         "english department",
         "english literature",
         "education department"
