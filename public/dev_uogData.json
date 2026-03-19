@@ -1,5 +1,5 @@
 {
-  "version": 2.1,
+  "version": 2.2,
   "variables": {
     "[VAR_FALL_RESULTS]": "Feb 06, 2026",
     "[VAR_SPRING_COMMENCE]": "Feb 02, 2026",
@@ -248,7 +248,11 @@
         "kharcha",
         "fees structure",
         "total fee",
-        "semester ki fee"
+        "semester ki fee",
+        "fee voucher",
+        "challan form",
+        "submit fee",
+        "fee deadline"
       ],
       "response": "To find the exact fee for a program, just type the name of the degree (e.g., \"Fee for BS Computer Science\" or \"MBA fee\") and I'll tell you instantly! 💰 \\n\\nOr, you can browse all fees by opening the program catalog below: [WIDGET_PROGRAMS]"
     },
@@ -274,15 +278,12 @@
     {
       "intent": "greeting_casual",
       "keywords": [
-        "hi",
         "hello",
         "hey",
         "sup",
-        "yo",
         "kya haal hai",
         "hii",
         "helo",
-        "hy",
         "heya",
         "wassup",
         "kaise ho",
@@ -348,10 +349,6 @@
         "calendar",
         "calender",
         "calander",
-        "cal",
-        "cala",
-        "cale",
-        "cald",
         "celendar",
         "datesheet",
         "date sheet",
@@ -370,7 +367,6 @@
         "fall finals",
         "fall schedule",
         "fall dates",
-        "fal",
         "autumn"
       ],
       "response": "🍂 Fall Semester Schedule:\n• Classes Commenced: [VAR_FALL_COMMENCE]\n• Mid Terms: [VAR_FALL_MIDS]\n• Final Terms: [VAR_FALL_FINALS]\n• Results: [VAR_FALL_RESULTS]"
@@ -384,9 +380,7 @@
         "spring mids",
         "spring finals",
         "spring schedule",
-        "spring dates",
-        "spr",
-        "sprng"
+        "spring dates"
       ],
       "response": "🌸 Spring Semester Schedule:\n• Classes Commence: [VAR_SPRING_COMMENCE]\n• Mid Terms: [VAR_SPRING_MIDS]\n• Final Terms: [VAR_SPRING_FINALS]\n• Results: [VAR_SPRING_RESULTS]"
     },
@@ -397,9 +391,7 @@
         "summer semester",
         "summer classes",
         "summer schedule",
-        "summer dates",
-        "sumer",
-        "smmer"
+        "summer dates"
       ],
       "response": "☀️ Summer Semester Schedule:\n• Classes Commence: [VAR_SUMMER_COMMENCE]\n• Mid Terms: [VAR_SUMMER_MIDS]\n• Final Terms: [VAR_SUMMER_FINALS]\n• Results: [VAR_SUMMER_RESULTS]"
     },
@@ -450,7 +442,10 @@
         "off days",
         "free days",
         "holiday",
-        "free"
+        "free",
+        "winter break",
+        "summer vacation",
+        "next holiday"
       ],
       "response": "🏖️ Upcoming Public Holidays (Expected):\n• Eid-ul-Fitr: [VAR_HOLIDAY_EID_FITR]\n• Labour Day: [VAR_HOLIDAY_LABOUR]\n• Eid-ul-Adha: [VAR_HOLIDAY_EID_ADHA]\n• Ashura: [VAR_HOLIDAY_ASHURA]\n• Independence Day: [VAR_HOLIDAY_INDEPENDENCE]"
     },
@@ -629,7 +624,6 @@
         "blck a",
         "blok a",
         "a-block",
-        "a",
         "where is block a?"
       ],
       "response": "Block A, officially named the Al-Farabi Block 🏢, houses Sociology, Psychology, BBA, MBA, Finance, an IT Lab, and the Video Conference Hall. 📊"
@@ -645,14 +639,11 @@
         "information technology",
         "computer science",
         "software engineering",
-        "cs",
-        "it",
-        "b block kidhar hai",
+        "block kidhar hai",
         "b block kahan hai",
         "blck b",
         "blok b",
         "b-block",
-        "b",
         "where is block b?"
       ],
       "response": "Block B, officially the Arfa Karim Block 💻, contains Economics, Information Technology (IT), Computer Science (CS), and Software Engineering."
@@ -671,7 +662,6 @@
         "blck bs",
         "blok bs",
         "bs-block",
-        "bs",
         "where is block bs?"
       ],
       "response": "Block BS, now named the Jabir Bin Hayyan Block 🔬, contains the Pro VC office, Chemistry, Botany, Zoology, and Environmental science departments. 🌿"
@@ -690,7 +680,6 @@
         "blck s",
         "blok s",
         "s-block",
-        "s",
         "where is block s?"
       ],
       "response": "Block S, known as the Al-Khwarizmi Block 📐, is home to the Math, Physics, Commerce, and Statistics departments, as well as the Printing Press. 🖨️"
@@ -711,7 +700,6 @@
         "blck r",
         "blok r",
         "r-block",
-        "r",
         "where is block r?"
       ],
       "response": "Block R, officially the Ibne Khaldun Block 🌍, houses International Relations, Political Science, History, Islamic Studies, English, Physical Education, Geography, and CELTS. 📚"
@@ -734,8 +722,6 @@
         "blok e",
         "blck m",
         "blok m",
-        "e",
-        "m",
         "where is block e?",
         "where is block m?"
       ],
@@ -754,7 +740,6 @@
         "blck p",
         "blok p",
         "p-block",
-        "p",
         "where is block p?"
       ],
       "response": "Block P, now the Omar al Khayam Block 📸, is home to Bio-Chemistry, Bio-Technology, Mass Communication, and the Wood Workshop. 🧬"
@@ -770,10 +755,38 @@
         "ceramics",
         "design",
         "blck sada",
-        "sada dept",
         "where is Sada block?"
       ],
       "response": "Block SADA, known as the Sadequain Block 🎨, houses Architecture, Fine Arts, Ceramics, Multimedia Design, Textile Design, and Product Design. 📐"
+    },
+    {
+      "intent": "block_new_1",
+      "keywords": [
+        "new block 1",
+        "islamic studies dept",
+        "physical education",
+        "sports science"
+      ],
+      "response": "New Block 1 🕌 contains:\\n• Islamic Studies\\n• Physical Education and Sports Science"
+    },
+    {
+      "intent": "block_hrm",
+      "keywords": [
+        "hrm block",
+        "hotel management",
+        "hospitality management"
+      ],
+      "response": "HRM Block 🏨 contains:\\n• Institute of Hotel and Restaurant Management (BS Hospitality, ADP Hotel)"
+    },
+    {
+      "intent": "block_english",
+      "keywords": [
+        "new block english",
+        "english department",
+        "english literature",
+        "education department"
+      ],
+      "response": "New Block English 📚 contains:\\n• English Language & Literature\\n• Department of Education"
     },
     {
       "intent": "admissions",
@@ -791,9 +804,12 @@
         "admissions open",
         "dakhla",
         "merit",
-        "merit list kab"
+        "merit list kab",
+        "closing merit",
+        "spring admissions",
+        "fall admissions"
       ],
-      "response": "Admissions generally open in Fall. 🍂 BS requires at least 45% in Inter/DAE. MS/MPhil/PhD require 16 years of education, plus a departmental test and interview. 📝"
+      "response": "Admissions generally open in Fall. 🍂 BS requires at least 45% in Inter/DAE. Here is the step-by-step official guide on how to apply: https://uog.edu.pk/downloads/admissions/2025/How-To-Fall-2025.pdf"
     },
     {
       "intent": "transport",
@@ -809,9 +825,12 @@
         "buses",
         "routes list",
         "bus route",
-        "bus timing"
+        "bus timing",
+        "bus card",
+        "bus pass",
+        "transport card"
       ],
-      "response": "UOG operates a massive fleet of buses 🚌 covering routes to Gujranwala, Sialkot, Daska, Jhelum, Kharian, and Mandi Bahauddin. Contact the Transport Office for the exact route plan! 🗺️"
+      "response": "UOG operates a massive fleet of buses! 🚌 Contact the Transport Office for the exact route plan, and follow the official UoG Transport WhatsApp channel here for live updates: https://whatsapp.com/channel/0029Vb6y1tF77qVVrWShvg0L"
     },
     {
       "intent": "library",
@@ -845,7 +864,10 @@
         "hostel fee",
         "hostl",
         "hstel",
-        "room rent"
+        "room rent",
+        "hostel form",
+        "hostel allotment",
+        "hostel merit list"
       ],
       "response": "UOG provides on-campus hostel facilities for both male and female students. 🛏️ Seats are limited and usually allotted on a merit/distance basis."
     },
@@ -972,21 +994,18 @@
       "intent": "acknowledgment",
       "keywords": [
         "okay",
-        "ok",
         "alright",
         "thanks",
         "thank you",
         "got it",
         "nice",
         "good",
-        "kk",
         "okies",
         "thx",
         "thnx",
         "ty",
         "shukriya",
-        "jazakallah",
-        "hm"
+        "jazakallah"
       ],
       "response": "You're very welcome! 😊 Let me know if you need help with anything else."
     },
@@ -1147,6 +1166,36 @@
         "uog email"
       ],
       "response": "You can visit uog.edu.pk 🌐 or email info@uog.edu.pk ✉️ for official support."
+    },
+    {
+      "intent": "convocation",
+      "keywords": [
+        "convocation",
+        "9th convocation",
+        "degree ceremony",
+        "passed out",
+        "graduating ceremony",
+        "medal",
+        "convocation register"
+      ],
+      "response": "The 9th Convocation is for students who passed out in Spring-2021, Fall-2021, Spring-2022, Fall-2022, Spring 2023, and Fall 2023. 🎓 Register or check your details here: https://ch.uog.edu.pk/MISC/UniversityCovocationStudents"
+    },
+    {
+      "intent": "study_drives",
+      "keywords": [
+        "drive",
+        "drives",
+        "notes",
+        "past papers",
+        "study material",
+        "slides",
+        "semester drive",
+        "subject drive",
+        "books pdf",
+        "calculas book",
+        "it notes"
+      ],
+      "response": "I have a growing collection of study materials, notes, and Google Drives for different semesters and subjects! 📚 Click below to search the Drives Archive: [WIDGET_DRIVES]"
     },
     {
       "intent": "fallback_unknown",
