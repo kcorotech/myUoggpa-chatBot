@@ -58,6 +58,25 @@ def build_json_for_env(sheet_id, prefix):
     except Exception as e:
         print("No Programs tab found, skipping...")
 
+    try:
+        drives_data = get_csv(sheet_id, "Drives")
+        drives_list = []
+        for row in drives_data:
+            keys = list(row.keys())
+            if len(keys) >= 4 and str(row.get(keys[0], "")).strip() != "":
+                drives_list.append({
+                    "d": str(row.get(keys[0], "")).strip(), # Department
+                    "s": str(row.get(keys[1], "")).strip(), # Semester
+                    "n": str(row.get(keys[2], "")).strip(), # Name
+                    "l": str(row.get(keys[3], "")).strip()  # Link
+                })
+        
+        if drives_list: 
+            variables["[DATA_DRIVES]"] = json.dumps(drives_list, ensure_ascii=False)
+    except Exception as e:
+        print("No Drives tab found, skipping...")
+    # 👆👆👆 END OF NEW BLOCK 👆👆👆
+    
     # 3. Get Intents
     intents_data = get_csv(sheet_id, "Intents")
     intents = []
