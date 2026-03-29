@@ -1,5 +1,5 @@
 {
-  "version": 1.8,
+  "version": 1.9,
   "variables": {
     "[VAR_FALL_COMMENCE]": "Sept 15, 2025",
     "[VAR_FALL_MIDS]": "Nov 10 - 17, 2025",
@@ -507,7 +507,7 @@
         "connection",
         "conect"
       ],
-      "response": "To connect to UOG Eduroam WiFi 📶:\n1️⃣ Network Name: eduroam\n2️⃣ EAP Method: PEAP\n3️⃣ Phase 2 Authentication: MSCHAPV2\n4️⃣ CA Certificate: Do not validate\n5️⃣ Identity: <YourRollNo>@uog.edu.pk\n6️⃣ Password: Your RollNo."
+      "response": "To connect to UOG Eduroam WiFi 📶:\n1️⃣ Network Name: eduroam\n2️⃣ EAP Method: PEAP\n3️⃣ Phase 2 Authentication: MSCHAPV2\n4️⃣ CA Certificate: Do not validate\n5️⃣ Identity: <YourRollNo>@hhcampus.uog.edu.pk\n6️⃣ Password: Your RollNo."
     },
     {
       "intent": "lms_assignments",
