@@ -1,5 +1,5 @@
 {
-  "version": 1.9,
+  "version": 2.0,
   "variables": {
     "[VAR_FALL_COMMENCE]": "Sept 15, 2025",
     "[VAR_FALL_MIDS]": "Nov 10 - 17, 2025",
@@ -933,9 +933,12 @@
         "how does this work",
         "app usage",
         "how to run",
-        "kese use karun"
+        "kese use karun",
+        "video tutorial",
+        "app tutorial",
+        "watch tutorial"
       ],
-      "response": "This app helps you manage your UOG academic life! 📱\n\n• Calculate your semester grades 🧮\n• Save your results 💾\n• Check grading criteria 📊\n• Ask me questions about the campus! 🤖"
+      "response": "This app helps you manage your UOG academic life! 📱\\n\\n• Calculate your semester grades 🧮\\n• Save your results 💾\\n• Check grading criteria 📊\\n• Ask me questions about the campus! 🤖\\n\\n🎥 Watch the full video tutorial here: [Insert Video Link]"
     },
     {
       "intent": "about_app",
@@ -1229,9 +1232,81 @@
       "response": "I have a growing collection of study materials, notes, and Google Drives for different semesters and subjects! 📚 Click below to search the Drives Archive: [WIDGET_DRIVES]"
     },
     {
-      "intent": "fallback_unknown",
-      "keywords": [],
-      "response": "I'm still learning about MyUOG! 🤔 Could you try rephrasing your question, or contact the university directly at info@uog.edu.pk?"
+      "intent": "app_rating",
+      "keywords": [
+        "rate app",
+        "rating",
+        "give rating",
+        "rate openar",
+        "how to rate",
+        "app review",
+        "review app",
+        "play store link",
+        "feedback",
+        "5 stars",
+        "review",
+        "rate it",
+        "rate us",
+        "love this app",
+        "good app"
+      ],
+      "response": "Enjoying the app? 🎓\nHelp Openar reach more students by leaving a rating! It only takes a second and helps keep the helpful updates coming. ⏱️ Rate us here: [Insert Play Store Link] ⭐⭐⭐⭐⭐"
+    },
+    {
+      "intent": "nsct_info",
+      "keywords": [
+        "nsct",
+        "what is nsct",
+        "hec test",
+        "hec computing test",
+        "nceac test",
+        "it test",
+        "pseb test",
+        "hec skill test",
+        "national skills certification test"
+      ],
+      "response": "The National Skills Certification Test (NSCT) is a new computer-based test by HEC, MoITT, and P@SHA! 💻 It is designed to test your computing skills, bridge the gap between university and the IT industry, and boost your job chances. 🚀"
+    },
+    {
+      "intent": "nsct_eligibility",
+      "keywords": [
+        "who can take nsct",
+        "nsct eligibility",
+        "eligible for nsct",
+        "can i give nsct",
+        "nsct semester",
+        "nsct for which students",
+        "nsct criteria"
+      ],
+      "response": "To be eligible for the NSCT, you must be a student currently enrolled in your 7th or 8th semester of a computing program (like CS, IT, SE, AI, or Data Science) at an HEC-recognized university! 🎓"
+    },
+    {
+      "intent": "nsct_apply",
+      "keywords": [
+        "nsct website",
+        "nsct link",
+        "apply for nsct",
+        "nsct portal",
+        "nsct registration",
+        "register for nsct",
+        "hec test link"
+      ],
+      "response": "You can find all the official details, check the competency areas, and register for the test at the official HEC portal here: 🌐 https://nsct.hec.gov.pk/"
+    },
+    {
+      "intent": "nsct_prep",
+      "keywords": [
+        "nsct prep",
+        "nsct preparation",
+        "nsct syllabus",
+        "nsct past papers",
+        "how to pass nsct",
+        "nsct mock test",
+        "nsct study material",
+        "nsct practice",
+        "nsct topics"
+      ],
+      "response": "The NSCT covers industry-endorsed competency areas (your core computing subjects). 📚 To practice and get ready for the test, you can check out this awesome preparation platform: 💻 https://www.nsctprep.dev/"
     }
   ]
 }
