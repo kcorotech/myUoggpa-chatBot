@@ -1,12 +1,12 @@
 {
-  "version": 2.0,
+  "version": 1.1,
   "variables": {
     "[VAR_FALL_COMMENCE]": "Sept 15, 2025",
     "[VAR_FALL_MIDS]": "Nov 10 - 17, 2025",
     "[VAR_FALL_FINALS]": "Jan 06 - 21, 2026",
     "[VAR_FALL_RESULTS]": "Feb 06, 2026",
     "[VAR_SPRING_COMMENCE]": "Feb 02, 2026",
-    "[VAR_SPRING_MIDS]": "Mar 30 - Apr 06, 2026",
+    "[VAR_SPRING_MIDS]": "Apr 06 - Apr 13, 2026",
     "[VAR_SPRING_FINALS]": "June 1 - 16, 2026",
     "[VAR_SPRING_RESULTS]": "July 2, 2026",
     "[VAR_SUMMER_COMMENCE]": "June 22, 2026",
@@ -938,7 +938,7 @@
         "app tutorial",
         "watch tutorial"
       ],
-      "response": "This app helps you manage your UOG academic life! 📱\\n\\n• Calculate your semester grades 🧮\\n• Save your results 💾\\n• Check grading criteria 📊\\n• Ask me questions about the campus! 🤖\\n\\n🎥 Watch the full video tutorial here: [Insert Video Link]"
+      "response": "This app helps you manage your UOG academic life! 📱\\n\\n• Calculate your semester grades 🧮\\n• Save your results 💾\\n• Check grading criteria 📊\\n• Ask me questions about the campus! 🤖\\n\\n🎥 Watch the full video tutorial here: https://youtu.be/B2coLio7KAU?si=AdE6a6c5LtShHMAL"
     },
     {
       "intent": "about_app",
@@ -949,7 +949,9 @@
         "about this app",
         "app info",
         "app kia hai",
-        "what is myuoggpa"
+        "what is myuoggpa",
+        "myuog",
+        "my uog"
       ],
       "response": "MyUOG is your personal academic companion! 🎒 It's designed specifically for University of Gujrat students to calculate GPAs accurately, track progress, and get instant answers. 🚀"
     },
@@ -1250,7 +1252,7 @@
         "love this app",
         "good app"
       ],
-      "response": "Enjoying the app? 🎓\nHelp Openar reach more students by leaving a rating! It only takes a second and helps keep the helpful updates coming. ⏱️ Rate us here: [Insert Play Store Link] ⭐⭐⭐⭐⭐"
+      "response": "Enjoying the app? 🎓\nHelp Openar reach more students by leaving a rating! It only takes a second and helps keep the helpful updates coming. ⏱️ Rate us here: https://play.google.com/store/apps/details?id=com.myuoggpa\n ⭐⭐⭐⭐⭐"
     },
     {
       "intent": "nsct_info",
