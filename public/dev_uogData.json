@@ -1,5 +1,5 @@
 {
-  "version": 3.0,
+  "version": 3.1,
   "variables": {
     "[VAR_FALL_COMMENCE]": "Sept 15, 2025",
     "[VAR_FALL_MIDS]": "Nov 10 - 17, 2025",
@@ -1307,6 +1307,13 @@
         "nsct topics"
       ],
       "response": "The NSCT covers industry-endorsed competency areas (your core computing subjects). 📚 To practice and get ready for the test, you can check out this awesome preparation platform: 💻 https://www.nsctprep.dev/"
+    },
+    {
+      "intent": "ai_screen",
+      "keywords": [
+        "switch to ai"
+      ],
+      "response": "[WIDGET_AI]"
     },
     {
       "intent": "fallback_unknown",
