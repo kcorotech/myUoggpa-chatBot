@@ -232,7 +232,9 @@
         "phd",
         "ms",
         "masters",
-        "mphil"
+        "mphil",
+        "morning",
+        "evening"
       ],
       "response": "UOG offers over 120+ programs across BS, MS/MPhil, and PhD levels! 🎓 \\n\\nClick below to browse the full list, search by department, or filter by Morning/Evening shifts: [WIDGET_PROGRAMS]"
     },
