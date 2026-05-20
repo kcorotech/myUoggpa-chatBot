@@ -1,5 +1,5 @@
 {
-  "version": 1.4,
+  "version": 1.5,
   "variables": {
     "[VAR_FALL_COMMENCE]": "Sept 15, 2025",
     "[VAR_FALL_MIDS]": "Nov 10 - 17, 2025",
@@ -1234,7 +1234,6 @@
         "drive",
         "drives",
         "notes",
-        "past papers",
         "study material",
         "slides",
         "semester drive",
@@ -1321,6 +1320,60 @@
         "nsct topics"
       ],
       "response": "The NSCT covers industry-endorsed competency areas (your core computing subjects). 📚 To practice and get ready for the test, you can check out this awesome preparation platform: 💻 https://www.nsctprep.dev/"
+    },
+    {
+      "intent": "trap_batch_info",
+      "keywords": [
+        "batch",
+        "batch 2023",
+        "batch 2024",
+        "batch 2025",
+        "batch 2026",
+        "session",
+        "batch 2023-2027"
+      ],
+      "response": "I don't track specific student batches or sessions. But I can help you with grading policies, fee structures, or finding past papers! 🎓"
+    },
+    {
+      "intent": "trap_course_code",
+      "keywords": [
+        "course code",
+        "syllabus",
+        "course outline",
+        "outline"
+      ],
+      "response": "I don't have course outlines or syllabuses right now. However, if you are looking for past papers, just type the subject name and \"paper\" (e.g. 'OOP past paper')! 📚"
+    },
+    {
+      "intent": "calendar_conclude",
+      "keywords": [
+        "conclude",
+        "finish",
+        "end",
+        "khatam",
+        "semester end",
+        "classes end"
+      ],
+      "response": "To see exactly when this semester concludes (final exams and result dates), check the official Academic Calendar below! 📅 [WIDGET_CALENDAR]"
+    },
+    {
+      "intent": "trap_generic_exams",
+      "keywords": [
+        "i want past papers",
+        "need some past papers",
+        "exams",
+        "exam",
+        "paper",
+        "papers",
+        "past paper",
+        "past papers"
+      ],
+      "response": "To find past papers, please tell me the subject name or course code! 📚 For example, try typing:\\n• 'CS102 mid'\\n• 'OOP past papers'\\n• 'Software Engineering'"
+    },
+    {
+      "intent": "fallback_unknown",
+      "keywords": [],
+      "response": "I'm still learning about MyUOG! 🤔 Could you try rephrasing your question, or contact the university directly at info@uog.edu.pk?"
     }
   ]
 }
