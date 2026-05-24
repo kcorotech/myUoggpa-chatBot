@@ -1,5 +1,5 @@
 {
-  "version": 1.7,
+  "version": 1.8,
   "variables": {
     "[VAR_FALL_COMMENCE]": "Sept 15, 2025",
     "[VAR_FALL_MIDS]": "Nov 10 - 17, 2025",
@@ -260,7 +260,7 @@
         "submit fee",
         "fee deadline"
       ],
-      "response": "To find the exact fee for a program, just type the name of the degree (e.g., \"Fee for BS Computer Science\" or \"MBA fee\") and I'll tell you instantly! 💰 \\n\\nOr, you can browse all fees by opening the program catalog below: [WIDGET_PROGRAMS]"
+      "response": "To find the exact fee for a program, type the degree name (e.g. \"Fee for BS Computer Science\" or \"MBA fee\"). 💰\n\\n\\nOr browse all fee: [WIDGET_PROGRAMS]"
     },
     {
       "intent": "greeting_islamic",
