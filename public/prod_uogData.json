@@ -1,5 +1,5 @@
 {
-  "version": 1.9,
+  "version": 2.0,
   "variables": {
     "[VAR_FALL_COMMENCE]": "Sept 15, 2025",
     "[VAR_FALL_MIDS]": "Nov 10 - 17, 2025",
@@ -1316,6 +1316,20 @@
         "classes end"
       ],
       "response": "To see exactly when this semester concludes (final exams and result dates), check the official Academic Calendar below! 📅 [WIDGET_CALENDAR]"
+    },
+    {
+      "intent": "trap_generic_exams",
+      "keywords": [
+        "i want past papers",
+        "need some past papers",
+        "exams",
+        "exam",
+        "paper",
+        "papers",
+        "past paper",
+        "past papers"
+      ],
+      "response": "To find past papers, please tell me the subject name or course code! 📚 For example, try typing:\\n• 'CS102 mid'\\n• 'OOP past papers'\\n• 'Software Engineering exam'"
     },
     {
       "intent": "fallback_unknown",
