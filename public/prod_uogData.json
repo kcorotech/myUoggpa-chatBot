@@ -1,5 +1,5 @@
 {
-  "version": 2.0,
+  "version": 2.1,
   "variables": {
     "[VAR_FALL_COMMENCE]": "Sept 15, 2025",
     "[VAR_FALL_MIDS]": "Nov 10 - 17, 2025",
@@ -888,9 +888,7 @@
       "intent": "user_name",
       "keywords": [
         "my name is",
-        "i am",
         "call me",
-        "im",
         "myself",
         "name is"
       ],
@@ -1022,7 +1020,6 @@
         "shut up",
         "dumb",
         "fuck",
-        "bs",
         "bullshit",
         "wtf",
         "stfu",
@@ -1211,7 +1208,7 @@
         "rate app",
         "rating",
         "give rating",
-        "rate openar",
+        "rate myuog",
         "how to rate",
         "app review",
         "review app",
@@ -1224,7 +1221,7 @@
         "love this app",
         "good app"
       ],
-      "response": "Enjoying the app? 🎓\nHelp Openar reach more students by leaving a rating! It only takes a second and helps keep the helpful updates coming. ⏱️ Rate us here: https://play.google.com/store/apps/details?id=com.myuoggpa\n ⭐⭐⭐⭐⭐"
+      "response": "Enjoying the app? 🎓\nHelp MyUOG reach more students by leaving a rating! It only takes a second and helps keep the helpful updates coming. ⏱️ Rate us here: https://play.google.com/store/apps/details?id=com.myuoggpa\n ⭐⭐⭐⭐⭐"
     },
     {
       "intent": "nsct_info",
@@ -1329,7 +1326,30 @@
         "past paper",
         "past papers"
       ],
-      "response": "To find past papers, please tell me the subject name or course code! 📚 For example, try typing:\\n• 'CS102 mid'\\n• 'OOP past papers'\\n• 'Software Engineering exam'"
+      "response": "You can browse all available past papers in our dedicated section! 📚 [CMD_NAV_PAST_PAPERS]"
+    },
+    {
+      "intent": "official_documents",
+      "keywords": [
+        "transcript",
+        "degree",
+        "migration certificate",
+        "provisional certificate",
+        "get transcript",
+        "apply for degree"
+      ],
+      "response": "You can apply for your transcript, degree, or provisional certificate by visiting the UOG SSC (Student Service Center) at Hafiz Hayat Campus or applying through your CMS portal. 🎓 [CMD_CMS]"
+    },
+    {
+      "intent": "affiliated_colleges",
+      "keywords": [
+        "affiliate",
+        "affiliated",
+        "sub campus",
+        "affiliated colleges",
+        "private college"
+      ],
+      "response": "I am currently optimized for the main Hafiz Hayat Campus! 🏛️ While the general grading policies and academic calendar dates usually apply to you as well, please check with your specific affiliated college's admin for exact details."
     },
     {
       "intent": "fallback_unknown",

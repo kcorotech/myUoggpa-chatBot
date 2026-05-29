@@ -1,5 +1,5 @@
 {
-  "version": 3.3,
+  "version": 3.4,
   "variables": {
     "[VAR_FALL_COMMENCE]": "Sept 15, 2025",
     "[VAR_FALL_MIDS]": "Nov 10 - 17, 2025",
@@ -232,7 +232,9 @@
         "phd",
         "ms",
         "masters",
-        "mphil"
+        "mphil",
+        "morning",
+        "evening"
       ],
       "response": "UOG offers over 120+ programs across BS, MS/MPhil, and PhD levels! 🎓 \\n\\nClick below to browse the full list, search by department, or filter by Morning/Evening shifts: [WIDGET_PROGRAMS]"
     },
@@ -258,7 +260,7 @@
         "submit fee",
         "fee deadline"
       ],
-      "response": "To find the exact fee for a program, just type the name of the degree (e.g., \"Fee for BS Computer Science\" or \"MBA fee\") and I'll tell you instantly! 💰 \\n\\nOr, you can browse all fees by opening the program catalog below: [WIDGET_PROGRAMS]"
+      "response": "To find the exact fee for a program, type the degree name (e.g. \"Fee for BS Computer Science\" or \"MBA fee\"). 💰\n\\n\\nOr browse all fee: [WIDGET_PROGRAMS]"
     },
     {
       "intent": "greeting_islamic",
@@ -886,9 +888,7 @@
       "intent": "user_name",
       "keywords": [
         "my name is",
-        "i am",
         "call me",
-        "im",
         "myself",
         "name is"
       ],
@@ -909,7 +909,7 @@
         "app tutorial",
         "watch tutorial"
       ],
-      "response": "This app helps you manage your UOG academic life! 📱\\n\\n• Calculate your semester grades 🧮\\n• Save your results 💾\\n• Check grading criteria 📊\\n• Ask me questions about the campus! 🤖\\n\\n🎥 Watch the full video tutorial here: [Insert Video Link]"
+      "response": "This app helps you manage your UOG academic life! 📱\\n\\n• Calculate your semester grades 🧮\\n• Save your results 💾\\n• Check grading criteria 📊\\n• Ask me questions about the campus! 🤖\\n\\n🎥 Watch the full video tutorial here: https://youtu.be/iYqrOneqti8"
     },
     {
       "intent": "about_app",
@@ -920,7 +920,9 @@
         "about this app",
         "app info",
         "app kia hai",
-        "what is myuoggpa"
+        "what is myuoggpa",
+        "myuog",
+        "my uog"
       ],
       "response": "MyUOG is your personal academic companion! 🎒 It's designed specifically for University of Gujrat students to calculate GPAs accurately, track progress, and get instant answers. 🚀"
     },
@@ -1018,7 +1020,6 @@
         "shut up",
         "dumb",
         "fuck",
-        "bs",
         "bullshit",
         "wtf",
         "stfu",
@@ -1191,7 +1192,6 @@
         "drive",
         "drives",
         "notes",
-        "past papers",
         "study material",
         "slides",
         "semester drive",
@@ -1208,7 +1208,7 @@
         "rate app",
         "rating",
         "give rating",
-        "rate openar",
+        "rate myuog",
         "how to rate",
         "app review",
         "review app",
@@ -1221,7 +1221,7 @@
         "love this app",
         "good app"
       ],
-      "response": "Enjoying the app? 🎓\nHelp Openar reach more students by leaving a rating! It only takes a second and helps keep the helpful updates coming. ⏱️ Rate us here: [Insert Play Store Link] ⭐⭐⭐⭐⭐"
+      "response": "Enjoying the app? 🎓\nHelp MyUOG reach more students by leaving a rating! It only takes a second and helps keep the helpful updates coming. ⏱️ Rate us here: https://play.google.com/store/apps/details?id=com.myuoggpa\n ⭐⭐⭐⭐⭐"
     },
     {
       "intent": "nsct_info",
@@ -1280,18 +1280,76 @@
       "response": "The NSCT covers industry-endorsed competency areas (your core computing subjects). 📚 To practice and get ready for the test, you can check out this awesome preparation platform: 💻 https://www.nsctprep.dev/"
     },
     {
-      "intent": "haide",
+      "intent": "trap_batch_info",
       "keywords": [
-        "haider"
+        "batch",
+        "batch 2023",
+        "batch 2024",
+        "batch 2025",
+        "batch 2026",
+        "session",
+        "batch 2023-2027"
       ],
-      "response": "hi wroking things"
+      "response": "I don't track specific student batches or sessions. But I can help you with grading policies, fee structures, or finding past papers! 🎓"
     },
     {
-      "intent": "ai_screen",
+      "intent": "trap_course_code",
       "keywords": [
-        "switch to ai"
+        "course code",
+        "syllabus",
+        "course outline",
+        "outline"
       ],
-      "response": "[WIDGET_AI]"
+      "response": "I don't have course outlines or syllabuses right now. However, if you are looking for past papers, just type the subject name and \"paper\" (e.g. 'OOP past paper')! 📚"
+    },
+    {
+      "intent": "calendar_conclude",
+      "keywords": [
+        "conclude",
+        "finish",
+        "end",
+        "khatam",
+        "semester end",
+        "classes end"
+      ],
+      "response": "To see exactly when this semester concludes (final exams and result dates), check the official Academic Calendar below! 📅 [WIDGET_CALENDAR]"
+    },
+    {
+      "intent": "trap_generic_exams",
+      "keywords": [
+        "i want past papers",
+        "need some past papers",
+        "exams",
+        "exam",
+        "paper",
+        "papers",
+        "past paper",
+        "past papers"
+      ],
+      "response": "You can browse all available past papers in our dedicated section! 📚 [CMD_NAV_PAST_PAPERS]"
+    },
+    {
+      "intent": "official_documents",
+      "keywords": [
+        "transcript",
+        "degree",
+        "migration certificate",
+        "provisional certificate",
+        "get transcript",
+        "apply for degree"
+      ],
+      "response": "You can apply for your transcript, degree, or provisional certificate by visiting the UOG SSC (Student Service Center) at Hafiz Hayat Campus or applying through your CMS portal. 🎓 [CMD_CMS]"
+    },
+    {
+      "intent": "affiliated_colleges",
+      "keywords": [
+        "affiliate",
+        "affiliated",
+        "sub campus",
+        "affiliated colleges",
+        "private college"
+      ],
+      "response": "I am currently optimized for the main Hafiz Hayat Campus! 🏛️ While the general grading policies and academic calendar dates usually apply to you as well, please check with your specific affiliated college's admin for exact details."
     },
     {
       "intent": "fallback_unknown",
