@@ -1,5 +1,5 @@
 {
-  "version": 2.1,
+  "version": 2.2,
   "variables": {
     "[VAR_FALL_COMMENCE]": "Sept 15, 2025",
     "[VAR_FALL_MIDS]": "Nov 10 - 17, 2025",
@@ -1324,7 +1324,14 @@
         "paper",
         "papers",
         "past paper",
-        "past papers"
+        "past papers",
+        "all papers",
+        "all past exams",
+        "all past papers",
+        "i want all exam",
+        "i want all exam",
+        "i want all past exam",
+        "i want all past papers"
       ],
       "response": "You can browse all available past papers in our dedicated section! 📚 [CMD_NAV_PAST_PAPERS]"
     },
