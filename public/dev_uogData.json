@@ -379,7 +379,7 @@
         "fall dates",
         "autumn"
       ],
-      "response": "🍂 Fall Semester Schedule:\n• Classes Commenced: [VAR_FALL_COMMENCE]\n• Mid Terms: [VAR_FALL_MIDS]\n• Final Terms: [VAR_FALL_FINALS]\n• Results: [VAR_FALL_RESULTS]"
+      "response": "[WIDGET_DATES|FALL]"
     },
     {
       "intent": "calendar_spring",
@@ -392,7 +392,7 @@
         "spring schedule",
         "spring dates"
       ],
-      "response": "🌸 Spring Semester Schedule:\n• Classes Commence: [VAR_SPRING_COMMENCE]\n• Mid Terms: [VAR_SPRING_MIDS]\n• Final Terms: [VAR_SPRING_FINALS]\n• Results: [VAR_SPRING_RESULTS]"
+      "response": "[WIDGET_DATES|SPRING]"
     },
     {
       "intent": "calendar_summer",
@@ -403,7 +403,7 @@
         "summer schedule",
         "summer dates"
       ],
-      "response": "☀️ Summer Semester Schedule:\n• Classes Commence: [VAR_SUMMER_COMMENCE]\n• Mid Terms: [VAR_SUMMER_MIDS]\n• Final Terms: [VAR_SUMMER_FINALS]\n• Results: [VAR_SUMMER_RESULTS]"
+      "response": "[WIDGET_DATES|SUMMER]"
     },
     {
       "intent": "calendar_mids",
@@ -419,7 +419,7 @@
         "half exams",
         "exam"
       ],
-      "response": "📝 Mid Term Examinations:\n• Fall Mids: [VAR_FALL_MIDS]\n• Spring Mids: [VAR_SPRING_MIDS]\n• Summer Exams: [VAR_SUMMER_MIDS]"
+      "response": "[WIDGET_DATES|MIDS]"
     },
     {
       "intent": "calendar_finals",
@@ -434,7 +434,7 @@
         "end exams",
         "board exams"
       ],
-      "response": "🎓 Final Term Examinations:\n• Fall Finals: [VAR_FALL_FINALS]\n• Spring Finals: [VAR_SPRING_FINALS]\n• Summer Exams: [VAR_SUMMER_FINALS]"
+      "response": "[WIDGET_DATES|FINALS]"
     },
     {
       "intent": "calendar_holidays",
@@ -458,7 +458,7 @@
         "summer vacation",
         "next holiday"
       ],
-      "response": "🏖️ Upcoming Public Holidays (Expected):\n• Eid-ul-Fitr: [VAR_HOLIDAY_EID_FITR]\n• Labour Day: [VAR_HOLIDAY_LABOUR]\n• Eid-ul-Adha: [VAR_HOLIDAY_EID_ADHA]\n• Ashura: [VAR_HOLIDAY_ASHURA]\n• Independence Day: [VAR_HOLIDAY_INDEPENDENCE]"
+      "response": "[WIDGET_DATES|HOLIDAYS]"
     },
     {
       "intent": "policy_course_load",
@@ -475,6 +475,17 @@
         "cr hours"
       ],
       "response": "📚 Course Load Policy:\n• Normal: 15 to 18 Cr. Hrs.\n• Maximum: 21 Cr. Hrs. (Requires HOD approval).\n• Minimum: 12 Cr. Hrs."
+    },
+    {
+      "intent": "uog_departments_total",
+      "keywords": [
+        "total credit hours",
+        "overall degree",
+        "total cr hrs",
+        "total credits in bs",
+        "how many total credit hours"
+      ],
+      "response": "A standard Bachelor of Science degree (like BS IT, BS CS, or BS SE) at UOG typically spans 130 to 136 total credit hours over 8 semesters. Check your explicit degree roadmap on your CMS portal! 🎓"
     },
     {
       "intent": "policy_withdrawal",
@@ -509,7 +520,7 @@
         "connection",
         "conect"
       ],
-      "response": "To connect to UOG Eduroam WiFi 📶:\n1️⃣ Network Name: eduroam\n2️⃣ EAP Method: PEAP\n3️⃣ Phase 2 Authentication: MSCHAPV2\n4️⃣ CA Certificate: Do not validate\n5️⃣ Identity: <YourRollNo>@hhcampus.uog.edu.pk\n6️⃣ Password: Your RollNo."
+      "response": "[WIDGET_EDUROAM]"
     },
     {
       "intent": "lms_assignments",
@@ -541,6 +552,17 @@
         "coder"
       ],
       "response": "This app was proudly developed by Kcoro Tech! 👨‍💻 If you have feedback or want to report a bug, email: kcorotech@gmail.com ✉️"
+    },
+    {
+      "intent": "app_meta_details",
+      "keywords": [
+        "myuog birth date",
+        "myuog feature",
+        "myuog ceo name",
+        "develop date",
+        "what is myuog"
+      ],
+      "response": "MyUOG is your personal academic companion! 🎒 Built by Haider Ali (Kcoro Tech), it's designed specifically for UOG students to calculate GPAs, track progress, and find past papers! 🚀"
     },
     {
       "intent": "bot_language",
@@ -607,15 +629,13 @@
         "department info",
         "all departments",
         "list of departments",
-        "blocks",
         "buildings",
-        "block kahan hain",
         "kidhar hain departments",
         "depts",
         "dept",
         "department list",
-        "sare block",
-        "block"
+        "how many blocks",
+        "full name of blocks"
       ],
       "response": "UOG campus blocks are named after scholars 🏛️:\n• Block A (Sociology, BBA...)\n• Block B (CS, IT...)\n• Block BS (Chemistry...)\n• Block E/M (Engineering)\n• Block P (Mass Com)\n• Block R (History, IR...)\n• Block S (Math, Physics)\n• Block SADA (Architecture, Fine Arts)\n• HRM Block (Hotel Management)\n• New Blocks (Islamic Studies, English, Edu)\nWhich department are you looking for? 🔍"
     },
@@ -631,9 +651,13 @@
         "blok a",
         "a-block",
         "where is block a?",
-        "Where is a block"
+        "Where is a block",
+        "sociology department",
+        "psychology department",
+        "bba department",
+        "mba department"
       ],
-      "response": "Block A, officially named the Al-Farabi Block 🏢, houses Sociology, Psychology, BBA, MBA, Finance, an IT Lab, and the Video Conference Hall. 📊"
+      "response": "[WIDGET_BLOCK|A]"
     },
     {
       "intent": "block_b",
@@ -648,9 +672,22 @@
         "blok b",
         "b-block",
         "where is block b?",
-        "Where is b block"
+        "Where is b block",
+        "arfa kareem",
+        "arfa cream",
+        "cs block",
+        "computer science block",
+        "computer science department",
+        "it block",
+        "information technology block",
+        "information technology department",
+        "software engineering block",
+        "se block",
+        "software engineering department",
+        "economics block",
+        "economics department"
       ],
-      "response": "Block B, officially the Arfa Karim Block 💻, contains Economics, Information Technology (IT), Computer Science (CS), and Software Engineering."
+      "response": "[WIDGET_BLOCK|B]"
     },
     {
       "intent": "block_bs",
@@ -663,9 +700,16 @@
         "blok bs",
         "bs-block",
         "where is block bs?",
-        "Where is bs block"
+        "Where is bs block",
+        "chemistry block",
+        "chemistry department",
+        "zoology block",
+        "zoology department",
+        "botany block",
+        "botany department",
+        "environmental science department"
       ],
-      "response": "Block BS, now named the Jabir Bin Hayyan Block 🔬, contains the Pro VC office, Chemistry, Botany, Zoology, and Environmental science departments. 🌿"
+      "response": "[WIDGET_BLOCK|BS]"
     },
     {
       "intent": "block_s",
@@ -678,9 +722,18 @@
         "blok s",
         "s-block",
         "where is block s?",
-        "Where is s block"
+        "Where is s block",
+        "math block",
+        "mathematics block",
+        "mathematics department",
+        "physics block",
+        "physics department",
+        "commerce block",
+        "commerce department",
+        "statistics block",
+        "statistics department"
       ],
-      "response": "Block S, known as the Al-Khwarizmi Block 📐, is home to the Math, Physics, Commerce, and Statistics departments, as well as the Printing Press. 🖨️"
+      "response": "[WIDGET_BLOCK|S]"
     },
     {
       "intent": "block_r",
@@ -692,9 +745,18 @@
         "blok r",
         "r-block",
         "where is block r?",
-        "Where is r block"
+        "Where is r block",
+        "law department",
+        "law block",
+        "english block",
+        "english department",
+        "international relations department",
+        "political science department",
+        "history department",
+        "islamic studies department",
+        "geography department"
       ],
-      "response": "Block R, officially the Ibne Khaldun Block 🌍, houses International Relations, Political Science, History, Islamic Studies, English, Physical Education, Geography, and CELTS. 📚"
+      "response": "[WIDGET_BLOCK|R]"
     },
     {
       "intent": "block_e_m",
@@ -711,9 +773,13 @@
         "blck m",
         "blok m",
         "where is block e?",
-        "where is block m?"
+        "where is block m?",
+        "engineering block",
+        "electrical engineering department",
+        "mechanical engineering department",
+        "chemical engineering department"
       ],
-      "response": "Block E (Al-Jazari) and Block M (Ibn e Sina) ⚙️ host Chemical, Electrical, Mechanical Engineering, and B.Tech programs. 🛠️"
+      "response": "[WIDGET_BLOCK|EM]"
     },
     {
       "intent": "block_p",
@@ -725,9 +791,12 @@
         "blok p",
         "p-block",
         "where is block p?",
-        "Where is P block"
+        "Where is P block",
+        "mass communication department",
+        "bio chemistry department",
+        "bio technology department"
       ],
-      "response": "Block P, now the Omar al Khayam Block 📸, is home to Bio-Chemistry, Bio-Technology, Mass Communication, and the Wood Workshop. 🧬"
+      "response": "[WIDGET_BLOCK|P]"
     },
     {
       "intent": "block_sada",
@@ -737,9 +806,12 @@
         "sadequain",
         "blck sada",
         "where is Sada block?",
-        "Where is sada block"
+        "Where is sada block",
+        "architecture department",
+        "fine arts department",
+        "design department"
       ],
-      "response": "Block SADA, known as the Sadequain Block 🎨, houses Architecture, Fine Arts, Ceramics, Multimedia Design, Textile Design, and Product Design. 📐"
+      "response": "[WIDGET_BLOCK|SADA]"
     },
     {
       "intent": "block_new_1",
@@ -910,21 +982,6 @@
         "watch tutorial"
       ],
       "response": "This app helps you manage your UOG academic life! 📱\\n\\n• Calculate your semester grades 🧮\\n• Save your results 💾\\n• Check grading criteria 📊\\n• Ask me questions about the campus! 🤖\\n\\n🎥 Watch the full video tutorial here: https://youtu.be/iYqrOneqti8"
-    },
-    {
-      "intent": "about_app",
-      "keywords": [
-        "myuoggpa",
-        "my uog gpa",
-        "what is this app",
-        "about this app",
-        "app info",
-        "app kia hai",
-        "what is myuoggpa",
-        "myuog",
-        "my uog"
-      ],
-      "response": "MyUOG is your personal academic companion! 🎒 It's designed specifically for University of Gujrat students to calculate GPAs accurately, track progress, and get instant answers. 🚀"
     },
     {
       "intent": "goodbye",
@@ -1347,7 +1404,8 @@
         "affiliated",
         "sub campus",
         "affiliated colleges",
-        "private college"
+        "private college",
+        "affiliated college past papers of uog"
       ],
       "response": "I am currently optimized for the main Hafiz Hayat Campus! 🏛️ While the general grading policies and academic calendar dates usually apply to you as well, please check with your specific affiliated college's admin for exact details."
     },
