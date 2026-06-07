@@ -1,5 +1,5 @@
 {
-  "version": 3.4,
+  "version": 3.5,
   "variables": {
     "[VAR_FALL_COMMENCE]": "Sept 15, 2025",
     "[VAR_FALL_MIDS]": "Nov 10 - 17, 2025",
@@ -7,7 +7,7 @@
     "[VAR_FALL_RESULTS]": "Feb 06, 2026",
     "[VAR_SPRING_COMMENCE]": "Feb 02, 2026",
     "[VAR_SPRING_MIDS]": "Mar 30 - Apr 06, 2026",
-    "[VAR_SPRING_FINALS]": "June 1 - 16, 2026",
+    "[VAR_SPRING_FINALS]": "June 9, 2026",
     "[VAR_SPRING_RESULTS]": "July 2, 2026",
     "[VAR_SUMMER_COMMENCE]": "June 22, 2026",
     "[VAR_SUMMER_MIDS]": "July 20 - 24, 2026",
@@ -1050,7 +1050,8 @@
         "thnx",
         "ty",
         "shukriya",
-        "jazakallah"
+        "jazakallah",
+        "ok"
       ],
       "response": "You're very welcome! 😊 Let me know if you need help with anything else."
     },
