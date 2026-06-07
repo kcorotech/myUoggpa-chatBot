@@ -308,7 +308,7 @@
         "about uog",
         "university of gujrat",
         "uog",
-        "where is",
+        "where is uog",
         "location",
         "kidhar hai uog",
         "kahan hai uog",
@@ -416,8 +416,7 @@
         "midterms",
         "mid exams",
         "midterm exams",
-        "half exams",
-        "exam"
+        "half exams"
       ],
       "response": "[WIDGET_DATES|MIDS]"
     },
@@ -657,7 +656,7 @@
         "bba department",
         "mba department"
       ],
-      "response": "[WIDGET_BLOCK|A]"
+      "response": "[WIDGET_BLOCK|a]"
     },
     {
       "intent": "block_b",
@@ -687,7 +686,7 @@
         "economics block",
         "economics department"
       ],
-      "response": "[WIDGET_BLOCK|B]"
+      "response": "[WIDGET_BLOCK|b]"
     },
     {
       "intent": "block_bs",
@@ -709,7 +708,7 @@
         "botany department",
         "environmental science department"
       ],
-      "response": "[WIDGET_BLOCK|BS]"
+      "response": "[WIDGET_BLOCK|bs]"
     },
     {
       "intent": "block_s",
@@ -733,7 +732,7 @@
         "statistics block",
         "statistics department"
       ],
-      "response": "[WIDGET_BLOCK|S]"
+      "response": "[WIDGET_BLOCK|s]"
     },
     {
       "intent": "block_r",
@@ -756,7 +755,7 @@
         "islamic studies department",
         "geography department"
       ],
-      "response": "[WIDGET_BLOCK|R]"
+      "response": "[WIDGET_BLOCK|r]"
     },
     {
       "intent": "block_e_m",
@@ -779,7 +778,7 @@
         "mechanical engineering department",
         "chemical engineering department"
       ],
-      "response": "[WIDGET_BLOCK|EM]"
+      "response": "[WIDGET_BLOCK|em]"
     },
     {
       "intent": "block_p",
@@ -796,7 +795,7 @@
         "bio chemistry department",
         "bio technology department"
       ],
-      "response": "[WIDGET_BLOCK|P]"
+      "response": "[WIDGET_BLOCK|p]"
     },
     {
       "intent": "block_sada",
@@ -811,7 +810,7 @@
         "fine arts department",
         "design department"
       ],
-      "response": "[WIDGET_BLOCK|SADA]"
+      "response": "[WIDGET_BLOCK|sada]"
     },
     {
       "intent": "block_new_1",
@@ -823,7 +822,7 @@
         "sports science",
         "Where is new block"
       ],
-      "response": "New Block 1 🕌 contains:\\n• Islamic Studies\\n• Physical Education and Sports Science"
+      "response": "[WIDGET_BLOCK|new]"
     },
     {
       "intent": "block_hrm",
@@ -832,7 +831,7 @@
         "hm block",
         "Where is hrm block"
       ],
-      "response": "HRM Block 🏨 contains:\\n• Institute of Hotel and Restaurant Management (BS Hospitality, ADP Hotel)"
+      "response": "[WIDGET_BLOCK|hrm]"
     },
     {
       "intent": "block_english",
@@ -843,7 +842,7 @@
         "education department",
         "Where is english block"
       ],
-      "response": "New Block English 📚 contains:\\n• English Language & Literature\\n• Department of Education"
+      "response": "[WIDGET_BLOCK|new]"
     },
     {
       "intent": "admissions",
@@ -905,14 +904,13 @@
         "book issue",
         "study area"
       ],
-      "response": "The main central library is the Quaid-i-Azam Library. 📚 It connects a network of 11 departmental libraries with thousands of books and digital access. 💻"
+      "response": "[WIDGET_BLOCK|library]"
     },
     {
       "intent": "hostel",
       "keywords": [
         "hostel",
         "accommodation",
-        "room",
         "stay",
         "boarding",
         "girls hostel",
@@ -1409,6 +1407,50 @@
         "affiliated college past papers of uog"
       ],
       "response": "I am currently optimized for the main Hafiz Hayat Campus! 🏛️ While the general grading policies and academic calendar dates usually apply to you as well, please check with your specific affiliated college's admin for exact details."
+    },
+    {
+      "intent": "exam_not_found",
+      "keywords": [],
+      "response": "I didn't find any exams matching \"[QUERY]\" in my dataset right now. I have saved it for review, and the developer can add it in the next papers update. 📝"
+    },
+    {
+      "intent": "missing_exam_review_process",
+      "keywords": [
+        "how you add it later",
+        "how you add later",
+        "how add it later",
+        "add it later",
+        "note it down",
+        "add soon",
+        "plzz jaldi add krna",
+        "when will you add",
+        "how can you add it"
+      ],
+      "response": "When I do not find a paper, your question is saved in review logs. The developer checks those missing-paper requests, uploads the paper to the exams repo, rebuilds exams.json, increases the version, and your app syncs it automatically. 📝"
+    },
+    {
+      "intent": "summer_eligibility",
+      "keywords": [
+        "summer eligibility",
+        "eligibility of summer semester",
+        "who can take summer",
+        "can i study summer",
+        "summer semester rules",
+        "summer course eligibility"
+      ],
+      "response": "☀️ Summer semester is usually for improvement, repeat, backlog, or special allowed cases. Please confirm final eligibility from your department/HOD because it can depend on semester, course offering, and university policy."
+    },
+    {
+      "intent": "bot_model_config_safe",
+      "keywords": [
+        "what model are you",
+        "what ai model is this",
+        "current api configuration",
+        "api configuration",
+        "model are u using",
+        "what model are u using"
+      ],
+      "response": "I am the built-in MyUOG Assistant inside this app. I can help with GPA/CGPA, UOG info, dates, WiFi, blocks, programs, and past papers. I cannot expose private API keys or internal secrets. 🔐"
     },
     {
       "intent": "fallback_unknown",
