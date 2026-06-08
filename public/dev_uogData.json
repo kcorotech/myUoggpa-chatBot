@@ -103,7 +103,6 @@
         "seting",
         "setings",
         "adjust",
-        "configuration",
         "mode"
       ],
       "response": "Here are your quick settings! ⚙️ Tap any option below to switch it instantly: [WIDGET_SETTINGS]"
@@ -309,7 +308,6 @@
         "university of gujrat",
         "uog",
         "where is uog",
-        "location",
         "kidhar hai uog",
         "kahan hai uog",
         "uog kya hai",
@@ -514,10 +512,7 @@
         "internet password",
         "wifi pass",
         "net pass",
-        "eduroam password",
-        "connect",
-        "connection",
-        "conect"
+        "eduroam password"
       ],
       "response": "[WIDGET_EDUROAM]"
     },
@@ -555,10 +550,8 @@
     {
       "intent": "app_meta_details",
       "keywords": [
-        "myuog birth date",
         "myuog feature",
         "myuog ceo name",
-        "develop date",
         "what is myuog"
       ],
       "response": "MyUOG is your personal academic companion! 🎒 Built by Haider Ali (Kcoro Tech), it's designed specifically for UOG students to calculate GPAs, track progress, and find past papers! 🚀"
@@ -1500,6 +1493,117 @@
         "how can i prepare final"
       ],
       "response": "For final exam preparation 📚:\\n\\n1️⃣ Revise teacher slides and marked topics first.\\n2️⃣ Practice 2–3 past papers from the Past Papers section.\\n3️⃣ Prepare long questions, definitions, diagrams, and examples.\\n4️⃣ Write answers in points and headings.\\n5️⃣ Sleep properly before the exam."
+    },
+    {
+      "intent": "bot_developer_more",
+      "keywords": [
+        "founder name",
+        "creator name",
+        "creater name",
+        "authors",
+        "author",
+        "team members of kcoro tech",
+        "creator of myuog",
+        "creater of myuog"
+      ],
+      "response": "MyUOG was developed by **Haider Ali / Kcoro Tech**. 👨‍💻 For feedback or bug reports, email: kcorotech@gmail.com"
+    },
+    {
+      "intent": "uog_full_form",
+      "keywords": [
+        "uog full form",
+        "full form of uog",
+        "uog stands for",
+        "uog meaning"
+      ],
+      "response": "**UOG** stands for **University of Gujrat**. 🎓"
+    },
+    {
+      "intent": "video_conference_hall",
+      "keywords": [
+        "video conference hall",
+        "conference hall",
+        "vc hall",
+        "video hall"
+      ],
+      "response": "The **Video Conference Hall** is in **Block A — Al-Farabi Block**. 📍 [WIDGET_BLOCK|a]"
+    },
+    {
+      "intent": "exam_add_review",
+      "keywords": [
+        "how you add that",
+        "how you add it later",
+        "how add paper",
+        "how add exam",
+        "add paper later"
+      ],
+      "response": "When I say I have saved it for review, it means your question is logged for the developer. 📝 The developer checks missing paper requests, adds the paper image/data later, updates exams.json, and then the app fetches it in the next update."
+    },
+    {
+      "intent": "sgpa_info",
+      "keywords": [
+        "sgpa",
+        "semester gpa",
+        "sem gpa"
+      ],
+      "response": "SGPA means **Semester Grade Point Average**. It is the GPA of one semester only. You can calculate it using the GPA calculator: [WIDGET_GPA]"
+    },
+    {
+      "intent": "cms_issue",
+      "keywords": [
+        "cms grades not showing",
+        "semester grades not showing",
+        "marks not showing on cms",
+        "cms pr semester grades show ni horahy",
+        "cms result issue"
+      ],
+      "response": "If your semester grades are not showing on CMS, refresh/re-login first, then check later because results may still be processing. If it stays missing, contact your department or exam branch. 🎓 CMS: https://cms.uog.edu.pk/"
+    },
+    {
+      "intent": "cms_link_only",
+      "keywords": [
+        "cms link",
+        "only cms link",
+        "send cms link",
+        "give cms link"
+      ],
+      "response": "🎓 CMS: https://cms.uog.edu.pk/"
+    },
+    {
+      "intent": "lms_link_only",
+      "keywords": [
+        "lms link",
+        "only lms link",
+        "send lms link",
+        "give lms link"
+      ],
+      "response": "📚 LMS: https://lms.uog.edu.pk/login/index.php"
+    },
+    {
+      "intent": "challan_help",
+      "keywords": [
+        "challan",
+        "chalan",
+        "fee challan",
+        "generate challan",
+        "miscellaneous fee",
+        "misscalance fees",
+        "dmc challan",
+        "paper rechecking challan"
+      ],
+      "response": "For DMC, transcript, paper rechecking, name correction, or other exam challans, use the official UOG examination downloads/challan page: https://uog.edu.pk/en/examination/downloads-"
+    },
+    {
+      "intent": "marks_repeat_policy",
+      "keywords": [
+        "how to get marks",
+        "repeat paper",
+        "can i repeat paper",
+        "repeat paper on marks",
+        "improve marks",
+        "paper improvement"
+      ],
+      "response": "For marks, repeat/improvement, or rechecking rules, please confirm from your department or Controller of Examination. For paper rechecking challan, check the official examination downloads section."
     },
     {
       "intent": "fallback_unknown",

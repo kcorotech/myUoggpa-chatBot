@@ -1,5 +1,5 @@
 {
-  "version": 2.2,
+  "version": 2.3,
   "variables": {
     "[VAR_FALL_COMMENCE]": "Sept 15, 2025",
     "[VAR_FALL_MIDS]": "Nov 10 - 17, 2025",
@@ -307,8 +307,7 @@
         "about uog",
         "university of gujrat",
         "uog",
-        "where is",
-        "location",
+        "where is uog",
         "kidhar hai uog",
         "kahan hai uog",
         "uog kya hai",
@@ -378,7 +377,7 @@
         "fall dates",
         "autumn"
       ],
-      "response": "🍂 Fall Semester Schedule:\n• Classes Commenced: [VAR_FALL_COMMENCE]\n• Mid Terms: [VAR_FALL_MIDS]\n• Final Terms: [VAR_FALL_FINALS]\n• Results: [VAR_FALL_RESULTS]"
+      "response": "[WIDGET_DATES|FALL]"
     },
     {
       "intent": "calendar_spring",
@@ -391,7 +390,7 @@
         "spring schedule",
         "spring dates"
       ],
-      "response": "🌸 Spring Semester Schedule:\n• Classes Commence: [VAR_SPRING_COMMENCE]\n• Mid Terms: [VAR_SPRING_MIDS]\n• Final Terms: [VAR_SPRING_FINALS]\n• Results: [VAR_SPRING_RESULTS]"
+      "response": "[WIDGET_DATES|SPRING]"
     },
     {
       "intent": "calendar_summer",
@@ -402,7 +401,7 @@
         "summer schedule",
         "summer dates"
       ],
-      "response": "☀️ Summer Semester Schedule:\n• Classes Commence: [VAR_SUMMER_COMMENCE]\n• Mid Terms: [VAR_SUMMER_MIDS]\n• Final Terms: [VAR_SUMMER_FINALS]\n• Results: [VAR_SUMMER_RESULTS]"
+      "response": "[WIDGET_DATES|SUMMER]"
     },
     {
       "intent": "calendar_mids",
@@ -415,10 +414,9 @@
         "midterms",
         "mid exams",
         "midterm exams",
-        "half exams",
-        "exam"
+        "half exams"
       ],
-      "response": "📝 Mid Term Examinations:\n• Fall Mids: [VAR_FALL_MIDS]\n• Spring Mids: [VAR_SPRING_MIDS]\n• Summer Exams: [VAR_SUMMER_MIDS]"
+      "response": "[WIDGET_DATES|MIDS]"
     },
     {
       "intent": "calendar_finals",
@@ -433,7 +431,7 @@
         "end exams",
         "board exams"
       ],
-      "response": "🎓 Final Term Examinations:\n• Fall Finals: [VAR_FALL_FINALS]\n• Spring Finals: [VAR_SPRING_FINALS]\n• Summer Exams: [VAR_SUMMER_FINALS]"
+      "response": "[WIDGET_DATES|FINALS]"
     },
     {
       "intent": "calendar_holidays",
@@ -457,7 +455,7 @@
         "summer vacation",
         "next holiday"
       ],
-      "response": "🏖️ Upcoming Public Holidays (Expected):\n• Eid-ul-Fitr: [VAR_HOLIDAY_EID_FITR]\n• Labour Day: [VAR_HOLIDAY_LABOUR]\n• Eid-ul-Adha: [VAR_HOLIDAY_EID_ADHA]\n• Ashura: [VAR_HOLIDAY_ASHURA]\n• Independence Day: [VAR_HOLIDAY_INDEPENDENCE]"
+      "response": "[WIDGET_DATES|HOLIDAYS]"
     },
     {
       "intent": "policy_course_load",
@@ -474,6 +472,17 @@
         "cr hours"
       ],
       "response": "📚 Course Load Policy:\n• Normal: 15 to 18 Cr. Hrs.\n• Maximum: 21 Cr. Hrs. (Requires HOD approval).\n• Minimum: 12 Cr. Hrs."
+    },
+    {
+      "intent": "uog_departments_total",
+      "keywords": [
+        "total credit hours",
+        "overall degree",
+        "total cr hrs",
+        "total credits in bs",
+        "how many total credit hours"
+      ],
+      "response": "A standard Bachelor of Science degree (like BS IT, BS CS, or BS SE) at UOG typically spans 130 to 136 total credit hours over 8 semesters. Check your explicit degree roadmap on your CMS portal! 🎓"
     },
     {
       "intent": "policy_withdrawal",
@@ -503,12 +512,9 @@
         "internet password",
         "wifi pass",
         "net pass",
-        "eduroam password",
-        "connect",
-        "connection",
-        "conect"
+        "eduroam password"
       ],
-      "response": "To connect to UOG Eduroam WiFi 📶:\n1️⃣ Network Name: eduroam\n2️⃣ EAP Method: PEAP\n3️⃣ Phase 2 Authentication: MSCHAPV2\n4️⃣ CA Certificate: Do not validate\n5️⃣ Identity: <YourRollNo>@hhcampus.uog.edu.pk\n6️⃣ Password: Your RollNo."
+      "response": "[WIDGET_EDUROAM]"
     },
     {
       "intent": "lms_assignments",
@@ -540,6 +546,15 @@
         "coder"
       ],
       "response": "This app was proudly developed by Kcoro Tech! 👨‍💻 If you have feedback or want to report a bug, email: kcorotech@gmail.com ✉️"
+    },
+    {
+      "intent": "app_meta_details",
+      "keywords": [
+        "myuog feature",
+        "myuog ceo name",
+        "what is myuog"
+      ],
+      "response": "MyUOG is your personal academic companion! 🎒 Built by Haider Ali (Kcoro Tech), it's designed specifically for UOG students to calculate GPAs, track progress, and find past papers! 🚀"
     },
     {
       "intent": "bot_language",
@@ -606,15 +621,13 @@
         "department info",
         "all departments",
         "list of departments",
-        "blocks",
         "buildings",
-        "block kahan hain",
         "kidhar hain departments",
         "depts",
         "dept",
         "department list",
-        "sare block",
-        "block"
+        "how many blocks",
+        "full name of blocks"
       ],
       "response": "UOG campus blocks are named after scholars 🏛️:\n• Block A (Sociology, BBA...)\n• Block B (CS, IT...)\n• Block BS (Chemistry...)\n• Block E/M (Engineering)\n• Block P (Mass Com)\n• Block R (History, IR...)\n• Block S (Math, Physics)\n• Block SADA (Architecture, Fine Arts)\n• HRM Block (Hotel Management)\n• New Blocks (Islamic Studies, English, Edu)\nWhich department are you looking for? 🔍"
     },
@@ -630,9 +643,13 @@
         "blok a",
         "a-block",
         "where is block a?",
-        "Where is a block"
+        "Where is a block",
+        "sociology department",
+        "psychology department",
+        "bba department",
+        "mba department"
       ],
-      "response": "Block A, officially named the Al-Farabi Block 🏢, houses Sociology, Psychology, BBA, MBA, Finance, an IT Lab, and the Video Conference Hall. 📊"
+      "response": "[WIDGET_BLOCK|a]"
     },
     {
       "intent": "block_b",
@@ -647,9 +664,22 @@
         "blok b",
         "b-block",
         "where is block b?",
-        "Where is b block"
+        "Where is b block",
+        "arfa kareem",
+        "arfa cream",
+        "cs block",
+        "computer science block",
+        "computer science department",
+        "it block",
+        "information technology block",
+        "information technology department",
+        "software engineering block",
+        "se block",
+        "software engineering department",
+        "economics block",
+        "economics department"
       ],
-      "response": "Block B, officially the Arfa Karim Block 💻, contains Economics, Information Technology (IT), Computer Science (CS), and Software Engineering."
+      "response": "[WIDGET_BLOCK|b]"
     },
     {
       "intent": "block_bs",
@@ -662,9 +692,16 @@
         "blok bs",
         "bs-block",
         "where is block bs?",
-        "Where is bs block"
+        "Where is bs block",
+        "chemistry block",
+        "chemistry department",
+        "zoology block",
+        "zoology department",
+        "botany block",
+        "botany department",
+        "environmental science department"
       ],
-      "response": "Block BS, now named the Jabir Bin Hayyan Block 🔬, contains the Pro VC office, Chemistry, Botany, Zoology, and Environmental science departments. 🌿"
+      "response": "[WIDGET_BLOCK|bs]"
     },
     {
       "intent": "block_s",
@@ -677,9 +714,18 @@
         "blok s",
         "s-block",
         "where is block s?",
-        "Where is s block"
+        "Where is s block",
+        "math block",
+        "mathematics block",
+        "mathematics department",
+        "physics block",
+        "physics department",
+        "commerce block",
+        "commerce department",
+        "statistics block",
+        "statistics department"
       ],
-      "response": "Block S, known as the Al-Khwarizmi Block 📐, is home to the Math, Physics, Commerce, and Statistics departments, as well as the Printing Press. 🖨️"
+      "response": "[WIDGET_BLOCK|s]"
     },
     {
       "intent": "block_r",
@@ -691,9 +737,18 @@
         "blok r",
         "r-block",
         "where is block r?",
-        "Where is r block"
+        "Where is r block",
+        "law department",
+        "law block",
+        "english block",
+        "english department",
+        "international relations department",
+        "political science department",
+        "history department",
+        "islamic studies department",
+        "geography department"
       ],
-      "response": "Block R, officially the Ibne Khaldun Block 🌍, houses International Relations, Political Science, History, Islamic Studies, English, Physical Education, Geography, and CELTS. 📚"
+      "response": "[WIDGET_BLOCK|r]"
     },
     {
       "intent": "block_e_m",
@@ -710,9 +765,13 @@
         "blck m",
         "blok m",
         "where is block e?",
-        "where is block m?"
+        "where is block m?",
+        "engineering block",
+        "electrical engineering department",
+        "mechanical engineering department",
+        "chemical engineering department"
       ],
-      "response": "Block E (Al-Jazari) and Block M (Ibn e Sina) ⚙️ host Chemical, Electrical, Mechanical Engineering, and B.Tech programs. 🛠️"
+      "response": "[WIDGET_BLOCK|em]"
     },
     {
       "intent": "block_p",
@@ -724,9 +783,12 @@
         "blok p",
         "p-block",
         "where is block p?",
-        "Where is P block"
+        "Where is P block",
+        "mass communication department",
+        "bio chemistry department",
+        "bio technology department"
       ],
-      "response": "Block P, now the Omar al Khayam Block 📸, is home to Bio-Chemistry, Bio-Technology, Mass Communication, and the Wood Workshop. 🧬"
+      "response": "[WIDGET_BLOCK|p]"
     },
     {
       "intent": "block_sada",
@@ -736,9 +798,12 @@
         "sadequain",
         "blck sada",
         "where is Sada block?",
-        "Where is sada block"
+        "Where is sada block",
+        "architecture department",
+        "fine arts department",
+        "design department"
       ],
-      "response": "Block SADA, known as the Sadequain Block 🎨, houses Architecture, Fine Arts, Ceramics, Multimedia Design, Textile Design, and Product Design. 📐"
+      "response": "[WIDGET_BLOCK|sada]"
     },
     {
       "intent": "block_new_1",
@@ -750,7 +815,7 @@
         "sports science",
         "Where is new block"
       ],
-      "response": "New Block 1 🕌 contains:\\n• Islamic Studies\\n• Physical Education and Sports Science"
+      "response": "[WIDGET_BLOCK|new]"
     },
     {
       "intent": "block_hrm",
@@ -759,7 +824,7 @@
         "hm block",
         "Where is hrm block"
       ],
-      "response": "HRM Block 🏨 contains:\\n• Institute of Hotel and Restaurant Management (BS Hospitality, ADP Hotel)"
+      "response": "[WIDGET_BLOCK|hrm]"
     },
     {
       "intent": "block_english",
@@ -770,7 +835,7 @@
         "education department",
         "Where is english block"
       ],
-      "response": "New Block English 📚 contains:\\n• English Language & Literature\\n• Department of Education"
+      "response": "[WIDGET_BLOCK|new]"
     },
     {
       "intent": "admissions",
@@ -832,14 +897,13 @@
         "book issue",
         "study area"
       ],
-      "response": "The main central library is the Quaid-i-Azam Library. 📚 It connects a network of 11 departmental libraries with thousands of books and digital access. 💻"
+      "response": "[WIDGET_BLOCK|library]"
     },
     {
       "intent": "hostel",
       "keywords": [
         "hostel",
         "accommodation",
-        "room",
         "stay",
         "boarding",
         "girls hostel",
@@ -911,21 +975,6 @@
       "response": "This app helps you manage your UOG academic life! 📱\\n\\n• Calculate your semester grades 🧮\\n• Save your results 💾\\n• Check grading criteria 📊\\n• Ask me questions about the campus! 🤖\\n\\n🎥 Watch the full video tutorial here: https://youtu.be/iYqrOneqti8"
     },
     {
-      "intent": "about_app",
-      "keywords": [
-        "myuoggpa",
-        "my uog gpa",
-        "what is this app",
-        "about this app",
-        "app info",
-        "app kia hai",
-        "what is myuoggpa",
-        "myuog",
-        "my uog"
-      ],
-      "response": "MyUOG is your personal academic companion! 🎒 It's designed specifically for University of Gujrat students to calculate GPAs accurately, track progress, and get instant answers. 🚀"
-    },
-    {
       "intent": "goodbye",
       "keywords": [
         "bye",
@@ -992,7 +1041,8 @@
         "thnx",
         "ty",
         "shukriya",
-        "jazakallah"
+        "jazakallah",
+        "ok"
       ],
       "response": "You're very welcome! 😊 Let me know if you need help with anything else."
     },
@@ -1323,14 +1373,7 @@
         "paper",
         "papers",
         "past paper",
-        "past papers",
-        "all papers",
-        "all past exams",
-        "all past papers",
-        "i want all exam",
-        "i want all exam",
-        "i want all past exam",
-        "i want all past papers"
+        "past papers"
       ],
       "response": "You can browse all available past papers in our dedicated section! 📚 [CMD_NAV_PAST_PAPERS]"
     },
@@ -1353,9 +1396,214 @@
         "affiliated",
         "sub campus",
         "affiliated colleges",
-        "private college"
+        "private college",
+        "affiliated college past papers of uog"
       ],
       "response": "I am currently optimized for the main Hafiz Hayat Campus! 🏛️ While the general grading policies and academic calendar dates usually apply to you as well, please check with your specific affiliated college's admin for exact details."
+    },
+    {
+      "intent": "exam_not_found",
+      "keywords": [],
+      "response": "I didn't find any exams matching \"[QUERY]\" in my dataset right now. I have saved it for review, and the developer can add it in the next papers update. 📝"
+    },
+    {
+      "intent": "missing_exam_review_process",
+      "keywords": [
+        "how you add it later",
+        "how you add later",
+        "how add it later",
+        "add it later",
+        "note it down",
+        "add soon",
+        "plzz jaldi add krna",
+        "when will you add",
+        "how can you add it"
+      ],
+      "response": "When I do not find a paper, your question is saved in review logs. The developer checks those missing-paper requests, uploads the paper to the exams repo, rebuilds exams.json, increases the version, and your app syncs it automatically. 📝"
+    },
+    {
+      "intent": "summer_eligibility",
+      "keywords": [
+        "summer eligibility",
+        "eligibility of summer semester",
+        "who can take summer",
+        "can i study summer",
+        "summer semester rules",
+        "summer course eligibility"
+      ],
+      "response": "☀️ Summer semester is usually for improvement, repeat, backlog, or special allowed cases. Please confirm final eligibility from your department/HOD because it can depend on semester, course offering, and university policy."
+    },
+    {
+      "intent": "bot_model_config_safe",
+      "keywords": [
+        "what model are you",
+        "what ai model is this",
+        "current api configuration",
+        "api configuration",
+        "model are u using",
+        "what model are u using"
+      ],
+      "response": "I am the built-in MyUOG Assistant inside this app. I can help with GPA/CGPA, UOG info, dates, WiFi, blocks, programs, and past papers. I cannot expose private API keys or internal secrets. 🔐"
+    },
+    {
+      "intent": "hec_recognition",
+      "keywords": [
+        "uog hec recognised",
+        "uog hec recognized",
+        "is uog hec recognized",
+        "is uog hec recognised",
+        "hec approved uog",
+        "hec accredited uog"
+      ],
+      "response": "Yes, University of Gujrat is listed by HEC among recognized universities. ✅ For official verification, check the HEC recognized universities list."
+    },
+    {
+      "intent": "app_launch_date",
+      "keywords": [
+        "myuog birth date",
+        "myuog launch date",
+        "app launch date",
+        "release date",
+        "released date",
+        "myuog release date",
+        "develop date",
+        "developed date"
+      ],
+      "response": "MyUOG was released on Mar 19, 2026. 🚀"
+    },
+    {
+      "intent": "student_name_privacy",
+      "keywords": [
+        "university of gujrat student name",
+        "uog student name",
+        "student name",
+        "students name",
+        "who am i"
+      ],
+      "response": "I cannot know a student's name unless the student has saved it in this app. For privacy, I do not identify students from UOG records. 🔐"
+    },
+    {
+      "intent": "exam_preparation",
+      "keywords": [
+        "how to prepare for final exam",
+        "how to prepare paper",
+        "how to prepare paper of final term",
+        "final exam preparation",
+        "paper preparation",
+        "how can i prepare final"
+      ],
+      "response": "For final exam preparation 📚:\\n\\n1️⃣ Revise teacher slides and marked topics first.\\n2️⃣ Practice 2–3 past papers from the Past Papers section.\\n3️⃣ Prepare long questions, definitions, diagrams, and examples.\\n4️⃣ Write answers in points and headings.\\n5️⃣ Sleep properly before the exam."
+    },
+    {
+      "intent": "bot_developer_more",
+      "keywords": [
+        "founder name",
+        "creator name",
+        "creater name",
+        "authors",
+        "author",
+        "team members of kcoro tech",
+        "creator of myuog",
+        "creater of myuog"
+      ],
+      "response": "MyUOG was developed by **Haider Ali / Kcoro Tech**. 👨‍💻 For feedback or bug reports, email: kcorotech@gmail.com"
+    },
+    {
+      "intent": "uog_full_form",
+      "keywords": [
+        "uog full form",
+        "full form of uog",
+        "uog stands for",
+        "uog meaning"
+      ],
+      "response": "**UOG** stands for **University of Gujrat**. 🎓"
+    },
+    {
+      "intent": "video_conference_hall",
+      "keywords": [
+        "video conference hall",
+        "conference hall",
+        "vc hall",
+        "video hall"
+      ],
+      "response": "The **Video Conference Hall** is in **Block A — Al-Farabi Block**. 📍 [WIDGET_BLOCK|a]"
+    },
+    {
+      "intent": "exam_add_review",
+      "keywords": [
+        "how you add that",
+        "how you add it later",
+        "how add paper",
+        "how add exam",
+        "add paper later"
+      ],
+      "response": "When I say I have saved it for review, it means your question is logged for the developer. 📝 The developer checks missing paper requests, adds the paper image/data later, updates exams.json, and then the app fetches it in the next update."
+    },
+    {
+      "intent": "sgpa_info",
+      "keywords": [
+        "sgpa",
+        "semester gpa",
+        "sem gpa"
+      ],
+      "response": "SGPA means **Semester Grade Point Average**. It is the GPA of one semester only. You can calculate it using the GPA calculator: [WIDGET_GPA]"
+    },
+    {
+      "intent": "cms_issue",
+      "keywords": [
+        "cms grades not showing",
+        "semester grades not showing",
+        "marks not showing on cms",
+        "cms pr semester grades show ni horahy",
+        "cms result issue"
+      ],
+      "response": "If your semester grades are not showing on CMS, refresh/re-login first, then check later because results may still be processing. If it stays missing, contact your department or exam branch. 🎓 CMS: https://cms.uog.edu.pk/"
+    },
+    {
+      "intent": "cms_link_only",
+      "keywords": [
+        "cms link",
+        "only cms link",
+        "send cms link",
+        "give cms link"
+      ],
+      "response": "🎓 CMS: https://cms.uog.edu.pk/"
+    },
+    {
+      "intent": "lms_link_only",
+      "keywords": [
+        "lms link",
+        "only lms link",
+        "send lms link",
+        "give lms link"
+      ],
+      "response": "📚 LMS: https://lms.uog.edu.pk/login/index.php"
+    },
+    {
+      "intent": "challan_help",
+      "keywords": [
+        "challan",
+        "chalan",
+        "fee challan",
+        "generate challan",
+        "miscellaneous fee",
+        "misscalance fees",
+        "dmc challan",
+        "paper rechecking challan"
+      ],
+      "response": "For DMC, transcript, paper rechecking, name correction, or other exam challans, use the official UOG examination downloads/challan page: https://uog.edu.pk/en/examination/downloads-"
+    },
+    {
+      "intent": "marks_repeat_policy",
+      "keywords": [
+        "how to get marks",
+        "repeat paper",
+        "can i repeat paper",
+        "repeat paper on marks",
+        "improve marks",
+        "paper improvement"
+      ],
+      "response": "For marks, repeat/improvement, or rechecking rules, please confirm from your department or Controller of Examination. For paper rechecking challan, check the official examination downloads section."
     },
     {
       "intent": "fallback_unknown",
