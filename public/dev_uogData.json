@@ -1,5 +1,5 @@
 {
-  "version": 3.5,
+  "version": 3.6,
   "variables": {
     "[VAR_FALL_COMMENCE]": "Sept 15, 2025",
     "[VAR_FALL_MIDS]": "Nov 10 - 17, 2025",
@@ -1451,6 +1451,55 @@
         "what model are u using"
       ],
       "response": "I am the built-in MyUOG Assistant inside this app. I can help with GPA/CGPA, UOG info, dates, WiFi, blocks, programs, and past papers. I cannot expose private API keys or internal secrets. 🔐"
+    },
+    {
+      "intent": "hec_recognition",
+      "keywords": [
+        "uog hec recognised",
+        "uog hec recognized",
+        "is uog hec recognized",
+        "is uog hec recognised",
+        "hec approved uog",
+        "hec accredited uog"
+      ],
+      "response": "Yes, University of Gujrat is listed by HEC among recognized universities. ✅ For official verification, check the HEC recognized universities list."
+    },
+    {
+      "intent": "app_launch_date",
+      "keywords": [
+        "myuog birth date",
+        "myuog launch date",
+        "app launch date",
+        "release date",
+        "released date",
+        "myuog release date",
+        "develop date",
+        "developed date"
+      ],
+      "response": "MyUOG was released on Mar 19, 2026. 🚀"
+    },
+    {
+      "intent": "student_name_privacy",
+      "keywords": [
+        "university of gujrat student name",
+        "uog student name",
+        "student name",
+        "students name",
+        "who am i"
+      ],
+      "response": "I cannot know a student's name unless the student has saved it in this app. For privacy, I do not identify students from UOG records. 🔐"
+    },
+    {
+      "intent": "exam_preparation",
+      "keywords": [
+        "how to prepare for final exam",
+        "how to prepare paper",
+        "how to prepare paper of final term",
+        "final exam preparation",
+        "paper preparation",
+        "how can i prepare final"
+      ],
+      "response": "For final exam preparation 📚:\\n\\n1️⃣ Revise teacher slides and marked topics first.\\n2️⃣ Practice 2–3 past papers from the Past Papers section.\\n3️⃣ Prepare long questions, definitions, diagrams, and examples.\\n4️⃣ Write answers in points and headings.\\n5️⃣ Sleep properly before the exam."
     },
     {
       "intent": "fallback_unknown",
