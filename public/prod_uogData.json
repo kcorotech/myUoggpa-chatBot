@@ -1,5 +1,5 @@
 {
-  "version": 2.3,
+  "version": 2.4,
   "variables": {
     "[VAR_FALL_COMMENCE]": "Sept 15, 2025",
     "[VAR_FALL_MIDS]": "Nov 10 - 17, 2025",
@@ -26,6 +26,134 @@
     "[DATA_DRIVES]": "[{\"d\": \"BS IT\", \"s\": \"1-3\", \"n\": \"Semester 1 to 3 Complete Drive\", \"l\": \"https://drive.google.com/drive/u/0/mobile/folders/1JnEw2vtleXTIw9pAS_DV-_XXuCWe_L7n?usp=sharing\"}, {\"d\": \"BS IT\", \"s\": \"4\", \"n\": \"Semester 4 Drive\", \"l\": \"https://drive.google.com/drive/folders/1nIu_S9glnTegB015KDNr5Rvjfs-b4i--?usp=sharing\"}, {\"d\": \"BS IT\", \"s\": \"5\", \"n\": \"Semester 5 Drive\", \"l\": \"https://drive.google.com/drive/folders/10ZlBQ0gF-Dq8i__SherCUms7cloPB0eA?usp=share_link\"}, {\"d\": \"BS IT\", \"s\": \"6\", \"n\": \"Semester 6 Drive\", \"l\": \"https://drive.google.com/drive/folders/1CqLMv9rkNIHnHEXsKUmmy1lcqhyKYBGJ?usp=sharing\"}, {\"d\": \"BS IT\", \"s\": \"7\", \"n\": \"Semester 7 Drive\", \"l\": \"https://drive.google.com/drive/folders/1AOMja2CrG6mnF_kfSr2VhyLq3mOCe4eO\"}, {\"d\": \"BS IT\", \"s\": \"8\", \"n\": \"Semester 8 Drive\", \"l\": \"https://drive.google.com/drive/folders/1RXFR6QIp5zvqEK82teAtjtGl3LH_t9Sm?usp=sharing\"}, {\"d\": \"Math\", \"s\": \"All\", \"n\": \"Calculus & Analytical Geometry (SM Yousaf)\", \"l\": \"https://drive.google.com/drive/folders/19oTmd-9pb1W0pm_JwvdulZFYWuG9RWy2?usp=sharing\"}]"
   },
   "intents": [
+    {
+      "intent": "official_myuog_app_intro",
+      "keywords": [
+        "official my uog app",
+        "my uog official app",
+        "official uog app",
+        "uog official app",
+        "new my uog app",
+        "uog launched app",
+        "university of gujrat app",
+        "download official my uog",
+        "play store my uog",
+        "uog official mobile app"
+      ],
+      "response": "The official My UOG app by University of Gujrat gives student services like results/grades, attendance, fee challan, date sheet, digital card, roll no slip, and bus tracking.\n\nDownload:\nhttps://play.google.com/store/apps/details?id=pk.edu.uog.app"
+    },
+    {
+      "intent": "official_myuog_roll_no_slip",
+      "keywords": [
+        "roll no slip",
+        "roll number slip",
+        "roll no. slip",
+        "roll slip",
+        "exam roll no slip",
+        "exam roll number slip",
+        "my roll no slip",
+        "i want my roll no slip",
+        "where is roll no slip",
+        "download roll no slip",
+        "roll no slip app"
+      ],
+      "response": "For Roll No Slip, use the official My UOG app or CMS/exam portal. Check Student Portal / Exam section after slips are issued.\n\nDownload:\nhttps://play.google.com/store/apps/details?id=pk.edu.uog.app"
+    },
+    {
+      "intent": "official_myuog_marks_grades",
+      "keywords": [
+        "current semester marks",
+        "see current semester marks",
+        "check current semester marks",
+        "semester marks",
+        "marks on lms",
+        "current semester on lms",
+        "how can i see my marks of current semester on lms",
+        "how can i see my marks",
+        "how can i check my grades",
+        "check my grades",
+        "my grades",
+        "semester grades",
+        "results and grades",
+        "grade history",
+        "check result grades",
+        "see semester result"
+      ],
+      "response": "For marks/grades, check official My UOG app Results & Grades, CMS for semester results, and LMS course marks if your teacher uploads them.\n\nDownload:\nhttps://play.google.com/store/apps/details?id=pk.edu.uog.app"
+    },
+    {
+      "intent": "official_myuog_mid_marks",
+      "keywords": [
+        "mid numbers",
+        "mid marks",
+        "mid term marks",
+        "midterm marks",
+        "mid term numbers",
+        "midterm numbers",
+        "show mid marks",
+        "show the mid term marks",
+        "spring 2026 semester mid term marks",
+        "spring 2026 mid marks",
+        "current mid marks",
+        "mid marks spring 2026",
+        "mids marks",
+        "mids numbers"
+      ],
+      "response": "For mid term marks/numbers, check your LMS course first or official My UOG app Results & Grades if available.\n\nIf not visible, your teacher/department may not have uploaded them yet."
+    },
+    {
+      "intent": "official_myuog_bus_tracking",
+      "keywords": [
+        "live bus tracking",
+        "bus tracking app",
+        "uog bus tracking",
+        "track bus",
+        "bus location",
+        "transport tracking",
+        "official bus tracking",
+        "uog students made app",
+        "students made app bus tracking",
+        "live bus",
+        "university bus tracking",
+        "where is bus",
+        "bus live location"
+      ],
+      "response": "The official My UOG app has Bus Tracking & Transport for live university bus tracking.\n\nDownload:\nhttps://play.google.com/store/apps/details?id=pk.edu.uog.app"
+    },
+    {
+      "intent": "official_myuog_services",
+      "keywords": [
+        "official app features",
+        "my uog app features",
+        "attendance on official app",
+        "timetable app",
+        "fee challan app",
+        "digital student card",
+        "student card app",
+        "clearance app",
+        "course history app",
+        "admission app",
+        "library app",
+        "announcements app",
+        "events app",
+        "push notifications app"
+      ],
+      "response": "Official My UOG app services include attendance, grades, timetable, fee challan, digital card, date sheet, library, admissions, announcements, and bus tracking.\n\nDownload:\nhttps://play.google.com/store/apps/details?id=pk.edu.uog.app"
+    },
+    {
+      "intent": "official_myuog_vs_helper_app",
+      "keywords": [
+        "is this official app",
+        "are you official uog app",
+        "official app vs myuog",
+        "difference between myuog apps",
+        "kcoro app official",
+        "is kcoro app official",
+        "official university app",
+        "official records app"
+      ],
+      "response": "This MyUOG Assistant is an independent student-help app. For official records like grades, attendance, roll no slip, challan, and bus tracking, use the official My UOG app.\n\nDownload:\nhttps://play.google.com/store/apps/details?id=pk.edu.uog.app"
+    },
     {
       "intent": "action_target_cgpa",
       "keywords": [
