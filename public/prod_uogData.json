@@ -1,5 +1,5 @@
 {
-  "version": 2.4,
+  "version": 2.5,
   "variables": {
     "[VAR_FALL_COMMENCE]": "Sept 15, 2025",
     "[VAR_FALL_MIDS]": "Nov 10 - 17, 2025",
@@ -986,7 +986,7 @@
         "spring admissions",
         "fall admissions"
       ],
-      "response": "Admissions generally open in Fall. 🍂 BS requires at least 45% in Inter/DAE. Here is the step-by-step official guide on how to apply: https://uog.edu.pk/downloads/admissions/2025/How-To-Fall-2025.pdf"
+      "response": "🍂 Admissions Fall 2026 Open Now. \\n Here is the step-by-step official guide on how to apply: \\n https://uog.edu.pk/downloads/admissions/2025/How-To-Fall-2025.pdf  \\n Register here for fall 2026: \\n  https://uog.edu.pk/uog/register.php"
     },
     {
       "intent": "transport",
