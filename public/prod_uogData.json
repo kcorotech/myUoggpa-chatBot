@@ -1,5 +1,5 @@
 {
-  "version": 2.6,
+  "version": 2.7,
   "variables": {
     "[VAR_FALL_COMMENCE]": "Sept 15, 2025",
     "[VAR_FALL_MIDS]": "Nov 10 - 17, 2025",
@@ -9,10 +9,10 @@
     "[VAR_SPRING_MIDS]": "Apr 06 - Apr 13, 2026",
     "[VAR_SPRING_FINALS]": "June 1 - 23, 2026",
     "[VAR_SPRING_RESULTS]": "July 14, 2026",
-    "[VAR_SUMMER_COMMENCE]": "June 22, 2026",
-    "[VAR_SUMMER_MIDS]": "July 20 - 24, 2026",
-    "[VAR_SUMMER_FINALS]": "Aug 17 - 21, 2026",
-    "[VAR_SUMMER_RESULTS]": "Aug 31, 2026",
+    "[VAR_SUMMER_COMMENCE]": "June 29, 2026",
+    "[VAR_SUMMER_MIDS]": "July 27 - 31, 2026",
+    "[VAR_SUMMER_FINALS]": "Aug 24 - 31, 2026",
+    "[VAR_SUMMER_RESULTS]": "Sept 01, 2026",
     "[VAR_STAT_STUDENTS]": "16,000",
     "[VAR_STAT_FACULTY]": "650",
     "[VAR_HOLIDAY_EID_FITR]": "Mar 19 - 22, 2026",
@@ -474,6 +474,22 @@
         "web portal"
       ],
       "response": "Here are the official UOG portals:\n\n🌐 Main Website: https://uog.edu.pk\n📚 LMS: https://lms.uog.edu.pk\n🎓 CMS: https://cms.uog.edu.pk"
+    },
+    {
+      "intent": "fall_2026_start",
+      "keywords": [
+        "fall 2026 start",
+        "when fall 2026 start",
+        "when will fall 2026 start",
+        "fall 2026 classes start",
+        "fall classes start",
+        "fall semester start",
+        "commencement of classes fall 2026",
+        "fall 2026 kab start hoga",
+        "fall 2026 classes kab start hongi",
+        "fall 2026 semester kab shuru hoga"
+      ],
+      "response": "🍂 Fall 2026 classes will start on Monday, September 07, 2026. 🎓"
     },
     {
       "intent": "calendar_link",
@@ -1732,6 +1748,19 @@
         "paper improvement"
       ],
       "response": "For marks, repeat/improvement, or rechecking rules, please confirm from your department or Controller of Examination. For paper rechecking challan, check the official examination downloads section."
+    },
+    {
+      "intent": "admission_calendar_fall_2026",
+      "keywords": [
+        "admission calendar fall 2026",
+        "fall 2026 admission calendar",
+        "fall 2026 dates",
+        "fall 2026 schedule",
+        "fall 2026 merit list",
+        "fall 2026 fee deadline",
+        "fall 2026 admission deadline"
+      ],
+      "response": "🍂 Fall 2026 Admission Calendar:\n• Last date to apply online: Friday, August 07, 2026\n• Departmental Test & Interview: Saturday, August 08, 2026\n• First Merit List: Monday, August 10, 2026\n• Fee deadline for 1st Merit List: Wednesday, August 12, 2026\n• Second Merit List: Thursday, August 13, 2026\n• Fee deadline for 2nd Merit List: August 18, 2026\n• Classes start: Monday, September 07, 2026 🎓"
     },
     {
       "intent": "fallback_unknown",
