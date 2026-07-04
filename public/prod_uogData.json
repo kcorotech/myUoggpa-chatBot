@@ -1,5 +1,5 @@
 {
-  "version": 2.9,
+  "version": 3.0,
   "variables": {
     "[VAR_FALL_COMMENCE]": "Sept 15, 2025",
     "[VAR_FALL_MIDS]": "Nov 10 - 17, 2025",
@@ -1748,7 +1748,7 @@
         "spring admissions",
         "fall admissions"
       ],
-      "response": "🍂 Fall 2026 Admission Calendar:\n• Last date to apply online: Friday, August 07, 2026\n• Departmental Test & Interview: Saturday, August 08, 2026\n• First Merit List: Monday, August 10, 2026\n• Fee deadline for 1st Merit List: Wednesday, August 12, 2026\n• Second Merit List: Thursday, August 13, 2026\n• Fee deadline for 2nd Merit List: August 18, 2026\n• Classes start: Monday, September 07, 2026 🎓 \nRegister here:\nhttps://uog.edu.pk/uog/register.php"
+      "response": "🍂 Fall 2026 Admission Calendar:\n• Last date to apply online: Friday, August 07, 2026\n\n• Departmental Test & Interview: Saturday, August 08, 2026\n\n• First Merit List: Monday, August 10, 2026\n\n• Fee deadline for 1st Merit List: Wednesday, August 12, 2026\n\n• Second Merit List: Thursday, August 13, 2026\n\n• Fee deadline for 2nd Merit List: August 18, 2026\n\n• Classes start: Monday, September 07, 2026 🎓 \n\nRegister here:\nhttps://uog.edu.pk/uog/register.php"
     },
     {
       "intent": "fallback_unknown",
