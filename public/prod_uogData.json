@@ -1,5 +1,5 @@
 {
-  "version": 2.8,
+  "version": 2.9,
   "variables": {
     "[VAR_FALL_COMMENCE]": "Sept 15, 2025",
     "[VAR_FALL_MIDS]": "Nov 10 - 17, 2025",
@@ -982,29 +982,6 @@
       "response": "[WIDGET_BLOCK|new]"
     },
     {
-      "intent": "admissions",
-      "keywords": [
-        "admission",
-        "apply",
-        "deadline",
-        "merit list",
-        "enroll",
-        "uog admission",
-        "apply for uog",
-        "how to apply",
-        "admission open",
-        "adm",
-        "admissions open",
-        "dakhla",
-        "merit",
-        "merit list kab",
-        "closing merit",
-        "spring admissions",
-        "fall admissions"
-      ],
-      "response": "🍂 Fall 2026 \\nAdmissions Open Now. \\nstep-by-step official guide on\\nhow to apply: \\n https://uog.edu.pk/downloads/admissions/2025/How-To-Fall-2025.pdf  \\nRegister here for fall 2026: \\n https://uog.edu.pk/uog/register.php"
-    },
-    {
       "intent": "transport",
       "keywords": [
         "transport",
@@ -1548,7 +1525,7 @@
     {
       "intent": "exam_not_found",
       "keywords": [],
-      "response": "I didn't find any exams matching \"[QUERY]\" in my dataset right now. I have saved it for review, and the developer can add it in the next papers update. 📝"
+      "response": "I couldn't find any past paper matching \"[QUERY]\" right now. 📚\n\nIf you are looking for a past paper, try typing the subject name with \"paper\", for example:\nOOP past paper\nDLD final paper\nPF mid paper\n\nIf your question is about admissions or calendar dates, please type:\nadmissions"
     },
     {
       "intent": "missing_exam_review_process",
@@ -1750,22 +1727,28 @@
       "response": "For marks, repeat/improvement, or rechecking rules, please confirm from your department or Controller of Examination. For paper rechecking challan, check the official examination downloads section."
     },
     {
-      "intent": "admission_calendar_fall_2026",
+      "intent": "admissions",
       "keywords": [
-        "admission calendar fall 2026",
-        "admissions calendar fall 2026",
-        "fall 2026 admission calendar",
-        "fall 2026 admissions calendar",
-        "fall admissions calendar",
-        "fall admission calendar",
-        "fall 2026 dates",
-        "fall 2026 schedule",
-        "fall 2026 merit list",
-        "fall 2026 fee deadline",
-        "fall 2026 admission deadline",
-        "fall 2026 admissions deadline"
+        "admission",
+        "admissions",
+        "apply",
+        "deadline",
+        "merit list",
+        "enroll",
+        "uog admission",
+        "apply for uog",
+        "how to apply",
+        "admission open",
+        "adm",
+        "admissions open",
+        "dakhla",
+        "merit",
+        "merit list kab",
+        "closing merit",
+        "spring admissions",
+        "fall admissions"
       ],
-      "response": "🍂 Fall 2026 Admission Calendar:\n• Last date to apply online: Friday, August 07, 2026\n• Departmental Test & Interview: Saturday, August 08, 2026\n• First Merit List: Monday, August 10, 2026\n• Fee deadline for 1st Merit List: Wednesday, August 12, 2026\n• Second Merit List: Thursday, August 13, 2026\n• Fee deadline for 2nd Merit List: August 18, 2026\n• Classes start: Monday, September 07, 2026 🎓"
+      "response": "🍂 Fall 2026 Admission Calendar:\n• Last date to apply online: Friday, August 07, 2026\n• Departmental Test & Interview: Saturday, August 08, 2026\n• First Merit List: Monday, August 10, 2026\n• Fee deadline for 1st Merit List: Wednesday, August 12, 2026\n• Second Merit List: Thursday, August 13, 2026\n• Fee deadline for 2nd Merit List: August 18, 2026\n• Classes start: Monday, September 07, 2026 🎓 \nRegister here:\nhttps://uog.edu.pk/uog/register.php"
     },
     {
       "intent": "fallback_unknown",
