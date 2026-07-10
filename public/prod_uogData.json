@@ -1,5 +1,5 @@
 {
-  "version": 3.1,
+  "version": 3.2,
   "variables": {
     "[VAR_FALL_COMMENCE]": "Sept 15, 2025",
     "[VAR_FALL_MIDS]": "Nov 10 - 17, 2025",
@@ -1508,7 +1508,7 @@
         "get transcript",
         "apply for degree"
       ],
-      "response": "You can generate your transcript using offical app\nlink: https://play.google.com/store/apps/details?id=pk.edu.uog.app\n\nNotice: Uni server is down accroding to me"
+      "response": "Generate your transcript using the official UOG app.\n\n📱 https://play.google.com/store/apps/details?id=pk.edu.uog.app\n\n🚨 Notice: University server appears to be down."
     },
     {
       "intent": "affiliated_colleges",
