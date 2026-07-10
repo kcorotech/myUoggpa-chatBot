@@ -1,5 +1,5 @@
 {
-  "version": 3.0,
+  "version": 3.1,
   "variables": {
     "[VAR_FALL_COMMENCE]": "Sept 15, 2025",
     "[VAR_FALL_MIDS]": "Nov 10 - 17, 2025",
@@ -1508,7 +1508,7 @@
         "get transcript",
         "apply for degree"
       ],
-      "response": "You can apply for your transcript, degree, or provisional certificate by visiting the UOG SSC (Student Service Center) at Hafiz Hayat Campus or applying through your CMS portal. 🎓 [CMD_CMS]"
+      "response": "You can generate your transcript using offical app\nlink: https://play.google.com/store/apps/details?id=pk.edu.uog.app\n\nNotice: Uni server is down accroding to me"
     },
     {
       "intent": "affiliated_colleges",
