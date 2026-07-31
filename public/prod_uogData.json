@@ -1,5 +1,5 @@
 {
-  "version": 3.3,
+  "version": 3.4,
   "variables": {
     "[VAR_FALL_COMMENCE]": "Sept 15, 2025",
     "[VAR_FALL_MIDS]": "Nov 10 - 17, 2025",
@@ -77,7 +77,11 @@
         "results and grades",
         "grade history",
         "check result grades",
-        "see semester result"
+        "see semester result",
+        "check my result",
+        "check my results",
+        "results",
+        "result"
       ],
       "response": "For marks/grades, check official My UOG app Results & Grades, CMS for semester results, and LMS course marks if your teacher uploads them.\n\nDownload:\nhttps://play.google.com/store/apps/details?id=pk.edu.uog.app"
     },
