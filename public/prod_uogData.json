@@ -1,5 +1,5 @@
 {
-  "version": 3.6,
+  "version": 3.7,
   "variables": {
     "[VAR_FALL_COMMENCE]": "Sept 15, 2025",
     "[VAR_FALL_MIDS]": "Nov 10 - 17, 2025",
@@ -477,7 +477,7 @@
         "official links",
         "web portal"
       ],
-      "response": "Here are the official UOG portals:\n\n🌐 Main Website: https://uog.edu.pk\n📚 LMS: https://lms.uog.edu.pk\n🎓 CMS: https://cms.uog.edu.pk"
+      "response": "Here are the official UOG portals:\n\n🌐 Main Website: https://uog.edu.pk\n📚 LMS: https://lms.uog.edu.pk\n🎓 CMS: https://cms.uog.edu.pk\nApp: https://play.google.com/store/apps/details?id=pk.edu.uog.app\n\nIf the app doesn't appear on the Play Store,\nplease report the issue to the developer.\n\n📞 Developer Support (WhatsApp)\nhttps://wa.me/923198774242"
     },
     {
       "intent": "fall_2026_start",
