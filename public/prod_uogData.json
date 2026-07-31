@@ -1,5 +1,5 @@
 {
-  "version": 3.4,
+  "version": 3.5,
   "variables": {
     "[VAR_FALL_COMMENCE]": "Sept 15, 2025",
     "[VAR_FALL_MIDS]": "Nov 10 - 17, 2025",
@@ -83,7 +83,7 @@
         "results",
         "result"
       ],
-      "response": "For marks/grades, check official My UOG app Results & Grades, CMS for semester results, and LMS course marks if your teacher uploads them.\n\nDownload:\nhttps://play.google.com/store/apps/details?id=pk.edu.uog.app"
+      "response": "For marks/grades, check official My UOG app.\nCMS for semester results, and\nLMS course marks if your teacher \nuploads them.\n\nDownload:\nhttps://play.google.com/store/apps/details?id=pk.edu.uog.app\n\nIf the app doesn't appear on the Play Store,\nplease report the issue to the developer.\n\n📞 WhatsApp Developer:\n +92 319 8774242"
     },
     {
       "intent": "official_myuog_mid_marks",
@@ -1512,7 +1512,7 @@
         "get transcript",
         "apply for degree"
       ],
-      "response": "Generate your transcript using the official UOG app.\n\n📱 https://play.google.com/store/apps/details?id=pk.edu.uog.app\n\n🚨 Notice: University server appears to be down."
+      "response": "📄 Generate your transcript using the official UOG app.\n\n📱 https://play.google.com/store/apps/details?id=pk.edu.uog.app\n\n🚨 The University server appears to be down.\n\nIf the app doesn't appear on the Play Store,\nplease report the issue to the developer.\n\n📞 WhatsApp Developer:\n +92 319 8774242"
     },
     {
       "intent": "affiliated_colleges",
