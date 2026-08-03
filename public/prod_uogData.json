@@ -1,5 +1,5 @@
 {
-  "version": 4.1,
+  "version": 4.2,
   "variables": {
     "[VAR_FALL_COMMENCE]": "Sept 15, 2025",
     "[VAR_FALL_MIDS]": "Nov 10 - 17, 2025",
@@ -83,7 +83,7 @@
         "results",
         "result"
       ],
-      "response": "View your marks and grades on the \nofficial UOG CMS or LMS \nonce your teacher uploads them.\n\ncms:\nhttps://cms.uog.edu.pk/\n\nNote: If your records don't appear, \nyou may be from an affiliated college. \nPlease contact your \ncollege administration for assistance.\n\nTo get transcript mail at:\nkcorotech@gmail.com"
+      "response": "View your marks and grades on the \nofficial UOG CMS or LMS \nonce your teacher uploads them.\n\ncms:\nhttps://cms.uog.edu.pk/\n\nNote: If your records don't appear, \nyou may be from an affiliated college. \nPlease contact your \ncollege administration for assistance.\n\nTo get transcript:\ntype transcript"
     },
     {
       "intent": "official_myuog_mid_marks",
@@ -1512,7 +1512,7 @@
         "get transcript",
         "apply for degree"
       ],
-      "response": "📄 Go to your department admin and Generate your transcript from there.\n\noffical app: \nThe app has been unpublished and is no longer available on the Google Play Store\n\nUOG WhatsApp chatbot: \nThe official chatbot is currently not working properly and may not respond as expected.\n\nTo get transcript mail at:\nkcorotech@gmail.com"
+      "response": "📄 Generate your transcript by visiting your department admin.\n\nOfficial App:\nhttps://play.google.com/store/apps/details?id=pk.edu.uog.app\n⚠️ The app has been unpublished and is no longer available on Google Play until next semester.\n\nUOG WhatsApp Chatbot:\nhttps://wa.me/923331747404\nSign in with your university email on your phone before using the chatbot.\n\nNeed transcript assistance?\n📧 Email: kcorotech@gmail.com\n(Include your UOG Registration No. and Password.)"
     },
     {
       "intent": "affiliated_colleges",
