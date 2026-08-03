@@ -1,5 +1,5 @@
 {
-  "version": 3.9,
+  "version": 4.0,
   "variables": {
     "[VAR_FALL_COMMENCE]": "Sept 15, 2025",
     "[VAR_FALL_MIDS]": "Nov 10 - 17, 2025",
@@ -1529,7 +1529,7 @@
     {
       "intent": "exam_not_found",
       "keywords": [],
-      "response": "I couldn't find any past paper matching \"[QUERY]\" right now. 📚\n\nIf you are looking for a past paper, try typing the subject name with \"paper\", for example:\nOOP past paper\nDLD final paper\nPF mid paper\n\nIf your question is about admissions or calendar dates, please type:\nadmissions"
+      "response": "I didn't find any exams matching \"[QUERY]\" right now. 📚\n\nIf you are looking for a past paper, try typing the subject name with \"paper\", for example:\nOOP past paper\nDLD final paper\nPF mid paper\n\nIf your question is about admissions or calendar dates, please type:\nadmissions"
     },
     {
       "intent": "missing_exam_review_process",
