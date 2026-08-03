@@ -1,5 +1,5 @@
 {
-  "version": 3.8,
+  "version": 3.9,
   "variables": {
     "[VAR_FALL_COMMENCE]": "Sept 15, 2025",
     "[VAR_FALL_MIDS]": "Nov 10 - 17, 2025",
@@ -1512,7 +1512,7 @@
         "get transcript",
         "apply for degree"
       ],
-      "response": "📄 Go to your department admin and Generate your transcript from there.\n\noffical app: \nThe app has been unpublished and is no longer available on the Google Play Store\n\nUOG WhatsApp chatbot: \nThe official chatbot is currently not working properly and may not respond as expected."
+      "response": "📄 Go to your department admin and Generate your transcript from there.\n\noffical app: \nThe app has been unpublished and is no longer available on the Google Play Store\n\nUOG WhatsApp chatbot: \nThe official chatbot is currently not working properly and may not respond as expected.\n\nTo get transcript mail at:\nkcorotech@gmail.com"
     },
     {
       "intent": "affiliated_colleges",
