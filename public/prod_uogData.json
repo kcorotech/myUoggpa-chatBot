@@ -1,5 +1,5 @@
 {
-  "version": 4.2,
+  "version": 4.3,
   "variables": {
     "[VAR_FALL_COMMENCE]": "Sept 15, 2025",
     "[VAR_FALL_MIDS]": "Nov 10 - 17, 2025",
@@ -1512,7 +1512,7 @@
         "get transcript",
         "apply for degree"
       ],
-      "response": "📄 Generate your transcript by visiting your department admin.\n\nOfficial App:\nhttps://play.google.com/store/apps/details?id=pk.edu.uog.app\n⚠️ The app has been unpublished and is no longer available on Google Play until next semester.\n\nUOG WhatsApp Chatbot:\nhttps://wa.me/923331747404\nSign in with your university email on your phone before using the chatbot.\n\nNeed transcript assistance?\n📧 Email: kcorotech@gmail.com\n(Include your UOG Registration No. and Password.)"
+      "response": "📄 Generate your transcript by visiting your department admin.\n\nOfficial App:\nhttps://play.google.com/store/apps/details?id=pk.edu.uog.app\n⚠️ The app has been unpublished and is no longer available on Google Play until next semester.\n\nUOG WhatsApp Chatbot:\nhttps://wa.me/923331747404\nSign in with your university email on your phone before using the chatbot.\n\nNeed transcript assistance?\n📧 Email: \nkcorotech@gmail.com"
     },
     {
       "intent": "affiliated_colleges",
