@@ -1,5 +1,5 @@
 {
-  "version": 4.0,
+  "version": 4.1,
   "variables": {
     "[VAR_FALL_COMMENCE]": "Sept 15, 2025",
     "[VAR_FALL_MIDS]": "Nov 10 - 17, 2025",
@@ -83,7 +83,7 @@
         "results",
         "result"
       ],
-      "response": "View your marks and grades on the \nofficial UOG CMS or LMS \nonce your teacher uploads them.\n\ncms:\nhttps://cms.uog.edu.pk/\n\nNote: If your records don't appear, \nyou may be from an affiliated college. \nPlease contact your \ncollege administration for assistance."
+      "response": "View your marks and grades on the \nofficial UOG CMS or LMS \nonce your teacher uploads them.\n\ncms:\nhttps://cms.uog.edu.pk/\n\nNote: If your records don't appear, \nyou may be from an affiliated college. \nPlease contact your \ncollege administration for assistance.\n\nTo get transcript mail at:\nkcorotech@gmail.com"
     },
     {
       "intent": "official_myuog_mid_marks",
