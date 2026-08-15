@@ -1,5 +1,5 @@
 {
-  "version": 4.4,
+  "version": 4.5,
   "variables": {
     "[VAR_FALL_COMMENCE]": "Sept 15, 2025",
     "[VAR_FALL_MIDS]": "Nov 10 - 17, 2025",
@@ -83,7 +83,7 @@
         "results",
         "result"
       ],
-      "response": "View your marks and grades on the \nofficial UOG CMS or LMS \nonce your teacher uploads them.\n\ncms:\nhttps://cms.uog.edu.pk/\n\nNote: If your records don't appear, \nyou may be from an affiliated college. \nPlease contact your \ncollege administration for assistance.\n\nNeed Personal transcript assistance?\nhttps://forms.gle/c8UK6wHRnLcRLXUM6"
+      "response": "View your marks and grades on the \nofficial UOG CMS or LMS \nonce your teacher uploads them.\n\ncms:\nhttps://cms.uog.edu.pk/\n\nlms:\nhttps://lms.uog.edu.pk/\n\nNote: If your records don't appear, \nyou may be from an affiliated college. \nPlease contact your \ncollege administration for assistance.\n\nlogin on lms or cms:\nusername: Your Roll No.\npassword: Your Roll No. (first login)"
     },
     {
       "intent": "official_myuog_mid_marks",
@@ -156,7 +156,7 @@
         "official university app",
         "official records app"
       ],
-      "response": "This MyUOG Assistant is an independent student-help app. For official records like grades, attendance, roll no slip, challan, and bus tracking, use the official Portals.\n\nCMS:\nhttps://cms.uog.edu.pk/\n\nLMS:\nhttps://lms.uog.edu.pk/login/index.php"
+      "response": "This MyUOG Assistant is an independent student-help app. For official records like grades, attendance, roll no slip, challan, and bus tracking, use the official Portals.\n\nCMS:\nhttps://cms.uog.edu.pk/\n\nLMS:\nhttps://lms.uog.edu.pk/"
     },
     {
       "intent": "action_target_cgpa",
@@ -1512,7 +1512,7 @@
         "get transcript",
         "apply for degree"
       ],
-      "response": "📄 Generate your transcript by visiting your department admin.\n\nOfficial App:\nhttps://play.google.com/store/apps/details?id=pk.edu.uog.app\n⚠️ The app has been unpublished and is no longer available on Google Play until next semester.\n\nUOG WhatsApp Chatbot:\nhttps://wa.me/923331747404\nSign in with your university email on your phone before using the chatbot.\n\nNeed Personal transcript assistance?\nhttps://forms.gle/c8UK6wHRnLcRLXUM6"
+      "response": "📄 Get your transcript from your Department Admin.\n\nOfficial App:\nhttps://play.google.com/store/apps/details?id=pk.edu.uog.app\n⚠️ The app is currently unpublished and unavailable on Google Play until next semester.\n\nUOG WhatsApp Chatbot:\nhttps://wa.me/923331747404\nSign in with your university email on your phone before using it.\n\nNote: These are the only available options."
     },
     {
       "intent": "affiliated_colleges",
@@ -1752,7 +1752,7 @@
         "spring admissions",
         "fall admissions"
       ],
-      "response": "🍂 Fall 2026 Admission Calendar:\n• Last date to apply online: Friday, August 07, 2026\n\n• Departmental Test & Interview: Saturday, August 08, 2026\n\n• First Merit List: Monday, August 10, 2026\n\n• Fee deadline for 1st Merit List: Wednesday, August 12, 2026\n\n• Second Merit List: Thursday, August 13, 2026\n\n• Fee deadline for 2nd Merit List: August 18, 2026\n\n• Classes start: Monday, September 07, 2026 🎓 \n\nRegister here:\nhttps://uog.edu.pk/uog/register.php"
+      "response": "🍂 Fall 2026 Admission Calendar: \n• Last date to apply online: Friday, August 07, 2026\n\n• Departmental Test & Interview: Saturday, August 08, 2026\n\n• First Merit List: Monday, August 10, 2026\n\n• Fee deadline for 1st Merit List: Wednesday, August 12, 2026\n\n• Second Merit List: Thursday, August 13, 2026\n\n• Fee deadline for 2nd Merit List: August 18, 2026\n\n• Classes start: Monday, September 07, 2026 🎓 \n\nRegister here:\nhttps://uog.edu.pk/uog/register.php\n\nPhase2 admission Opened\n• no dates provided"
     },
     {
       "intent": "fallback_unknown",
