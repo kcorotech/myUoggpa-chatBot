@@ -1,5 +1,5 @@
 {
-  "version": 4.5,
+  "version": 46.0,
   "variables": {
     "[VAR_FALL_COMMENCE]": "Sept 15, 2025",
     "[VAR_FALL_MIDS]": "Nov 10 - 17, 2025",
@@ -40,7 +40,7 @@
         "play store my uog",
         "uog official mobile app"
       ],
-      "response": "The official My UOG app by University of Gujrat gives student services like results/grades, attendance, fee challan, date sheet, digital card, roll no slip, and bus tracking.\n\nDownload: The app has been unpublished and is no longer available on the Google Play Store."
+      "response": "The official My UOG app by University of Gujrat gives student services like results/grades, attendance, fee challan, date sheet, digital card, roll no slip, and bus tracking.\n\nDownload: https://play.google.com/store/apps/details?id=pk.edu.uog.app"
     },
     {
       "intent": "official_myuog_roll_no_slip",
@@ -57,7 +57,7 @@
         "download roll no slip",
         "roll no slip app"
       ],
-      "response": "For Roll No Slip, \nuse the official CMS/exam portal.\nCheck Student Portal / Exam \nsection after slips are issued.\n\nCms:\nhttps://cms.uog.edu.pk/\n\nNote: If your records don't appear, \nyou may be from an affiliated college. \nPlease contact your college \nadministration for assistance."
+      "response": "For Roll No Slip, \nuse the official CMS/exam portal.\nCheck Student Portal / Exam \nsection after slips are issued.\n\nCms:\nhttps://cms.uog.edu.pk/\n\nApp:\nhttps://play.google.com/store/apps/details?id=pk.edu.uog.app"
     },
     {
       "intent": "official_myuog_marks_grades",
@@ -83,7 +83,7 @@
         "results",
         "result"
       ],
-      "response": "View your marks and grades on the \nofficial UOG CMS or LMS \nonce your teacher uploads them.\n\ncms:\nhttps://cms.uog.edu.pk/\n\nlms:\nhttps://lms.uog.edu.pk/\n\nNote: If your records don't appear, \nyou may be from an affiliated college. \nPlease contact your \ncollege administration for assistance.\n\nlogin on lms or cms:\nusername: Your Roll No.\npassword: Your Roll No. (first login)"
+      "response": "View your marks and grades on the \nofficial UOG CMS or LMS or App\nonce your teacher uploads them.\n\ncms:\nhttps://cms.uog.edu.pk/\n\nlms:\nhttps://lms.uog.edu.pk/\n\nApp:\nhttps://play.google.com/store/apps/details?id=pk.edu.uog.app\n\nlogin on lms or cms or app:\nusername: Your Roll No.\npassword: Your Roll No. (first login)"
     },
     {
       "intent": "official_myuog_mid_marks",
@@ -122,7 +122,7 @@
         "where is bus",
         "bus live location"
       ],
-      "response": "The official **My UOG** app provides **Bus Tracking & Transport** for live university bus tracking.\n\n**Download:** The app is currently unpublished and is not available for download from the Play Store."
+      "response": "The official **My UOG** app provides **Bus Tracking & Transport** for live university bus tracking.\n\n**Download:** \nhttps://play.google.com/store/apps/details?id=pk.edu.uog.app"
     },
     {
       "intent": "official_myuog_services",
@@ -142,7 +142,7 @@
         "events app",
         "push notifications app"
       ],
-      "response": "Official My UOG app services include attendance, grades, timetable, fee challan, digital card, date sheet, library, admissions, announcements, and bus tracking.\n\nDownload: The app has been unpublished and is no longer available on the Google Play Store."
+      "response": "Official My UOG app services include attendance, grades, timetable, fee challan, digital card, date sheet, library, admissions, announcements, and bus tracking.\n\n**Download:** \nhttps://play.google.com/store/apps/details?id=pk.edu.uog.app"
     },
     {
       "intent": "official_myuog_vs_helper_app",
@@ -477,7 +477,7 @@
         "official links",
         "web portal"
       ],
-      "response": "Here are the official UOG portals:\n\n🌐 Main Website: https://uog.edu.pk\n📚 LMS: https://lms.uog.edu.pk\n🎓 CMS: https://cms.uog.edu.pk\nApp: The app has been unpublished and is no longer available on the Google Play Store."
+      "response": "Here are the official UOG portals:\n\n🌐 Main Website: https://uog.edu.pk\n📚 LMS: https://lms.uog.edu.pk\n🎓 CMS: https://cms.uog.edu.pk\nApp: https://play.google.com/store/apps/details?id=pk.edu.uog.app"
     },
     {
       "intent": "fall_2026_start",
@@ -1512,7 +1512,7 @@
         "get transcript",
         "apply for degree"
       ],
-      "response": "📄 Get your transcript from your Department Admin.\n\nOfficial App:\nhttps://play.google.com/store/apps/details?id=pk.edu.uog.app\n⚠️ The app is currently unpublished and unavailable on Google Play until next semester.\n\nUOG WhatsApp Chatbot:\nhttps://wa.me/923331747404\nSign in with your university email on your phone before using it.\n\nNote: These are the only available options."
+      "response": "📄 Get your transcript from your Department Admin.\n\nOfficial App:\nhttps://play.google.com/store/apps/details?id=pk.edu.uog.app\n\nUOG WhatsApp Chatbot:\nhttps://wa.me/923331747404\nSign in with your university email on your phone before using it.\n\nNote: These are the only available options."
     },
     {
       "intent": "affiliated_colleges",
